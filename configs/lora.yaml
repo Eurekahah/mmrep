@@ -1,0 +1,16 @@
+# P4 的 LoRA 配置草稿（取自 CONTRACT 3.5，P4 可补充，不要改动已有数值）
+lr: 5.0e-4
+weight_decay: 0.01
+epochs: 5
+batch_size: 128
+warmup_ratio: 0.05
+lr_schedule: cosine
+precision: fp16          # LoRA 参数保持 fp32
+freeze_logit_scale_bias: true
+seed: 42
+train_split: [flickr, train]
+ranks: [8, 16]
+alpha_factor: 2          # lora_alpha = 2 * r
+dropout: 0.05
+bias: none
+target_modules_regex: '.*(vision_model|text_model).*\.(q_proj|k_proj|v_proj|out_proj)'

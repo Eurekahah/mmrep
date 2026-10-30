@@ -1,0 +1,13 @@
+# 扰动配置（见 docs/CONTRACT.md 3.6）。主设置是 noise / occl，弱强档只在 Flickr val 上使用。
+seed: 42
+noise_sigma:        # 高斯噪声标准差，作用在 [0,1] 像素空间，加完 clip 到 [0,1]
+  noise_lo: 0.05
+  noise: 0.10
+  noise_hi: 0.20
+occl_ratio:         # 遮挡方块边长 / 输入边长，填 0
+  occl_lo: 0.20
+  occl: 0.30
+  occl_hi: 0.40
+# 只有这些 (dataset, split) 会跑弱强档
+strength_scope:
+  - [flickr, val]

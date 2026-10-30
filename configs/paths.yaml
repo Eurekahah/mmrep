@@ -1,0 +1,9 @@
+# 本地数据位置。环境变量 MMREP_DATA_ROOT 优先于这里的 data_root。
+# 目录约定（每个人自己下载后按这个放，prepare_data.py 和 datasets.py 都按它找文件）：
+#   <data_root>/flickr30k/flickr30k-images/*.jpg
+#   <data_root>/flickr30k/flickr_annotations_30k.csv
+#   <data_root>/coco/val2017/*.jpg
+#   <data_root>/coco/annotations/{instances_val2017.json,captions_val2017.json}
+#   <data_root>/cifar100/cifar-100-python/   （torchvision 自动生成）
+data_root: ./data_raw
+splits_dir: ./splits

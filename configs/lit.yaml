@@ -1,0 +1,13 @@
+# P3 的 LiT 配置草稿（取自 CONTRACT 3.5，P3 可补充，不要改动已有数值）
+lr: 1.0e-4
+weight_decay: 0.01
+epochs: 5
+batch_size: 128
+warmup_ratio: 0.05
+lr_schedule: cosine
+precision: fp16
+freeze_logit_scale_bias: true
+seed: 42
+train_split: [flickr, train]
+trainable: [text_model, text_projection]
+frozen: [vision_model, visual_projection]

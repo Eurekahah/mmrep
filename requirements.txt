@@ -1,0 +1,18 @@
+# torch / torchvision 单独装（见 README），其余库：
+transformers==4.49.0
+peft==0.14.0
+accelerate==1.2.1
+sentencepiece==0.2.0
+protobuf
+safetensors
+numpy==1.26.4
+scikit-learn==1.5.2
+umap-learn==0.5.7
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+openpyxl==3.1.5
+pillow
+tqdm
+pyyaml
+pytest

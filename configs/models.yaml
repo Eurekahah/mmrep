@@ -1,0 +1,33 @@
+# 模型与输入配置：全组唯一来源，代码里不允许写死 224 / 256。
+# 预处理参数来自各模型官方 preprocessor_config.json（2026-10 核对）。
+clip:
+  hf_name: openai/clip-vit-base-patch32
+  input_size: 224
+  embed_dim: 512
+  patch_size: 32
+  # CLIP 官方：短边缩放到 input_size（双三次），再中心裁剪成正方形
+  resize:
+    mode: shortest_edge_center_crop
+    interpolation: bicubic
+  mean: [0.48145466, 0.4578275, 0.40821073]
+  std: [0.26862954, 0.26130258, 0.27577711]
+  tokenizer:
+    max_length: 77
+    padding: max_length
+    lowercase: false
+
+siglip:
+  hf_name: google/siglip2-base-patch32-256
+  input_size: 256
+  embed_dim: 768
+  patch_size: 32
+  # SigLIP2 官方：直接缩放到 input_size x input_size（双线性，不保持长宽比，不裁剪）
+  resize:
+    mode: squash
+    interpolation: bilinear
+  mean: [0.5, 0.5, 0.5]
+  std: [0.5, 0.5, 0.5]
+  tokenizer:
+    max_length: 64
+    padding: max_length
+    lowercase: true

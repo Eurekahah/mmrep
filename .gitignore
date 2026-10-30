@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data_raw/
+features_dummy/
+features/*
+features_cifar/*
+ckpt/*
+logs/*
+results/figs/
+!**/.gitkeep
+*.npz
+*.pt
+*.safetensors
+.DS_Store
