@@ -52,7 +52,7 @@ data_raw/
   cifar100/cifar-100-python/                  # torchvision 自动生成
 ```
 
-下载命令：
+下载命令（一条命令版：`sh tools/download_data.sh all`，下面是分步写法）：
 
 ```
 # Flickr30K（国内慢可 export HF_ENDPOINT=https://hf-mirror.com）
