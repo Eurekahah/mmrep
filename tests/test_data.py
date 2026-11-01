@@ -104,37 +104,56 @@ def test_noise_range_and_scaling():
     assert abs(float((f * 0.1).std()) - 0.1) < 0.005
 
 
-@pytest.mark.parametrize("model,ratio_mode,side", [
-    ("clip", "occl_lo", 45), ("clip", "occl", 67), ("clip", "occl_hi", 90),
-    ("siglip", "occl_lo", 51), ("siglip", "occl", 77), ("siglip", "occl_hi", 102)])
-def test_occl_side_and_region(model, ratio_mode, side):
+@pytest.mark.parametrize("model", MODELS)
+@pytest.mark.parametrize("mode,area", [("occl_lo", 0.10), ("occl", 0.25), ("occl_hi", 0.50)])
+def test_occl_area_aspect_fill(model, mode, area):
     s = SIZE[model]
-    x = torch.ones(3, s, s)
-    out = P.perturb(x, ratio_mode, 5)
-    zero = (out == 0).all(0)
-    assert int(zero.sum()) == side * side
-    ys, xs = torch.where(zero)
-    assert int(ys.max() - ys.min()) + 1 == side and int(xs.max() - xs.min()) + 1 == side
-    assert float(out[:, ~zero].min()) == 1.0     # 方块以外不变
+    mean = load_models_cfg()[model]["mean"]
+    ratios = []
+    for idx in range(60):
+        x = torch.rand(3, s, s) * 0.5            # 取值 <0.5，保证和填充色可区分
+        out = P.perturb(x, mode, idx, fill=mean)
+        changed = (out != x).any(0)
+        ys, xs = torch.where(changed)
+        bh, bw = int(ys.max() - ys.min()) + 1, int(xs.max() - xs.min()) + 1
+        top, left, h2, w2 = P.occl_box(s, s, area, idx)
+        assert (bh, bw) == (h2, w2) and (int(ys.min()), int(xs.min())) == (top, left)   # 变化区域就是返回的矩形
+        assert abs(h2 * w2 / (s * s) - area) < 0.02                                       # 面积比准确（取整误差内）
+        assert 0.25 <= (w2 / h2) <= 4.0 or area >= 0.5                                  # 长宽比在范围内（大面积会被画面截断）
+        box = out[:, top:top + h2, left:left + w2]
+        assert torch.allclose(box, torch.tensor(mean).view(3, 1, 1).expand_as(box))      # 填的是均值像素
+        assert torch.equal(out[:, ~changed], x[:, ~changed])                              # 其余像素不变
+        ratios.append(w2 / h2)
+    assert max(ratios) / min(ratios) > 3          # 长宽比确实有变化，不是固定正方形
+
+
+def test_occl_fill_gives_zero_after_normalize():
+    for m in MODELS:
+        s = SIZE[m]
+        x = torch.rand(3, s, s)
+        out = normalize(P.perturb(x, "occl", 3, fill=load_models_cfg()[m]["mean"]), m)
+        top, left, bh, bw = P.occl_box(s, s, 0.25, 3)
+        assert float(out[:, top:top + bh, left:left + bw].abs().max()) < 1e-5
 
 
 def test_occl_same_relative_region_across_models():
     for idx in range(50):
-        tops = {}
-        for m in MODELS:
-            s = SIZE[m]
-            top, left, side = P.occl_box(s, s, 0.3, idx)
-            tops[m] = (top / s, left / s, (top + side) / s, (left + side) / s)
-        assert max(abs(a - b) for a, b in zip(tops["clip"], tops["siglip"])) < 0.01
+        for area in (0.10, 0.25, 0.50):
+            reg = {}
+            for m in MODELS:
+                s = SIZE[m]
+                t, l, bh, bw = P.occl_box(s, s, area, idx)
+                reg[m] = (t / s, l / s, (t + bh) / s, (l + bw) / s)
+            assert max(abs(a - b) for a, b in zip(reg["clip"], reg["siglip"])) < 0.02
 
 
-def test_strength_levels_share_position():
-    assert P.occl_position(3) == P.occl_position(3)
-    for idx in range(20):
-        a = P.occl_box(224, 224, 0.2, idx)
-        c = P.occl_box(224, 224, 0.4, idx)
-        u, v = P.occl_position(idx)
-        assert a[0] == round(u * (224 - a[2])) and c[1] == round(v * (224 - c[2]))
+def test_occl_levels_share_shape_and_position():
+    for idx in range(30):
+        r1, u1, v1 = P.occl_params(idx)
+        assert (r1, u1, v1) == P.occl_params(idx)
+        lo = P.occl_box(224, 224, 0.10, idx)
+        hi = P.occl_box(224, 224, 0.50, idx)
+        assert lo[2] * lo[3] < hi[2] * hi[3]
 
 
 # ---------------- 数据集 ----------------

@@ -79,7 +79,7 @@ class ImageTextDataset(Dataset):
     def __getitem__(self, i):
         pil = self._pil(i)
         x = load_resized_01(pil, self.model)
-        x = perturb(x, self.cond, i)
+        x = perturb(x, self.cond, i, fill=load_models_cfg()[self.model]["mean"])
         x = normalize(x, self.model)
         if self.name == "cifar100":
             caps, label = [], int(self.cifar.targets[i])

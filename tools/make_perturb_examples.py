@@ -16,7 +16,7 @@ from data.datasets import ImageTextDataset
 from data.perturb import ALL_MODES
 
 TITLE = {"clean": "clean", "noise_lo": "noise s=0.05", "noise": "noise s=0.10", "noise_hi": "noise s=0.20",
-         "occl_lo": "occl 20%", "occl": "occl 30%", "occl_hi": "occl 40%"}
+         "occl_lo": "occl 10% area", "occl": "occl 25% area", "occl_hi": "occl 50% area"}
 
 
 def main():
@@ -42,7 +42,7 @@ def main():
         for r, id_ in enumerate(ids):
             x = load_resized_01(Image.open(os.path.join(d, id_)), model)
             for c, mode in enumerate(ALL_MODES):
-                axs[r, c].imshow(perturb(x, mode, r).permute(1, 2, 0).clamp(0, 1).numpy())
+                axs[r, c].imshow(perturb(x, mode, r, fill=cfg[model]["mean"]).permute(1, 2, 0).clamp(0, 1).numpy())
                 axs[r, c].axis("off")
                 if r == 0:
                     axs[r, c].set_title(TITLE[mode], fontsize=9)

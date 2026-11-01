@@ -4,10 +4,14 @@ noise_sigma:        # 高斯噪声标准差，作用在 [0,1] 像素空间，加
   noise_lo: 0.05
   noise: 0.10
   noise_hi: 0.20
-occl_ratio:         # 遮挡方块边长 / 输入边长，填 0
-  occl_lo: 0.20
-  occl: 0.30
-  occl_hi: 0.40
+# 遮挡：Random Erasing 风格的随机矩形（Zhong et al., AAAI 2020）
+#   面积占整图的比例 = occl_area[mode]；长宽比 r = w/h 在 occl_aspect 范围内对数均匀采样；位置完全随机；
+#   填充该模型的“均值像素”（归一化后为 0，与 Cutout / Random Erasing 的均值填充一致），不是纯黑。
+occl_area:
+  occl_lo: 0.10
+  occl: 0.25
+  occl_hi: 0.50
+occl_aspect: [0.3, 3.3]
 # 只有这些 (dataset, split) 会跑弱强档
 strength_scope:
   - [flickr, val]

@@ -56,5 +56,5 @@ def preprocess_pil(pil_img, model, cond="clean", idx=0):
     """完整流水线：resize -> perturb -> normalize，返回可直接送进模型的张量。"""
     from .perturb import perturb
     x = load_resized_01(pil_img, model)
-    x = perturb(x, cond, idx)
+    x = perturb(x, cond, idx, fill=load_models_cfg()[model]["mean"])
     return normalize(x, model)

@@ -1,6 +1,6 @@
 # CONTRACT：全组统一约定
 
-本文件整理自分工文档第三节，是全组的唯一接口依据。11.4 之后冻结，要改的话先在群里说，改完更新本文件并通知受影响的人。
+本文件整理自分工文档第三节，是全组的唯一接口依据。冻结日期之后要改的话先在群里说，改完更新本文件并通知受影响的人。
 
 ## 3.1 环境
 
@@ -74,7 +74,7 @@ uv pip install transformers==4.49.0 peft==0.14.0 accelerate==1.2.1 sentencepiece
 - CLIP：224×224，7×7=49 个 patch；SigLIP2：256×256，8×8=64 个 patch；两者 patch 都是 32×32 像素，所以单个 patch 内的像素数一样
 - 同一张原图要分别预处理成两个尺寸，不要共用一份张量，也不要把一个模型的缓存给另一个模型用。`get_dataset(..., model)` 按 `model` 取各自的尺寸，P1 负责保证这点
 - 预处理方式以各模型官方处理器为准，写进 `configs/models.yaml`：CLIP 是“短边缩放到 224（双三次）再中心裁剪”，SigLIP2 是“直接缩放到 256×256（双线性，不保持长宽比、不裁剪）”。这两种处理在非正方形图上会让两边看到的画面不完全一样（CLIP 会裁掉左右或上下边缘，SigLIP2 会拉伸），属于已知差异，写进报告的局限里，不要试图在代码里统一
-- 所有尺寸相关的数值（遮挡边长、CIFAR 的放大尺寸、可视化的输入）都从 `models.yaml` 读，代码里不允许出现写死的 224 或 256
+- 所有尺寸相关的数值（遮挡矩形尺寸、CIFAR 的放大尺寸、可视化的输入）都从 `models.yaml` 读，代码里不允许出现写死的 224 或 256
 - 跨模型比较只比“相对变化”（例如 noise 相对 clean 的 Recall 降幅、间隙增幅），不直接比较两个模型的绝对数值，原因见 `docs/resolution_note.md`（P10 汇总）
 
 ## 3.5 训练设置（P3 与 P4 必须一致，只有微调方式不同）
@@ -103,17 +103,17 @@ uv pip install transformers==4.49.0 peft==0.14.0 accelerate==1.2.1 sentencepiece
 - 噪声：加 N(0, σ²)，clip 到 [0,1]，σ 见下表
 - 强度分三档（主设置是中档，所有数据集、所有分析都用中档；弱、强两档只在 Flickr val 上跑，用来看“扰动越强，间隙和对齐变化是否越大”）：
 
-| cond 名 | 噪声 σ | 遮挡边长占输入边长 | 遮挡面积占比 | CLIP 边长 | SigLIP2 边长 |
-|---|---|---|---|---|---|
-| `noise_lo` / `occl_lo` | 0.05 | 20% | 4% | 45 | 51 |
-| `noise` / `occl`（主设置） | 0.1 | 30% | 9% | 67 | 77 |
-| `noise_hi` / `occl_hi` | 0.2 | 40% | 16% | 90 | 102 |
+| cond 名 | 噪声 σ | 遮挡面积占整图比例 | 说明 |
+|---|---|---|---|
+| `noise_lo` / `occl_lo` | 0.05 | 10% | 弱 |
+| `noise` / `occl`（主设置） | 0.1 | 25% | 中，所有数据集、所有分析都用这一档 |
+| `noise_hi` / `occl_hi` | 0.2 | 50% | 强 |
 
-- 遮挡：1 个方块，边长为该模型输入边长乘上表中的比例（四舍五入），填 0；每个样本的位置随机，所以不同样本被遮挡的位置本来就各不相同
-- 遮挡位置用相对坐标：先用种子抽 `(u, v)`，u、v 取 [0,1] 均匀分布，左上角 = `round(u * (H - 边长))`、`round(v * (W - 边长))`，这样同一个样本在两个模型里遮挡的是原图的同一块区域
+- 遮挡：Random Erasing 风格的 1 个随机矩形（Zhong et al., AAAI 2020）：面积 = 表中比例 × 整图面积；长宽比 w/h 在 [0.3, 3.3] 内对数均匀随机（每个样本不同，所以不是固定正方形）；位置完全随机；矩形若超出画面，会把长边截到画面边界并放宽另一边以保持面积；填充值是该模型的均值像素（CLIP 为 OpenAI 的 mean，SigLIP2 为 0.5），即归一化后恰好为 0，与 Cutout / Random Erasing 的“均值填充”一致，不是纯黑。纯黑会引入额外的强对比边缘，让“遮挡”与“出现一块黑色异物”两个因素混在一起
+- 遮挡的形状和位置用相对坐标：先用种子抽 `(r, u, v)`（长宽比、位置），相对高 = √(面积/r)，相对宽 = √(面积×r)，左上角 = `round(u × (H − 高))`、`round(v × (W − 宽))`，这样同一个样本在两个模型里遮挡的是原图的同一块区域（取整误差内）。三档遮挡共用同一组 `(r, u, v)`，只有面积不同
 - 噪声：每个模型在自己的分辨率上生成（形状不同，没法逐像素相同），种子相同；σ 都是 0.1，两边每个 patch 内像素数相同，所以每个 patch 受到的噪声强度一致
 - 随机数：`torch.Generator().manual_seed(42 + 样本序号)`，同一样本在同一个模型的所有设置下得到完全相同的扰动；跨模型只保证遮挡区域相同，噪声是同分布的不同实例
-- 在线生成，不存盘；同一样本一次给出 clean/noise/occl 三份，一一对应；弱、强档同理，同一样本、同一种子，只改强度，位置与随机数不变（遮挡位置一致、噪声同一个标准正态场乘不同 σ），保证强度之间只有强度这一个变量
+- 在线生成，不存盘；同一样本一次给出 clean/noise/occl 三份，一一对应；弱、强档同理，同一样本、同一种子，只改强度，位置与随机数不变（遮挡的长宽比和位置一致、噪声同一个标准正态场乘不同 σ），保证强度之间只有强度这一个变量
 
 ## 3.7 特征文件格式（P2 产出）
 
@@ -148,7 +148,7 @@ CIFAR-100：`features_cifar/{model}/{setting}/{train|test}.npz`，含 `img_raw`�
 |---|---|
 | `load_model(model, setting, ckpt_root="ckpt", device="cuda")`（P2，`models/loader.py`） | 返回 `ModelWrapper`，属性：`embed_dim`、`input_size`、`mean`、`std`；方法：`tokenize(list[str]) -> dict`、`encode_image(pixel_values) -> Tensor[B,D]`、`encode_text(**tokens) -> Tensor[B,D]`，输出均为未归一化；`model` 取 `clip/siglip`，`setting` 取 `pretrained/lit/lora_r8/lora_r16` |
 | `get_dataset(name, split, cond, model)`（P1，`data/datasets.py`） | `name` 取 `flickr/coco/cifar100`；每项是 dict：`image`（按 `model` 对应的尺寸与官方预处理 resize、扰动、归一化后的 Tensor，CLIP 为 `[3,224,224]`，SigLIP2 为 `[3,256,256]`）、`captions`（list[str]，CIFAR 为空）、`idx`、`id`、`label`；同时提供 `collate_fn` |
-| `perturb(img01, mode, idx)`（P1，`data/perturb.py`） | `img01` 为 `[3,H,W]`、取值 [0,1]；`mode` 取 `clean/noise/noise_lo/noise_hi/occl/occl_lo/occl_hi`，返回同形状 |
+| `perturb(img01, mode, idx, seed=None, fill=None)`（P1，`data/perturb.py`；用法 `from data.perturb import perturb`，不要写 `from data import perturb`） | `img01` 为 `[3,H,W]`、取值 [0,1]；`mode` 取 `clean/noise/noise_lo/noise_hi/occl/occl_lo/occl_hi`，`fill` 是遮挡填充的 RGB（[0,1] 空间），`get_dataset` 会自动传该模型的 mean，其他人直接用 `get_dataset` 即可；返回同形状 |
 | `Logger`（P1，`tools/logger.py`） | 记录耗时和 `torch.cuda.max_memory_allocated`，写入 `logs/` |
 
 没有真实数据时，所有人用 P1 的 `tools/make_dummy_features.py`（造满足 3.7 格式的假特征）开发。
@@ -160,7 +160,7 @@ CIFAR-100：`features_cifar/{model}/{setting}/{train|test}.npz`，含 `img_raw`�
 | Flickr 子集大小 | 10000 张 | 6000 张（4000/1000/1000），显卡慢时 |
 | 训练轮数 | 5 epoch | 3 epoch |
 | 噪声强度 | 三档 0.05 / 0.1 / 0.2（只有 Flickr val 跑三档，其余只用 0.1） | 只用 0.1，去掉强度这一维 |
-| 遮挡边长 | 三档 20% / 30% / 40%（同上） | 只用 30% |
+| 遮挡面积 | 三档 10% / 25% / 50%（同上） | 只用 25% |
 | 模态间隙主指标 | 图文质心距离 | MMD |
 | 线性探针 | PyTorch 单层 Linear | sklearn LogisticRegression |
 | 降维采样 | 1000 张图 | 500 张 |
