@@ -1,0 +1,278 @@
+{
+  "validated_date": "2026-11-10",
+  "base_commit": "23eb9be4d6ff5ab697857150207afb44a57e5e91",
+  "local_branch": "p2/model-loader",
+  "nov9_loader_status": "implemented_CPU_and_GPU_verified",
+  "gpu_validation": "passed_real_COCO_single_batch_and_formal_pretrained_FP16_extraction",
+  "p2_unit_tests": {
+    "passed": 38,
+    "failed": 0,
+    "skipped": 0
+  },
+  "repository_tests": {
+    "passed": 77,
+    "failed": 1,
+    "skipped": 3,
+    "existing_failure": "tests/test_train_lit.py::test_training_smoke[siglip]",
+    "baseline_reproduced": true,
+    "max_abs_difference": 2.980232238769531e-07,
+    "evidence": "logs/p2_baseline_test.txt"
+  },
+  "models": {
+    "clip": {
+      "model": "clip",
+      "setting": "pretrained",
+      "status": "passed",
+      "input_kind": "deterministic synthetic RGB images and synthetic captions",
+      "weights_kind": "real public pretrained weights",
+      "scope": "integration and numerical checks only; not a dataset metric",
+      "batch_size": 2,
+      "device": "cpu",
+      "precision": "fp32",
+      "versions": {
+        "python": "3.10.22",
+        "torch": "2.4.1+cu121",
+        "cuda_runtime": "12.1",
+        "transformers": "4.49.0",
+        "peft": "0.14.0",
+        "numpy": "1.26.4",
+        "huggingface-hub": "0.36.2"
+      },
+      "tolerances": {
+        "atol": 1e-05,
+        "rtol": 1e-05
+      },
+      "hf_name": "openai/clip-vit-base-patch32",
+      "resolved_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "input_size": 224,
+      "embed_dim": 512,
+      "model_type": "clip",
+      "tokenizer_class": "CLIPTokenizer",
+      "tokenizer_policy": {
+        "max_length": 77,
+        "padding": "max_length",
+        "lowercase": false
+      },
+      "logit_parameters": {
+        "logit_scale": {
+          "value": 4.605170249938965,
+          "dtype": "torch.float32"
+        }
+      },
+      "parameter_count": 151277313,
+      "image": {
+        "shape": [
+          2,
+          512
+        ],
+        "dtype": "torch.float32",
+        "raw_norms": [
+          11.572340965270996,
+          11.556300163269043
+        ],
+        "repeat_max_abs_diff": 0.0,
+        "native_max_abs_diff": 0.0
+      },
+      "text": {
+        "shape": [
+          2,
+          512
+        ],
+        "dtype": "torch.float32",
+        "raw_norms": [
+          11.170905113220215,
+          11.00522232055664
+        ],
+        "repeat_max_abs_diff": 0.0,
+        "native_max_abs_diff": 0.0
+      },
+      "exports": {
+        "clean": {
+          "path": "logs/p2_smoke_cpu/clip/synthetic_clean.npz",
+          "export": {
+            "path": "logs/p2_smoke_cpu/clip/synthetic_clean.npz",
+            "status": "written",
+            "n_images": 2,
+            "n_texts": 10
+          }
+        },
+        "noise": {
+          "path": "logs/p2_smoke_cpu/clip/synthetic_noise.npz",
+          "export": {
+            "path": "logs/p2_smoke_cpu/clip/synthetic_noise.npz",
+            "status": "written",
+            "n_images": 2,
+            "n_texts": 0
+          }
+        }
+      },
+      "checks": [
+        "image/text shape",
+        "finite and nonzero raw embeddings",
+        "L2 normalization",
+        "repeat inference",
+        "raw native-model parity",
+        "fixed tokenizer length and case policy",
+        "clean 5-caption export",
+        "caption ordering",
+        "noise image-only export",
+        "NPZ reread"
+      ],
+      "wall_sec": 9.743951299999935,
+      "weight_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f"
+    },
+    "siglip": {
+      "model": "siglip",
+      "setting": "pretrained",
+      "status": "passed",
+      "input_kind": "deterministic synthetic RGB images and synthetic captions",
+      "weights_kind": "real public pretrained weights",
+      "scope": "integration and numerical checks only; not a dataset metric",
+      "batch_size": 2,
+      "device": "cpu",
+      "precision": "fp32",
+      "versions": {
+        "python": "3.10.22",
+        "torch": "2.4.1+cu121",
+        "cuda_runtime": "12.1",
+        "transformers": "4.49.0",
+        "peft": "0.14.0",
+        "numpy": "1.26.4",
+        "huggingface-hub": "0.36.2"
+      },
+      "tolerances": {
+        "atol": 1e-05,
+        "rtol": 1e-05
+      },
+      "hf_name": "google/siglip2-base-patch32-256",
+      "resolved_revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+      "input_size": 256,
+      "embed_dim": 768,
+      "model_type": "siglip",
+      "tokenizer_class": "GemmaTokenizerFast",
+      "tokenizer_policy": {
+        "max_length": 64,
+        "padding": "max_length",
+        "lowercase": true
+      },
+      "logit_parameters": {
+        "logit_scale": {
+          "value": 4.717002868652344,
+          "dtype": "torch.float32"
+        },
+        "logit_bias": {
+          "value": -16.766876220703125,
+          "dtype": "torch.float32"
+        }
+      },
+      "parameter_count": 376856066,
+      "image": {
+        "shape": [
+          2,
+          768
+        ],
+        "dtype": "torch.float32",
+        "raw_norms": [
+          13.04224967956543,
+          13.061739921569824
+        ],
+        "repeat_max_abs_diff": 0.0,
+        "native_max_abs_diff": 0.0
+      },
+      "text": {
+        "shape": [
+          2,
+          768
+        ],
+        "dtype": "torch.float32",
+        "raw_norms": [
+          21.78041648864746,
+          21.963449478149414
+        ],
+        "repeat_max_abs_diff": 0.0,
+        "native_max_abs_diff": 0.0
+      },
+      "exports": {
+        "clean": {
+          "path": "logs/p2_smoke_cpu/siglip/synthetic_clean.npz",
+          "export": {
+            "path": "logs/p2_smoke_cpu/siglip/synthetic_clean.npz",
+            "status": "written",
+            "n_images": 2,
+            "n_texts": 10
+          }
+        },
+        "noise": {
+          "path": "logs/p2_smoke_cpu/siglip/synthetic_noise.npz",
+          "export": {
+            "path": "logs/p2_smoke_cpu/siglip/synthetic_noise.npz",
+            "status": "written",
+            "n_images": 2,
+            "n_texts": 0
+          }
+        }
+      },
+      "checks": [
+        "image/text shape",
+        "finite and nonzero raw embeddings",
+        "L2 normalization",
+        "repeat inference",
+        "raw native-model parity",
+        "fixed tokenizer length and case policy",
+        "clean 5-caption export",
+        "caption ordering",
+        "noise image-only export",
+        "NPZ reread"
+      ],
+      "wall_sec": 12.885043100000075,
+      "weight_sha256": "7d241bb3becad218f211f480487f491df4f8c0a472ecf7afdec5615815a301f1"
+    }
+  },
+  "limitations": [
+    "Historical models entries are the 2026-11-10 CPU smoke receipts on synthetic inputs; see current_delivery for the 2026-11-11 formal GPU run.",
+    "Real P3/P4 checkpoints remain pending.",
+    "Full-stage norm statistics and LiT comparisons require the 96 future fine-tuned feature files."
+  ],
+  "updated_date": "2026-11-11",
+  "current_delivery": {
+    "formal_status": "pretrained_delivered_waiting_for_six_P3_P4_checkpoints",
+    "verification_date": "2026-11-11",
+    "device": "NVIDIA GeForce RTX 3080",
+    "data_validation": "logs/p2_data_validation.json",
+    "stage_validation": "results/p2_stages/pretrained/norm_stats_validation.json",
+    "valid_real_images": 6952,
+    "formal_feature_files": 32,
+    "expected_total_feature_files": 128,
+    "stage_norm_rows": 40,
+    "expected_total_norm_rows": 160,
+    "real_cpu_smoke_records_in_this_document": "models",
+    "real_gpu_smoke": {
+      "clip": "logs/p2_real_smoke/coco_val/clip/report.json",
+      "siglip": "logs/p2_real_smoke/coco_val/siglip/report.json"
+    },
+    "gpu_written_log": "logs/P2_runs.jsonl",
+    "feature_zip": "../P2_本地交接/P2_01_pretrained.zip",
+    "feature_zip_sha256": "a6fe8b98bb46fe1704a064446bbfa4aa3e5d5fe1c9a42f97688ee40215fe4225",
+    "coco_repeat_check": "logs/p2_coco_repeat.json",
+    "p2_offline_tests_passed": 66,
+    "repo_test_outcomes": {
+      "passed": 106,
+      "skipped": 2,
+      "failed_existing_p3": 1
+    },
+    "remaining_checkpoint_settings": {
+      "clip": [
+        "lit",
+        "lora_r8",
+        "lora_r16"
+      ],
+      "siglip": [
+        "lit",
+        "lora_r8",
+        "lora_r16"
+      ]
+    },
+    "formal_lit_image_pairs_checked": 0,
+    "formal_lit_image_pairs_planned": 32
+  }
+}
