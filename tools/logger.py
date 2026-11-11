@@ -8,6 +8,7 @@
         log.metric("n_images", 1000)
 退出时自动写入 wall_sec 和 gpu_mem_peak_MB，日志文件是 logs/{name}_{model}_{setting}.log，
 同时追加一行 JSON 到 logs/runs.jsonl，方便汇总。
+CPU 任务传 track_cuda=False，完全跳过 CUDA 查询和峰值重置；默认行为保持兼容。
 """
 import json
 import os
@@ -26,10 +27,12 @@ def _cuda():
 
 
 class RunLogger:
-    def __init__(self, name, model="", setting="", seed=None, log_dir=None, **extra):
+    def __init__(self, name, model="", setting="", seed=None, log_dir=None,
+                 track_cuda=True, **extra):
         self.name, self.model, self.setting, self.seed = name, model, setting, seed
         self.extra = dict(extra)
         self.metrics = {}
+        self.track_cuda = track_cuda
         self.log_dir = log_dir or os.path.join(REPO_ROOT, "logs")
         os.makedirs(self.log_dir, exist_ok=True)
         tag = "_".join(x for x in (name, model, setting) if x)
@@ -46,7 +49,7 @@ class RunLogger:
         self.info(f"{key} = {value}")
 
     def __enter__(self):
-        t = _cuda()
+        t = _cuda() if self.track_cuda else None
         if t is not None:
             t.cuda.reset_peak_memory_stats()
         self.t0 = time.time()
@@ -55,7 +58,7 @@ class RunLogger:
 
     def __exit__(self, exc_type, exc, tb):
         wall = time.time() - self.t0
-        t = _cuda()
+        t = _cuda() if self.track_cuda else None
         peak = round(t.cuda.max_memory_allocated() / 2**20, 1) if t is not None else 0.0
         rec = {"time": datetime.now().isoformat(timespec="seconds"), "name": self.name,
                "model": self.model, "setting": self.setting, "seed": self.seed,
