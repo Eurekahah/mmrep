@@ -13,4 +13,4 @@ ranks: [8, 16]
 alpha_factor: 2          # lora_alpha = 2 * r
 dropout: 0.05
 bias: none
-target_modules_regex: '.*(vision_model|text_model).*\.(q_proj|k_proj|v_proj|out_proj)'
+target_modules_regex: '(vision_model|text_model)\.encoder\.layers\.\d+\.self_attn\.(q_proj|k_proj|v_proj|out_proj)'
