@@ -6,6 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+from threadpoolctl import threadpool_limits
 
 
 def _unit(x):
@@ -85,7 +86,10 @@ def gap_linsep(img, txt_all):
         raise ValueError("at least two samples per modality are required")
     cv = StratifiedKFold(folds, shuffle=True, random_state=42)
     clf = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000, random_state=42))
-    return float(cross_val_score(clf, X, y, cv=cv, scoring="accuracy").mean())
+    # 维度较高且会重复做多折拟合；限制 BLAS 线程，避免小型矩阵运算过度调度。
+    with threadpool_limits(limits=1):
+        scores = cross_val_score(clf, X, y, cv=cv, scoring="accuracy", n_jobs=1)
+    return float(scores.mean())
 
 def prototypes(img, txt, labels, min_count=20):
     """按类别计算图像和文本原型。
