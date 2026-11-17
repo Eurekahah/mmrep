@@ -14,3 +14,4 @@ results/figs/
 *.pt
 *.safetensors
 .DS_Store
+ckpt.zip
