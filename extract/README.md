@@ -2,6 +2,29 @@
 
 `extract_features.py` 使用 P1 的数据模块和 P2 的 `models.loader`，提取 Flickr30K / COCO 的图文原始嵌入。CIFAR-100 的 `extract_cifar.py` 由 P6 实现。本模块不训练模型，也不下载图片数据。
 
+## P6 CIFAR-100 特征
+
+`extract_cifar.py` 只调用冻结的图像塔，按 `data.preprocess.load_resized_01` 使用
+CLIP 的双三次短边缩放加中心裁剪，或 SigLIP2 的双线性方形缩放，然后按
+`models.yaml` 归一化。默认数据目录是 `$MMREP_DATA_ROOT/cifar100`（未设置时为
+`data_raw/cifar100`），目录内应包含 `cifar-100-python/`。
+
+```bash
+python -m extract.extract_cifar --model clip --setting pretrained --device cuda --data-root data_raw/cifar100
+python -m extract.extract_cifar --model siglip --setting pretrained --device cuda --data-root data_raw/cifar100
+```
+
+checkpoint 齐全后可以一次提取一个模型的四种设置：
+
+```bash
+python -m extract.extract_cifar --model clip --setting all --device cuda --data-root data_raw/cifar100
+python -m extract.extract_cifar --model siglip --setting all --device cuda --data-root data_raw/cifar100
+```
+
+输出为 `features_cifar/{model}/{setting}/{train,test}.npz` 和
+`class_txt.npz`。正式提取使用 GPU batch 512；显存不足时可以显式降低
+`--batch-size`，并在交接记录中注明实际值。
+
 从仓库根目录运行；Windows PowerShell 与 Linux 均使用 `python -m extract.extract_features`。先按总 README 安装环境，准备仓库规定的图片目录和 `splits/`。模型权重可通过 Hugging Face 自动取得，也可用 `--cache-dir` 指定已有缓存，并加 `--local-files-only` 禁止联网。LiT/LoRA 还需要 P3/P4 的 checkpoint。
 
 ## 单批检查与正式提取
