@@ -1,0 +1,501 @@
+index,id,caption,image_cosine,text_cosine
+0,3862011383.jpg,"An older woman with short blond-hair wearing a white shirt and beige pants, and carrying a mustard colored purse is crossing a city street.",1.0,0.6986132675102594
+1,2112921744.jpg,"A fluffy white dog looks down a steep, grassy embankment.",0.9999999999999998,0.7199606315244935
+2,743571049.jpg,A little boy is holding a lit sparkler in the backyard.,1.0,0.6658745792974412
+3,2371988553.jpg,A man in blue pants and heavy work boots is cleaning white confetti from a street paved with bricks.,1.0,0.7061647812488774
+4,3834502656.jpg,A man is welding something made of metal near many tools.,1.0,0.7979618331323763
+5,1517682494.jpg,"A woman holding a pink balloon and wearing a fuzzy pink tiara, and a man with his head tilted slightly forward and smiling with his mouth wide open are standing next to one another.",1.0,0.6745179154434161
+6,3965632762.jpg,A young man in a purple American football uniform is attempting to allude the tackle of another young man in a white uniform.,0.9999999999999998,0.7042701254077023
+7,1126403094.jpg,Two girls with purple hair and a short-haired woman are smiling.,1.0,0.726177778035998
+8,7353914844.jpg,Three kayakers in helmets and life vests held in place by their oars in a river pause for a photo opportunity with one kayak perpendicularly over another the third apart.,1.0,0.6948245865722065
+9,124880336.jpg,Three people wearing colorful costumes and masks sitting between two stone statues.,1.0,0.7379318156233223
+10,110615445.jpg,A couple show their affection on an escalator by embracing and kissing one another.,1.0,0.7742892267375852
+11,4224693415.jpg,Multiple butchers prepossessing meat and hanging it.,0.9999999999999999,0.7684198319419303
+12,4699461776.jpg,"A woman in a red dress with red-hair standing before a bright, multicolored home.",1.0,0.6572446953688718
+13,3377383984.jpg,A girl in a red and white uniform tagging out a girl in a black uniform and helmet during a competitive game of softball.,0.9999999999999999,0.6799734898733085
+14,3338474677.jpg,A man riding a blue bicycle on a main road stops at a stoplight.,0.9999999999999999,0.7757623737995983
+15,197688193.jpg,"While looking in the mirror, a man is shaving his beard with a manual razor.",1.0,0.7985336697725108
+16,4617869592.jpg,Men and women sitting at the table out on the patio drinking cocktails while young boy looks on.,0.9999999999999998,0.6952789472322886
+17,6332384430.jpg,A black man wearing a red belt and a white man wearing a blue belt are pictured in the act of practicing martial arts inside a building with a woman looking on in the background.,0.9999999999999999,0.6804714924491013
+18,2429466917.jpg,"A man, dressed in black, sits while a female dances at his side.",1.0,0.7612780171257626
+19,4702851298.jpg,A beautiful asian lady standing in a crosswalk in a french maid costume with a jacket on.,1.0,0.7202933630585775
+20,2381926946.jpg,A man in a gray shirt and white apron is slicing meat using equipment in front of salami and prosciutto.,1.0,0.6905078919511749
+21,3859199015.jpg,Two teens are playing a rock band video game while one of the boys flashes a peace sign.,0.9999999999999998,0.7751855163920864
+22,2595672128.jpg,"A young woman wearing a colorful headscarf, plaid shirt and skirt stands barefoot in front of a plantation, holding a sample of leaves in her hand.",1.0,0.6202984710526989
+23,86120479.jpg,A worker in a blue shirt and white hard hat is climbing a scaffolding.,1.0,0.6494856982443287
+24,206051614.jpg,"A man with brown hair, eyeglasses, and a gray long-sleeved shirt is holding a telephone in his left hand.",1.0,0.6578051645737312
+25,4075239348.jpg,A group of people run a race or marathon while a crowd of people watch.,1.0,0.7846337903581702
+26,6668564001.jpg,A man a long gray beard and his partner share a meal at an outdoor restaurant.,1.0,0.7500754921402961
+27,4930823945.jpg,"Two men sitting on horses one wearing a cowboy hat, the other in a baseball cap, with a big tree behind them.",0.9999999999999999,0.7459820558256738
+28,2555536389.jpg,"A man in an orange work suit with safety goggles on, mixing chemicals for work.",1.0,0.7592276156108269
+29,3562302012.jpg,A boy wearing a black shirt is climbing inside the bucket of a mechanical digger.,1.0,0.7578020685369702
+30,3419634480.jpg,"A black dog runs in the grass, its tongue hanging out.",1.0,0.7105151137745529
+31,2218334049.jpg,A black dog is standing outside in the dark of night.,1.0,0.765542275741089
+32,4300709050.jpg,A woman in a sleeveless shirt grins in the direction of the man in the adjoining plush bus seat.,0.9999999999999999,0.6966073995196383
+33,2981164885.jpg,"Next to two men in orange uniforms, a man in a gray sweatshirt places his arms over a wall and looks down.",1.0,0.6644201003530433
+34,7303750140.jpg,A man with glasses is playing his instrument in a small crown of people that includes another man in a suit with a trumpet.,1.0,0.7083688890021678
+35,2211946621.jpg,"A young man wearing glasses and a red plaid shirt sits at a table with a cup of coffee, writing on a stack of papers.",0.9999999999999998,0.6942824574670265
+36,291609418.jpg,Several children in colorful costumes sit in front of an iMac monitor in a room decorated with red curtains and blue flags.,0.9999999999999999,0.6947684325696528
+37,4558167404.jpg,A man in an olive cardigan and a woman in a yellow jacket and olive scarf walking down the street.,1.0,0.7855759746982042
+38,3053743109.jpg,Black and yellow teams are trying to get the basketball in the goal.,1.0,0.801869323540711
+39,4695704555.jpg,"Person in nun clothing rides a tall bike in the middle of the street, with a blue bike coming up behind them.",1.0,0.7514716122579199
+40,4864177176.jpg,A little boy in a black shirt is carrying a blue bag in back of him and a teal bucket in front of him.,1.0,0.704131551605457
+41,4921075662.jpg,Chopped leaves are piled in the back of a red buggy parked by white reclining chairs on green turf.,0.9999999999999998,0.6669936747987122
+42,201682811.jpg,"Two men are standing in a street, one appears to be throwing something.",1.0,0.8115055198687088
+43,3304763517.jpg,A toddler is sitting in a yellow ball pit surrounded by balls and holding one to her mouth.,1.0,0.6981254629545957
+44,324208502.jpg,An older person is sitting on a red bench next to a black man with a children's bookstore behind them both.,1.0,0.663649452663067
+45,4971194812.jpg,A man with spiked hair painted red with green tips and wearing a spiked collar and a fishnet undershirt standing and smiling.,0.9999999999999998,0.6465332338964236
+46,2701603045.jpg,A young boy with white swim trunks walks out of the water.,1.0,0.7402546381254628
+47,6188774172.jpg,A female athlete is ready for the volleyball coming toward her as other volleyball players look on.,1.0,0.8089721286626959
+48,1247484195.jpg,A little girl wearing a yellow dress moves frantically in front of a crowded baseball stadium.,1.0,0.7679647227093478
+49,2298097636.jpg,A brown dog is running along side a black dog in a field.,1.0,0.7500140028983338
+50,2401794446.jpg,Three people sit against a wall and use their phones to capture what's taking place.,1.0,0.7919621733927842
+51,89787769.jpg,A man holds a metal bowl full of some batter in one hand while his other hand appears blurred.,1.0,0.754502674826116
+52,2582390123.jpg,A small gray dog is in the grass with a brown cow.,0.9999999999999998,0.7164120806021801
+53,4719894224.jpg,Man in a fireman's uniform standing beside a firetruck with the U.S. flag attached to it.,1.0,0.7276232030176157
+54,5825226259.jpg,An enthusiastic little girl showing her skills on the drums.,1.0,0.8397916004239826
+55,498492764.jpg,A man prepares to interact with a lock for a bicycle while staring away from it.,1.0,0.8078745405221557
+56,3359636318.jpg,Two people are talking outside of the video game shop next door to the mobile phone store.,0.9999999999999997,0.7679343510128906
+57,227441355.jpg,An overhead view of a man in a gray shirt and blue pants adjusting a line to a large piece of concrete a gravelly area.,1.0,0.6095795840792805
+58,2885861465.jpg,Children in what appears to be an elementary school classroom hard at work.,1.0,0.7968097342654088
+59,7017792809.jpg,Two basketball players one in black and red and one in blue and white playing a game with the ref and crowd in the background.,1.0,0.695128288258867
+60,5222251832.jpg,"A snowboarder, who is wearing a red jacket, black pants, and a blue helmet, is midair.",1.0,0.6908257730947698
+61,2446842020.jpg,A woman in an angel costume is watching three children play with white bats.,0.9999999999999999,0.6424126470542071
+62,2788489062.jpg,Five people are in a swimming pool 3 ft. deep while there is a child on the side with blue shorts on and read floaties getting ready to jump in.,1.0,0.6851076320920758
+63,4853218641.jpg,A young teenage girl talking to her boyfriend on the phone about moving into another city,0.9999999999999999,0.7975455366431876
+64,3664415437.jpg,"A man with white hair, wearing a white shirt and blue pants, stands in front of a group of elderly men sitting outside next to a paved gray path on which a black dog sits.",1.0,0.6205198887140833
+65,4772236164.jpg,Several people gaze at walls which are covered with a myriad of brightly-colored pictures with various themes.,1.0,0.7641724861652643
+66,1213185795.jpg,A man in a gray and yellow jacket stands behind the counter at Boston Belle.,1.0,0.747430079715048
+67,4081110739.jpg,A man with two blond children looking at a house over a rail in autumn.,1.0,0.6918607082733108
+68,3358380484.jpg,A brown and white dog with his tongue sticking out jumping on some grass,1.0,0.7546428420685094
+69,3430098936.jpg,A person wearing a brown outfit and large cone shaped hat sitting on stairs with plates of red items.,1.0,0.654009339351697
+70,4624487350.jpg,A man raising or lowering a blue and red garage door next to a nail polish poster.,1.0,0.710654844517614
+71,5176080732.jpg,"Several people are in a building looking at several bicycles, and the person near the front has a blue shirt.",1.0,0.7033880819522236
+72,4181549116.jpg,A young child sits in a highchair and draws colorful squiggles on a white piece of paper.,1.0,0.7014173876987344
+73,4670009878.jpg,Many women and men are seated while others are standing behind a half wall with many bottles on the ledge.,1.0,0.7895239948000643
+74,2472574160.jpg,A man in camouflage clothing hides in a bed of roses and other flowers.,0.9999999999999999,0.7543083599311596
+75,2403376030.jpg,A woman in a black sweatshirt is walking on a dock with a wet dog.,0.9999999999999998,0.7722703267976864
+76,2536853135.jpg,Two men in professional clothing and hard hats are conversing over reports.,1.0,0.7280111451973148
+77,3437315443.jpg,A little girl is standing by a metal pole holding her fingers up in a v sign.,1.0,0.7471231043648312
+78,6141300695.jpg,A soccer goalie in red and green attempts to move the ball out of range of a player in red as the goalie has possession of it in his hands.,1.0,0.7368917181152662
+79,1578355853.jpg,"A group of people and a dog sit in the bleachers of a basketball court, watching another group of people's performance on the court.",1.0,0.7576179983304598
+80,5217054772.jpg,A woman in a flower dress has attached a piece of green fabric with five wooden cylinders pushed through them to her waste and is stretching the fabric.,1.0,0.6683306468805617
+81,7355491286.jpg,Two men in a small vehicle participate in a street race with a crowd cheering them on from the sidelines.,1.0,0.7473696622287057
+82,3094568845.jpg,A super car is spinning tires on a raceway track creating smoke near a crowd.,1.0,0.7659600725546225
+83,422763475.jpg,"A boy in a blue jacket, carrying a red sled, running away, followed by a small dog",0.9999999999999997,0.6496718488694986
+84,3856182861.jpg,Three healthcare professionals are looking over a chart or brochure in a nurse's station.,1.0,0.7585005225329495
+85,4804610884.jpg,"A person with dark hair wearing a white tank top, red pants and white shoes is walking down a sidewalk with artwork displayed against a wall.",0.9999999999999999,0.652597293461816
+86,3144705706.jpg,An child playing in a pile of snow on a street while an adult watches.,1.0,0.7426597041388479
+87,2716267794.jpg,Two kids practicing karate while wearing white clothing with a group of kids surrounding them.,0.9999999999999998,0.7544084390115182
+88,2885891981.jpg,A boy in a blue shirt and white helmet is riding a white bike.,0.9999999999999999,0.740428540632941
+89,7601453166.jpg,An ethnic man in an orange shirt uses stencils to trace red letters onto a white circular board.,1.0,0.7523514135115986
+90,1601783524.jpg,A redheaded woman wearing a beret and glasses waits for her laundry to dry at the laundromat.,1.0,0.7512092417182048
+91,7248241408.jpg,A man dressed in orange and black is running a marathon through the streets as people watch.,0.9999999999999998,0.7062847000186575
+92,2775549337.jpg,Here is a picture of someone demonstrating how cement is made.,1.0,0.829994373699459
+93,4986907781.jpg,A woman wearing a white blouse and blue skirt is dunked into some water by some people while a man dressed in colonial clothes watches.,1.0,0.7153499001688894
+94,17516940.jpg,A woman in a sunlit kitchen is trying to comfort a baby.,1.0,0.7452021787845816
+95,8042603870.jpg,Rock climber scaling a straight up and down rock with crack in middle.,0.9999999999999998,0.8260728280020566
+96,3867308040.jpg,Women sit on a beach as they watch men bring in a fishing net filled with fish in front of them.,1.0,0.738876596320208
+97,4089361660.jpg,A guy with a camera films a man in uniform while a woman interviews him.,1.0,0.8256792138069726
+98,7243489604.jpg,A man wearing jeans lies in a field of wheat smiling as he enjoys the sun on his face.,1.0,0.7554420371484092
+99,5453936030.jpg,"Two children, one older and one younger, are sitting on black and white pillows, and the older child is wearing a gray shirt while the younger child is wearing a white shirt.",1.0,0.6436483034126379
+100,197107117.jpg,Two large mountains stand high in the air as a person tries to climb one.,1.0,0.6365869314675472
+101,528500099.jpg,A woman dressed in a Nike shirt and matching pants looks down at the ground.,1.0,0.7670238852295242
+102,4732026053.jpg,"A quartet of male musicians, dressed simply in street clothes, play a tune in front of a store window.",0.9999999999999999,0.7694960505163055
+103,195546059.jpg,"A man wearing a white short-sleeve shirt is standing in front of an elevator shaft with a sign above him that reads, ""Elevator shaft.""",1.0,0.695249613666012
+104,4744741137.jpg,"A young woman, dressed in a reflective skirt is crossing a city street.",1.0,0.7671679631237676
+105,3564738125.jpg,"Two people heavily dressed, carrying backpacks, walk through snow.",1.0,0.7274105929204802
+106,2813784259.jpg,A boy wearing a white headband is kicking a soccer ball down the field.,1.0,0.7459494765520659
+107,3730011219.jpg,"The man is wearing a black shirt, holding a pail, and walking with a child next to the water.",0.9999999999999999,0.698900266106148
+108,6926512292.jpg,A dark-haired woman in a black and red bikini and sunglasses is playing volleyball under a cloudy sky.,0.9999999999999999,0.689480926603582
+109,2414035800.jpg,A woman in a gray sweatshirt is sitting on the floor with her small dog that is wrapped in a blanket.,1.0,0.7293120550010022
+110,421730441.jpg,A man in a black hat standing in front of a brick wall and a sign,1.0,0.7397923068141824
+111,183018056.jpg,"There is a parade going on in the street, a group of people are holding up an Oscar the Grouch float device.",0.9999999999999998,0.7479252181437417
+112,3369258147.jpg,A man is slouching on a couch with people walking and sitting around him.,1.0,0.7699121555078626
+113,4887777901.jpg,"A man in a white shirt taking a photograph, while lots of people sit on the steps.",1.0,0.7421901877465303
+114,4555563603.jpg,"A large house with three stories and 3 matching balconies, with one person standing on each balcony overlooking onlookers.",0.9999999999999999,0.6931703791639408
+115,4623436283.jpg,People are walking down a grassy hill with a fence behind them.,0.9999999999999998,0.750588477877361
+116,2763601657.jpg,The man with no shirt and flip-flops looks at the women in white shorts.,1.0,0.771353481237397
+117,2644430445.jpg,The girl in sunglasses holds up her phone to take a picture of something.,1.0,0.7362664708332249
+118,6229823951.jpg,"Three men are working on some kind of equipment, but I 'm not sure whether it's a ship or an oil rig.",1.0,0.8245728828584808
+119,363560757.jpg,A mountaineer in a red parka digs his two ice axes and crampons into a frozen wall of ice.,0.9999999999999998,0.7248884629398408
+120,110600869.jpg,A little girl in a blue jeans vest is running across the grass and laughing.,1.0,0.6448527146110481
+121,4714730332.jpg,Two police officers and one man in civilian clothes are standing on a street.,1.0,0.788682363287073
+122,4606967207.jpg,A person in a long-sleeved striped top stands near a cat in front of a glass-doored beverage cooler in a store.,1.0,0.706626592653721
+123,3273403495.jpg,A downhill skier races down the snowy hillside as the sun shines above in a clear sky.,1.0,0.7872015771916829
+124,101471792.jpg,A man with a red jacket is shielding himself from the sun trying to read a piece of paper.,1.0,0.7865300288852487
+125,7503567664.jpg,A person wearing a helmet and racing gear is jumping a four wheeler up a dune.,1.0,0.6387852126262328
+126,4329180126.jpg,Two boys and two girls all wearing hats are looking at pieces of paper.,1.0,0.7238686984470112
+127,7058943627.jpg,A woman dressed in a black shirt with purple bikini bottoms is playing volleyball in a fenced in area.,1.0,0.6925661979173264
+128,2117004715.jpg,A young girl in a pink shirt and blue hat is looking out of a basket.,1.0,0.731177206288779
+129,2554586230.jpg,"A woman with red-hair, a red shirt, blue pants and climbing shoes is standing outside on diagonal tree limbs.",1.0,0.6753570567798123
+130,4495952951.jpg,A man practices his juggling in an empty amphitheater.,0.9999999999999999,0.771835380560506
+131,3031071921.jpg,"Several people wait in line, surrounded by boxes, bags, and workers",1.0,0.7533225850964979
+132,19852513.jpg,A young boy is getting his haircut by a man wearing a black shirt.,1.0,0.739467998109594
+133,241346105.jpg,An American footballer in a red strip is running down the side of the field with the ball.,1.0,0.6837292044674123
+134,3176498130.jpg,Several teenage boys are sitting in grocery carts in a parking lot.,1.0,0.6693510669098075
+135,4076675949.jpg,An older Asian man is sitting at a desk and holding a piece of paper up that has writing on it.,0.9999999999999999,0.7181248075724886
+136,144429279.jpg,A middle-aged man and woman are holding hands walking in a street with people behind them.,0.9999999999999999,0.7692329869275403
+137,4166168198.jpg,A woman in an apron standing in front of shelves of bread in a bakery.,1.0,0.741510992820376
+138,516500358.jpg,A white ice cream truck stopped on the side of the road and a man stopped to buy some.,1.0,0.7575893992174304
+139,221597303.jpg,A young boy walking in the park dressed in dark clothes and dark cap.,1.0,0.7407682400652774
+140,65235150.jpg,An older man in his working uniform handling trash with a woman behind him looking intently at something.,1.0,0.7329495631318172
+141,5436966915.jpg,"A man wearing red ski pants, a black jacket, and a white helmet is skiing down a mountain.",0.9999999999999998,0.721832963072818
+142,5071580142.jpg,"One guy, in a white shirt and colorful pants, painting a column with many bright and colorful paints.",1.0,0.734278840676321
+143,2653940812.jpg,"A man, in a green shirt, is attempting to light a firework near the water of a lake.",1.0,0.7588766145635117
+144,235434641.jpg,A picture of an underpass with a lady in a motorized wheelchair going by in the distance.,0.9999999999999998,0.7768871515151865
+145,5074980095.jpg,Young people are doing chores in a field near a shed on a sunny day.,0.9999999999999998,0.773901108937505
+146,1994416869.jpg,A little girl in only socks and a necklace is being tossed in the air and caught.,1.0,0.6952918485961944
+147,102998070.jpg,"A young man in a blue sweater cleaning fish while three other men watch, one a man a cigarette, or match in his month.",0.9999999999999999,0.7237066161441893
+148,4748496940.jpg,"Two young men dressed in white golf shirts and sunglasses stand outside on a bright, sunny day reading a newspaper.",0.9999999999999997,0.7366568904189147
+149,129662899.jpg,"A man with sunglasses, a red hat and peach coveralls stands next to a large rope wound around a large spool.",1.0,0.653926314833031
+150,2085078076.jpg,A small boy standing near muddy water with something in his hand while someone beside him washes clothing in buckets.,0.9999999999999999,0.7665163055571858
+151,3701291852.jpg,Two people are silhouetted against a lake reflecting a painted sky.,1.0,0.7703590833517786
+152,1488937076.jpg,The Irish setter with the safety vest is running ahead of the Rottwieler and the Dalmation.,1.0,0.5957876327358089
+153,4213647132.jpg,A red train on the track is being worked on outside by three workers wearing orange.,0.9999999999999999,0.7364185032844508
+154,6322364581.jpg,"A short-haired, blond man wearing a white and black shirt and black visor puts his hand on the shoulder of a football player wearing a black #16 jersey.",0.9999999999999998,0.6132609381213034
+155,3616846215.jpg,Two women and a man smile at the camera with rakes in their hands standing in an unfinished greenhouse.,1.0,0.6688846107257784
+156,3134341610.jpg,A woman in mask sits next to a man wearing a Santa suit and also in mask as they hold wineglasses next to a Christmas tree.,0.9999999999999999,0.6960533179986124
+157,4427860005.jpg,"A group of people eats in yellow chairs at a restaurant, with many fans and lights on the ceiling.",1.0,0.7323596566962247
+158,3537322.jpg,A group of people sitting around tables with computer monitors on them paying attention to something on the left.,1.0,0.7575031700915031
+159,2172572633.jpg,The people in winter clothing are getting ready to start skiing.,0.9999999999999998,0.7482562379662161
+160,5441804056.jpg,"There are several people but three in particular, coming from a shopping center with boxes and plants in their carts.",1.0,0.7403065247479976
+161,437404867.jpg,A woman rests on the curb of a city street while talking on her cellphone.,0.9999999999999999,0.8090936489956633
+162,4234446819.jpg,"One young girl in a white hat and a blue dress, and one young girl in a blue top with black pants and carrying a purse are standing next to each other, the girl in the blue hat is pointing as something and smiling.",0.9999999999999998,0.6327684022546263
+163,280840823.jpg,Three young men are seated at a table playing a game of Monopoly while drinking sodas and one man is shoving the other away from him.,1.0,0.6998291483670216
+164,2637904605.jpg,A white and black dog leaps through long grass in a field.,0.9999999999999998,0.7649267179910657
+165,3005393426.jpg,"Men and women are gathered at a cluttered store, clothes hung on racks are scattered throughout",1.0,0.7274886893475603
+166,3272008494.jpg,A group of people waiting in a subway car and a woman staring into the camera.,1.0,0.7995335212794095
+167,4697180780.jpg,"A man wearing a short-sleeved, checkered shirt holds a camera with a large lens to his face.",1.0,0.7390844913061492
+168,6953298252.jpg,A soccer player in a yellow jersey heads a soccer ball while a player in an orange jersey is in close pursuit.,0.9999999999999999,0.7703590952250239
+169,4679761535.jpg,Two young girls (one wearing purple and one wearing red and orange) walking down the road in a parade.,1.0,0.7685119695502861
+170,2695085448.jpg,A woman in a black dress crouching in front of a brick wall talking on a cellphone.,1.0,0.7161744223683896
+171,83493458.jpg,A boy is pushing an object with a handle while wearing sunglasses by a building with a blue and white striped awning.,0.9999999999999997,0.6785564325382294
+172,4652090936.jpg,A pretty baby girl wearing pink is sitting in a baby feeder hi top chair.,1.0,0.7218261444724344
+173,1299817309.jpg,"A man and his friend hiking in a mountain near Bakersfield, California.",0.9999999999999998,0.7697943046650234
+174,2888545025.jpg,"An old man, in a brown striped suit, is holding a marker and writing on a white piece of paper.",1.0,0.6873459530476358
+175,143572368.jpg,A dark-skinned woman who is wearing a turban stands in the water doing laundry.,1.0,0.7534788911117225
+176,4803940133.jpg,"A young woman in a green ""Aeropostale"" shirt and a green bracelet with a black purse, looking down with pursed lips.",1.0,0.71096979303793
+177,3550253365.jpg,A middle-aged black man is sitting down looking straight in our direction.,0.9999999999999998,0.7729581154560536
+178,4389771247.jpg,Two boy scouts are standing on what appears to be a stage surrounded by a camping scene.,1.0,0.7680274476189342
+179,4111420077.jpg,A young man carries a big basket while an older man behind him talks on a cellphone.,1.0,0.7469472513502082
+180,3721812313.jpg,A woman with her arms on the cheeks of two men on either side of her pose while another man peeks over her head.,1.0,0.7299357409319344
+181,5332049234.jpg,"A street artist sits cross-legged surrounded by many drawings, one of which he is currently working on.",0.9999999999999999,0.8345728327131725
+182,953120250.jpg,"Two men in red performance one-piece-suits, performing what looks like gymnastics feats in front of an audience, outside.",1.0,0.7558035328371728
+183,3049770416.jpg,"A man holds a microphone to his mouth, backlit by green lights.",0.9999999999999999,0.7277077197687578
+184,824123145.jpg,Two elderly women are walking past a younger woman on a public path.,1.0,0.7910152001405355
+185,4764493697.jpg,"Three fire-fightes use a hose to put out a car that is on fire and smoking a lot, parked next to a street sign.",1.0,0.7710972632250563
+186,320199845.jpg,"The pictures shows a young man putting on his graduation cap and already has his gown on, with an older gentleman to his left and a stone building behind them.",0.9999999999999998,0.7647194108145853
+187,1424237335.jpg,Two smiling little blond girls in pink pants swing from a metal bar.,0.9999999999999999,0.7681069820265296
+188,3517124784.jpg,"A woman in a brown strip is taking a swing with a baseball bat at a yellow ball, whilst another woman is waiting on the sideline.",1.0,0.6490937332475794
+189,3589367895.jpg,The man dressed liked an indian wearing feathers is standing in front of the microphone.,1.0,0.7070701463665775
+190,2341254813.jpg,A boy in a green shirt is jumping with his arms in the air at the end of a bowling alley.,1.0,0.7669687667966361
+191,4684506763.jpg,A group of people is on a ferry headed toward a city with skyscrapers.,1.0,0.7725360037495557
+192,127449574.jpg,"A boy in a gray hooded sweater, looking at a school of fish at an aquarium.",1.0,0.75096159509048
+193,4689003496.jpg,A man waiting for doctor's order to do surgery on a cancer patient in the surgery ward.,0.9999999999999999,0.7630967698862301
+194,3704642429.jpg,A woman in a black t-shirt and light tan long skirt sing at the microphone while her band members play in the background.,1.0,0.6626685536231425
+195,2739331794.jpg,An orange and white motorcycle is being ridden on a racetrack.,1.0,0.7746464400454292
+196,3619381206.jpg,A man in a wetsuit and helmet walks in front of a bright red building.,0.9999999999999996,0.7076504340314456
+197,3094546534.jpg,"A restaurant is very busy and full of many customers, while a piano is barely visible to the right side of the photo.",0.9999999999999998,0.7723325453770062
+198,3088572348.jpg,A windsurfer is making a big splash in the ocean whilst riding a red windsurf.,1.0,0.7076028919632606
+199,3519815055.jpg,A youth in red swim trunks jumps into the water from a wooden board.,1.0,0.7175230226332594
+200,1713248099.jpg,"A brown dog, a black dog and a black and white dog are in a grassy field",1.0,0.7281079811071351
+201,4661245968.jpg,A woman wearing all black except for brown boots is standing next to a tagged wall.,1.0,0.7738478784854461
+202,1357753846.jpg,"A big, black dog runs through the water, near the shore.",1.0,0.7701628018553655
+203,2827589184.jpg,The blue-uniformed softball player is blocking the bag and trying to prevent the opposing player from touching the base.,1.0,0.6927747524819179
+204,5445317867.jpg,"A bicycle event with a rider rising above a crown of onlookers, dressed in a yellow, white and black outfit with a blue and white helmet.",1.0,0.6513293345557809
+205,1344701234.jpg,"Two boxers wearing protective gear are fighting, with onlookers watching.",0.9999999999999999,0.7298284353939999
+206,2125074196.jpg,A man wearing a black shirt and blue pants stands on a ladder and tries to put up an advertisement on the wall.,1.0,0.7346402158448341
+207,3324746155.jpg,A man wearing a blue shirt kicks a soccer ball along a green field.,1.0,0.736822441746987
+208,2646577258.jpg,The cowboy in blue is trying not to be thrown off of the horse.,0.9999999999999998,0.7616576184275446
+209,6332487919.jpg,An Indian woman covers her face with a beautiful veil in a store market.,0.9999999999999999,0.7778302775893352
+210,4565138772.jpg,"A man in glasses is yelling and holding a sign that says ""jobs with justice"".",1.0,0.7500409077784976
+211,2280525192.jpg,A brown and black dog jumping through a field of long blades of grass,1.0,0.6954870976439953
+212,3532538536.jpg,"A man, appearing Mexican or Peruvian, is astride a horse, smiling beneath his western hat.",1.0,0.7812787878201173
+213,6782191871.jpg,A dirt bike rider in an orange an white uniform riding a dirt bike in a stadium.,1.0,0.7714041340150721
+214,3209620285.jpg,Two people stand out on the beach and hold long sticks that have flames on each end.,1.0,0.7625304922377476
+215,3384314832.jpg,A fluffy white and brown dog is jumping over an obstacle and holding a tennis ball in its mouth.,1.0,0.7374172001103612
+216,2822891602.jpg,A kid is diving underwater while wearing swim gear and orange goggles.,1.0,0.7480846328774662
+217,154656621.jpg,Two men are making an arch with their arms and a third man is ducking beneath it.,0.9999999999999999,0.746272135423673
+218,3931111565.jpg,"Female wearing a pink helmet, white shirt and white gym shorts, parking her motorcycle along side a busy sidewalk cafe.",1.0,0.699684776549149
+219,3560620846.jpg,"A person is hanging on a wet ledge above a waterfall, looking down below him.",1.0,0.7222678543086967
+220,281754914.jpg,"The little boy in a yellow, striped shirt stands in some tall grass.",1.0,0.6127401675106934
+221,2049646140.jpg,A gymnast in a blue leotard is doing a handstand on the workout floor.,1.0,0.8016019199156986
+222,4796753895.jpg,"An older man in a nice dress shirt with a tie over his shoulder, walking across a street in downtown.",1.0,0.7238855686483138
+223,6753255813.jpg,This is a 49ers game being viewed from the home side most likely during half time due to the American flag on the field.,1.0,0.7348196655420505
+224,2340774655.jpg,"A group of people, including 2 girls in baseball caps, are standing in a crowd with several people pointing in different directions.",1.0,0.7345209034321378
+225,250892549.jpg,A golden dog with a blue object in its mouth stands next to another golden dog in front of a green fence in a grassy field.,1.0,0.6438561183268362
+226,4723023590.jpg,"A gentleman cooks multiple dishes while preparing extra ingredients in his kitchen, windows open behind him.",1.0,0.7837151026979887
+227,4630355820.jpg,Four women (one with bright pink hair and clothes) look at something.,1.0,0.700577190418929
+228,2095435987.jpg,The white dog is on its back in the sand with paws in the air.,1.0,0.632440919250502
+229,8170441792.jpg,A person in a blue shirt and gray pants is doing a ballet pose against a tree in a park.,1.0,0.7186619917219198
+230,4920749049.jpg,"A person is standing under a black umbrella with glasses, a denim jacket, and a white bag.",1.0,0.6459810002151767
+231,3466015690.jpg,"The lady with the red-hair, blue, orange, and maroon jacket is getting photographed by a woman wearing a blue sweater in front of a clothing store, judging by that mannequin.",1.0,0.7070112241451186
+232,2209317.jpg,A group of people wearing black shirts and one in a white shirt watching another person sitting on the ground in front of them.,1.0,0.7182518743783383
+233,3316725440.jpg,The bike rider is wearing a silver helmet and red shirt.,1.0,0.7440135910360446
+234,3601533527.jpg,A man is partially silhouetted and leaning against a dark object.,1.0,0.7769050620493624
+235,4704975006.jpg,A man sleeps in front of a painted blue wall with green graffiti.,1.0,0.7374132299641903
+236,150598969.jpg,"A woman with blond-hair and a cowboy hat, is holding the American Flag while riding a brown horse in an arena.",0.9999999999999999,0.7439275489923878
+237,6141981912.jpg,A soccer player wearing white shorts and an orange and green shirt holds the ball while being guarded by another soccer player in a blue uniform.,1.0,0.6708133786390011
+238,241347300.jpg,"A football player wearing a number 23 white jersey tackles a football player wearing a red, number three jersey while fans cheer.",1.0,0.6895113638568678
+239,3846534355.jpg,Three little boys on the beach watching another boy kick a ball.,0.9999999999999999,0.7734531160089657
+240,7317962094.jpg,A jockey stand up in his horse's stirrups as the house trots along.,1.0,0.7910151596611281
+241,2195419145.jpg,A businessman and a security guard are smiling and talking outside a glass building.,1.0,0.7754286371699872
+242,241346471.jpg,An American footballer in red is being tackled by three players in white whilst other red players look on.,1.0,0.709971939534096
+243,4369134678.jpg,A man wearing all white is using an orange chainsaw to cut down a thick tree next to his house.,1.0,0.722126635965722
+244,3151365121.jpg,The dog is walking on the sand beside the ocean.,1.0,0.7898838226192144
+245,1015584366.jpg,A mottled black and gray dog in a blue collar jumping over a fallen tree.,1.0,0.6894737163975295
+246,4912214346.jpg,"Two white women sharing a passionate kiss in front of a building, with bikes parked in front.",1.0,0.7528804385033121
+247,3831843450.jpg,"Two people are climbing down a steep, rocky trail, wedged between two mountains.",1.0,0.701974350011475
+248,2403544744.jpg,Two cows stand nearby while a dog races past both of them.,1.0,0.7657165500739451
+249,5820828817.jpg,A toddler looking through two green round toys as though they 're glasses while sitting in a carpeted room.,1.0,0.5872797639957651
+250,3838186953.jpg,Four people on bicycles cross down the middle of a railroad bridge.,1.0,0.7649721588692802
+251,4851553712.jpg,A woman is adjusting a camera in a crowd of people with a young girl holding a scooter in front of her.,1.0,0.7351180055351121
+252,4648495016.jpg,A singer in gray suit and black hat holds a guitar and sings into a microphone at an outside concert.,1.0,0.6702354136584976
+253,4764762394.jpg,A woman in sunglasses and a black dress holds her hand to her mouth.,1.0,0.7283003657656704
+254,2882743431.jpg,A brown dog is nibbling at the white dog's face.,1.0,0.7795533112205683
+255,4728172600.jpg,A man in a black shirt is looking over to the left while in a crowd.,1.0,0.7943489799141064
+256,730083159.jpg,"A crowd of Asian people, mostly children, wear blue sweatshirts or Black robes while standing in the street before a small shrine that sits atop a float featuring a white elephant.",1.0,0.6043634710893655
+257,2579268572.jpg,Many people on a roller coaster ride are flipped upside down over a white track.,1.0,0.7507942877326954
+258,3324962492.jpg,A sleeping baby is wearing a shirt with red trucks on it while being held by a woman.,0.9999999999999998,0.764338039729757
+259,129474628.jpg,Roppolo's Pizzeria serves is open at night and serving customers.,0.9999999999999999,0.7841197742804739
+260,2631541162.jpg,"Several toddlers in a room with many toys, a yellow lamp, a window, gray carpeting and paintings.",1.0,0.6852043496847983
+261,3973495184.jpg,Five women in red halter tops and short black skirts stand in front of a sports car.,1.0,0.6905433489863656
+262,6881643101.jpg,A snowboarder is captured midair from a jump off a half-pipe and performs a trick grabbing the back of his board.,1.0,0.8048515094595772
+263,118309463.jpg,A small boy smiles as he stands with others wearing the same black hats.,1.0,0.7728733592179612
+264,2244551043.jpg,The man and woman at the window are turned around to the man and woman behind them.,1.0,0.8021644485257613
+265,1538589805.jpg,Someone is looking out their window watching the mailman deliver their mail and drive on to the next house.,1.0,0.7521156025480058
+266,2324581814.jpg,A man with a beard and two others put something up on the wall.,1.0,0.7487586070008798
+267,1389323170.jpg,Woman holding a drink with a white bag next to her is sitting on a green sculpture.,1.0,0.7081969961997295
+268,490044494.jpg,Three tan and brown dogs are running over grass.,0.9999999999999999,0.6214928066986953
+269,2924870944.jpg,"A brown dog bolts towards the camera, with his tongue out and mouth open.",0.9999999999999998,0.7235568563784059
+270,197976461.jpg,A blond-hair lady is wearing a black and white top and a black skirt.,1.0,0.7308439257575079
+271,1250745375.jpg,A group of people attending either a concert or a party.,1.0,0.8449633609518133
+272,4717521897.jpg,A man with a yellow shirt and blue jeans crossing the street getting ready to take a drink from what looks like a bottle of beer.,1.0,0.7393896096122645
+273,63787714.jpg,Three jockeys are wearing colorful outfits while racing their horses on the track.,1.0,0.7200769795018646
+274,4977226573.jpg,A man with the yellow top is standing next to a car on the intersection while pedestrians wait for the green light to walk across the road.,0.9999999999999998,0.7110382934312216
+275,37969110.jpg,Brown-skinned girl pretends to do her homework while someone takes a picture for social services.,1.0,0.8320024213920674
+276,3105004381.jpg,A Man with a hat and goggles is standing by a car that has just been dug out of the snow.,1.0,0.7808984621072588
+277,934375844.jpg,A cute baby boy is sitting on the bed looking very happy.,1.0,0.7160791931443279
+278,234580030.jpg,A woman in pigtails talks to the red-hatted man under the shade of a tree.,1.0,0.6852007761299845
+279,3928848343.jpg,Ten people are sitting in a rocket-like carnival ride which is flying quickly through the air.,1.0,0.7535423177673886
+280,189521182.jpg,This girl has got some skills and is showing them off by playing with fire!,0.9999999999999999,0.7804815515281254
+281,2772946659.jpg,A man and woman stand at the altar to say their vows and get married.,1.0,0.8573172913701639
+282,4982184229.jpg,A woman is walking across a street in front of two buses which are green and blue.,1.0,0.7430634751255518
+283,194166920.jpg,"A man with brown hair, glasses and a green shirt sits in front of a computer monitor with a man in a white shirt.",0.9999999999999998,0.6811919896722056
+284,5728544416.jpg,A group of men and women are on stage doing a performance in dim lighting.,1.0,0.8096332368668077
+285,4934873039.jpg,High fashion ladies wait outside a tram beside a crowd of people in the city.,0.9999999999999998,0.8017659178077603
+286,430689218.jpg,A smiling women wearing a blue shirt sitting down on a chair holding a baby that is sound asleep in her arms.,1.0,0.6979514362863382
+287,4300312038.jpg,"A black man operates a crude machine pumping out a white powder in an equally crude room, he wears a blue cap, dress shirt, and smokes a cigarette.",1.0,0.7254856785496684
+288,2838590130.jpg,"In a large city, many people gathered around a large reflective oval shaped piece of art.",1.0,0.7650124867721012
+289,2970183443.jpg,Small white dog with spot on back leaping in air with football in mouth with small boy and man watching.,1.0,0.7208943085855912
+290,7291431398.jpg,A male baseball player for the baseball team The Indians prepares to catch a ball.,1.0,0.7963062796716046
+291,697582336.jpg,A black and brown dog runs in the grass while hanging its tongue out.,1.0,0.7197068651147013
+292,2872963574.jpg,A hockey player in black and white collides with another player wearing blue.,0.9999999999999998,0.7184198542466034
+293,3234646850.jpg,A woman wearing a red bandanna is carrying two pots past a stone structure and a house in the background.,1.0,0.6796984163969901
+294,4886594873.jpg,"The Rockettes perform on the street in front of Radio City Music Hall, as well as next to a cop car.",1.0,0.6608771184293467
+295,3246505968.jpg,A little girl wearing a pink and white striped bib is eating oatmeal at a restaurant table.,1.0,0.7059532608602527
+296,2221818690.jpg,"A teenager blows a whistle and wears white face paint, earmuffs, and a yellow hat while another teen watches.",0.9999999999999999,0.6514887424095939
+297,4788507034.jpg,"An older man with thin white hair, a beard, and glasses is wearing a white muscle shirt and vest while waiting by the tennis court.",0.9999999999999998,0.6429959034390875
+298,111908743.jpg,A man in red pants balancing on a blue object with his hands,1.0,0.7382266234698411
+299,405970010.jpg,A man in snow clothes and a red helmet is on top of a mountain with other mountains in the background.,1.0,0.6995590579815847
+300,507746329.jpg,"Children are playing in a park with a large, circular water fountain shooting water out of vents in the concrete on a clear, hot day.",1.0,0.7220335661049787
+301,4570980278.jpg,"Two women wearing jackets and jeans are walking through a park, apparently talking.",1.0,0.7368264541483915
+302,4107496324.jpg,A chef in a white uniform mixes popcorn with a large wooden utensil.,1.0,0.7051594270125048
+303,4817447781.jpg,There is six adults in front of a little kitchen some eating and others walking around.,0.9999999999999999,0.7448961556783982
+304,6754889771.jpg,5 ski-divers in mid-flight with cameras on their helmets - one with yellow smoke coming from foot and another with green smoke coming from foot.,0.9999999999999998,0.7264569067504298
+305,6313705763.jpg,A black-haired man dressed in black is blowing into an object while situated next to someone in pink.,1.0,0.7378819409228665
+306,98438433.jpg,Two mannequins are standing in the window behind a man who is taking a break from playing an instrument.,1.0,0.7797741772247264
+307,172097783.jpg,A young man dressed in blue swimming trunks and a red life jacket waterskiing in a blue lake.,1.0,0.712480375385508
+308,3347701468.jpg,A soccer team with blue jerseys is huddled together with their hands touching above their heads.,1.0,0.7811467871769349
+309,165173293.jpg,"Two people in colorful clothes are standing in a field, bent over to look at the ground.",0.9999999999999998,0.7210495181239418
+310,461866432.jpg,An unhappy looking girl wearing a pink skirt and a boy with a white t-shirt are sitting on a couch.,1.0,0.7419186518351777
+311,2195620255.jpg,Two brown dogs trot along frozen ground in a rural setting.,0.9999999999999999,0.7647252217800813
+312,149588792.jpg,"A man wearing a black jacket, and a smirk playing an accordion on a city street.",1.0,0.7284416507232816
+313,4796718287.jpg,A dark-haired woman biting fingernail in the middle of a crowded sidewalk.,1.0,0.7572679996467899
+314,2590318805.jpg,"Beside a white building with a thatched roof, a group of five people stand next to a red ladder, a horse with a cart full of straw, and several chickens.",1.0,0.6607828694482154
+315,6330156332.jpg,A man in a brown apron is smiling as he looks at a dish of food in what appears to be a commercial kitchen.,1.0,0.7561135219787717
+316,140770875.jpg,An older gentleman working with a machine and shaving down a wooden object,1.0,0.7540394231929939
+317,2341587426.jpg,Little girl in a green jersey playing soccer by herself.,1.0,0.765816954280925
+318,6610305057.jpg,A guy in a cycling suit and bike helmet riding a bike on a dirty track.,1.0,0.7734726410724373
+319,4433720033.jpg,"A man in a t-shirt and jeans smoking a cigarette at a sidewalk cafe, while others wait to get inside.",1.0,0.7135325971738871
+320,2206282062.jpg,"Female beach volleyball players on either side of a net, with one looking to spike the ball as her teammate watches with the blue sky in the background.",1.0,0.6761352882800246
+321,3949924354.jpg,A food vendor in Korea is siting behind a tricycle cart on the street selling some kind of food.,0.9999999999999998,0.7115614644327837
+322,573946592.jpg,A girl in a yellow shirt in front of a yellow truck with her arms in the air and a forest in the backdrop.,1.0,0.7334256394968124
+323,4883883679.jpg,"Three men outside in a field, and one is doing an obscure pose.",0.9999999999999999,0.7769234521106118
+324,7854434658.jpg,A boy and his younger brother taking a stroll through a grassy and forested field.,1.0,0.7715652878808054
+325,3042604058.jpg,College students sitting on the floor cheering for something.,1.0,0.8320827890026947
+326,45119507.jpg,A father and son are playing with a wooden train set on top of a city-themed play mat.,1.0,0.7629135457829097
+327,4622915732.jpg,The lady in the short black skirt is walking with a lady in a short striped dress.,1.0,0.6972741244012983
+328,4771934780.jpg,A man and woman in robes walking down the street as the man holds an umbrella over them.,1.0,0.7863587920109574
+329,3344411431.jpg,"A band, wearing matching shirts, is playing music with a brick wall behind them.",1.0,0.7570761785883293
+330,4589627804.jpg,A woman wearing a black shirt and green jacket is holding a green binder as she stands in front of a man wearing a black shirt on a street.,0.9999999999999999,0.6965192635246639
+331,2773744784.jpg,A man with glasses wearing a tuxedo and corsage stands near a man in a suit at a formal event.,1.0,0.7345820097747806
+332,329456684.jpg,"A hostess in a restaurant, wearing a uniform and a black hat is cleaning one of the tables.",1.0,0.7178703507918657
+333,1925838315.jpg,A guy with a red shirt and black apron on working standing with his hand in a shopping cart.,1.0,0.7268939139929722
+334,3197391293.jpg,A young girl dressed as a princess sits opposite a young boy with a red shirt at a fair.,0.9999999999999999,0.7403912197536549
+335,2113530024.jpg,"Four men in green at a soccer goal post trying to score, while 3 men in blue try to prevent it.",1.0,0.7560792090766686
+336,309430053.jpg,A person is swimming in crystal clear ocean water while his or her boat is anchored in the background.,1.0,0.7332920948073194
+337,3445296377.jpg,A little girl dressed in pink is falling in water while another girl dressed in red watches.,1.0,0.6270402377013014
+338,4736257831.jpg,A woman with green body paint is holding a green and blue hula hoop while her friend (also in blue and green) watches.,1.0,0.629762026263577
+339,107936523.jpg,A person with brown pants is sitting around a fenced area that has sparks flying.,0.9999999999999999,0.6779421432221928
+340,5885795251.jpg,A man in black is kissing a woman in a white wedding dress while a man in the foreground takes a picture.,1.0,0.7279389956393447
+341,373004394.jpg,A man on the sidewalk talks a cellphone and looks past a man on the cellphone in a car.,1.0,0.7834202002880417
+342,492587970.jpg,Two men shaving their faces while a woman in an orange shirt watches.,1.0,0.7519923403283826
+343,1901514112.jpg,A little redheaded girl sits in front as the tiny trail full of people approaches the tiny water tower.,1.0,0.6345818528628193
+344,4521610782.jpg,A busy street with a taxi sitting next to a orange street-cone,0.9999999999999999,0.7398710785542799
+345,446714977.jpg,Three men with guitar-like instruments and a woman perform on a small stage.,1.0,0.7538652841164812
+346,3417310067.jpg,Two athletic teams with four players in red and white uniforms and two players in green and yellow uniforms hold nets on sticks and run in a field in front of a tall metal chain link fence.,1.0,0.610182283992273
+347,2941340816.jpg,A car with a heavily damaged anterior is being pushed through the intersection by a few people and a police officer.,0.9999999999999999,0.7837278591537374
+348,4672131242.jpg,A man in a short-sleeve shirt standing in front of an open hatch door of a Honda SUV.,1.0,0.6957730086660583
+349,615927423.jpg,"A dark-skinned boy with blue shorts, a black tank top, and sandals is standing on the walk or do not walk street sign.",1.0,0.7324838400813787
+350,696663662.jpg,Child in blue shirt with eye closed and left arm wrapped with ace bandage and propped on a white pillow.,1.0,0.6527362052927161
+351,4634390308.jpg,A boy stands in the grass waving the flag of his home nation.,0.9999999999999998,0.7662433979215111
+352,866841633.jpg,A person paddles a boat while another has fallen into the water.,1.0,0.7485000925134491
+353,89202781.jpg,A lady with blue jeans and a brown shirt is speaking on her cellphone on the second floor of the mall.,1.0,0.6409489197432858
+354,4808270734.jpg,The lady with the brown shirt on is talking with the guy with the white shirt on the sidewalk.,1.0,0.7135718281116787
+355,2370481277.jpg,A little boy in green is kicking a soccer ball and 6 boys in referee shirts are following him.,1.0,0.6905547829230589
+356,2600362233.jpg,A blond girl with a headband looks at a stand of tomatoes and other vegetables.,1.0,0.7351337393416525
+357,3565840872.jpg,Two SouthEast Asian women wearing a purple and a green hijab stand beside their carts while a yellow uniformed worker rings them up at the register.,1.0,0.6815564592196446
+358,375955411.jpg,A person on scaffolding paints a large wall orange with a brush tied to a stick.,1.0,0.7061356134045236
+359,2471493912.jpg,A person wearing orange pants in playing in the mud.,1.0,0.774660176413156
+360,2952320230.jpg,The woman is dressed in all white swinging a tennis racket.,1.0,0.8006059872296386
+361,22267437.jpg,One man working at a fish market while a couple of men and one woman are browsing for fish.,0.9999999999999999,0.781448712771194
+362,4556256974.jpg,A young gentleman at the edge of a crowd on his cellphone raising his briefcase in the air to attract someones attention in the distance.,0.9999999999999999,0.7856685718307352
+363,2610183526.jpg,"A man and a woman, formally dressed, stand in front of a tall structure, both looking out at the ocean.",1.0,0.7416728566853187
+364,60779083.jpg,A man in a black shirt and a woman in a green shirt at a marketplace ordering food from a counter.,1.0,0.7418301599874344
+365,3087485737.jpg,A young man with a Mohawk style haircut and surfer shorts stands on a boogie board at the beach.,1.0,0.6412496189569881
+366,3501457496.jpg,A group a five people wearing the same shirt are sitting on the grass with a dog.,0.9999999999999999,0.7426990987931587
+367,8196866291.jpg,A group of kayakers go down a murky river on a cloudy day.,1.0,0.7006759203046944
+368,2595503905.jpg,"At a campsite, people are enjoying each others company before what looks like hiking.",1.0,0.7969644406189516
+369,8095826683.jpg,Three young musician in a band performing by female singing and two males playing guitars.,1.0,0.7949802942569362
+370,3943391155.jpg,"Three girls playing basketball, number 35 holding an orange, white, and black basketball.",1.0,0.7606373022188024
+371,4847415790.jpg,"A man wearing a short-sleeved, checked shirt and a hat holds a camera while standing in front of a brick wall.",1.0,0.668103927928187
+372,4460943467.jpg,3 young man in hoods standing in the middle of a quiet street facing the camera.,1.0,0.7291355496479597
+373,8454235.jpg,Several people work at circular fabric dye pools.,0.9999999999999998,0.7417451550258461
+374,1865794063.jpg,"Two teams of young children, one in blue and white, the other in green and white, playing soccer in a unisex match.",0.9999999999999998,0.7036330084823547
+375,445558349.jpg,A little child is looking towards someone while their head is in a painting designed like a bean.,1.0,0.7265132868632087
+376,2346523971.jpg,Three girls in hats and dresses dance to music played by boys in the background.,1.0,0.7400455962428265
+377,2697058141.jpg,"A young boy, wearing red and blue clothes, picking up food with a spatula.",1.0,0.6968178143976584
+378,3397090388.jpg,Bagpipes being played while walking in a parade or event on the street.,0.9999999999999998,0.7478870463365968
+379,2982923852.jpg,White female looking at the water with small child holding onto the rail,1.0,0.6520993032594835
+380,2561319255.jpg,A girl is jumping in the air while holding an orange and white guitar.,1.0,0.7889735336260815
+381,524282699.jpg,A black dog and tan dog run towards each other on a beach.,1.0,0.7632898856619904
+382,499692164.jpg,Someone is carefully putting together a metal work candle holder.,0.9999999999999998,0.7653305660954485
+383,4872513153.jpg,An Asian child leans against green metal in front of a large dirt pile.,1.0,0.7123110078901348
+384,2417169797.jpg,"A man and a woman wearing coats are facing standing outside facing each other, but not looking at each other.",1.0,0.7614671189738074
+385,38130732.jpg,A man on the phone dressed in hard has standing next to a white van.,1.0,0.7509444944452097
+386,4491508699.jpg,"A man sitting on a train playing an accordion, while a lady gazes over at him.",1.0,0.7041018243225968
+387,3376741717.jpg,A silhouette of a janitor with a broom cleaning up a messy venue.,1.0,0.7598967455087513
+388,1232148178.jpg,There is a little blond-hair girl with a green sweatshirt and a red shirt playing on a playground.,1.0,0.630002894635495
+389,4685167138.jpg,A small group of firefighters stand in all their firefighting attire and face masks while in front of a firetruck.,1.0,0.7527807666307248
+390,2667947118.jpg,Young boy with a hat and brown shirt holding a hand just above a wooden box.,1.0,0.6885901291003386
+391,2712352554.jpg,A boy does a skateboard trick off a metal plank.,1.0,0.7759549021170118
+392,127685074.jpg,A woman is reading a newspaper and a boy is resting his head on a seat in a rail car.,0.9999999999999998,0.7519878526661276
+393,2682546912.jpg,"Three men, two in black business suits and one in a black dress shirt are reviewing notes for a presentation.",1.0,0.7744034356998676
+394,3162105826.jpg,Two young girls laugh uproariously as they play with each other in their pajamas.,1.0,0.7526106947297446
+395,5536018957.jpg,"Two men in belt harnesses are working on a construction project, though only one wears his hard hat.",0.9999999999999998,0.7392915531213422
+396,3933142540.jpg,An older man wearing a polo shirt walking down a street lined with stores and green trees as cars pass by.,1.0,0.7060089371251159
+397,2882483779.jpg,Big black dog and kitten curiously looking at the wooden weave basket.,1.0,0.7540285848504404
+398,164048211.jpg,"Two young children, one wearing a blue shirt and something on their head climbing a tree standing in front of a body of water.",1.0,0.6587784358278376
+399,5196783191.jpg,"A musical group performs in front of a live audience, adorning colorful neon clothing and in front of a screen backdrop.",1.0,0.6860299405727981
+400,463978865.jpg,A man with dreadlocks and a backpack walks down the sidewalk with colorful buildings in the background.,0.9999999999999998,0.6980305552835666
+401,4575288615.jpg,"Two women standing in close proximity of each other, one of which is staring into the lens of the camera.",0.9999999999999998,0.8105650181721298
+402,7278851310.jpg,"Two men in red and blue T-Shirts are playing soccer, with the one in blue shirt trying to snatch the ball from the one in red shirt.",1.0,0.7364935782026003
+403,49227122.jpg,Several people are in a group where a man in a blue shirt is smiling.,0.9999999999999999,0.7548895160957105
+404,3099264059.jpg,The snowboarder is doing a stunt high in the air at night.,1.0,0.7420347443666795
+405,4502968133.jpg,A guy snowboarding down a pole that is on top of a blue vehicle into the snow.,0.9999999999999998,0.7894180495777918
+406,7030278443.jpg,"There is a crowd of people with their hands up in the air, supporting a man in a black uniform holding a white ball.",1.0,0.7860631375766247
+407,2222944983.jpg,A woman watches a man representing France with the number 5 on his chest doing some sort of winter sport similar to skiing.,1.0,0.7602325339564209
+408,2426303900.jpg,Two children with a yellow and blue umbrella play in the bathtub.,1.0,0.7359151219420468
+409,2926675936.jpg,A group of military people and a man in a business suit are cutting the tape at the grand opening of a building.,0.9999999999999998,0.7540690298883514
+410,465941693.jpg,A bus filled with families going on a vacation.,1.0,0.8430134677327991
+411,4129180972.jpg,A man with a black backpack walks down a road with water on either side.,1.0,0.7689801361269252
+412,2102538696.jpg,Two women are running at a track meet.,0.9999999999999999,0.7510943692442889
+413,4632869465.jpg,A blond girl smiles while holding flowers and her diploma after a graduation ceremony.,0.9999999999999999,0.8160823084808964
+414,2862509442.jpg,A group of people watch a drag race at the beginning and see the fire from the cars.,0.9999999999999999,0.8216693022780936
+415,4765305793.jpg,A person wearing a white shirt pushes shopping carts in front of a market selling fruit.,1.0,0.7274666037802611
+416,4672020554.jpg,"Demonstrators with Muslim flags and a sign reading ""Israel is a Terrorism Creation"" stand in the street.",0.9999999999999999,0.8133846944280321
+417,7833974088.jpg,A man wearing racing gear rides a bicycle on a road past fields of grapevines.,0.9999999999999998,0.7364638656800426
+418,5489602545.jpg,A man wearing a red t-shirt sweeps the sidewalk in front of a brick building.,0.9999999999999998,0.709503335808383
+419,3411022255.jpg,A group of people are in front of a store walking across a crosswalk.,0.9999999999999999,0.7521178411770965
+420,512520677.jpg,A crowd is gathered ready to watch some young adults perform.,1.0,0.8552874106253108
+421,1414779054.jpg,A boy plays with outstretched arms on the sidewalk next to a cobblestone street.,1.0,0.7834968284507051
+422,3605676864.jpg,Two children are in a pool with a beach ball floating nearby.,1.0,0.7286018941239586
+423,4432695449.jpg,Four police officers dressed in riot gear are maintaining a crowd that includes a man dressed as a clown.,1.0,0.752286045449722
+424,476772350.jpg,Man in suede jacket plays the electric guitar.,1.0,0.7701578919836474
+425,2052202553.jpg,A reddish brown dog walking in water carrying a stick in his mouth.,1.0,0.7346423423088406
+426,3963683506.jpg,"Six males, four with shirts and two without, have taken a break from their construction work on a building.",1.0,0.7796249985176471
+427,3481411830.jpg,A man dressed as a clown sitting down on a bench putting on his makeup.,0.9999999999999998,0.8260936386501029
+428,5408199015.jpg,A man in an orange hooded sweatshirt climbing a wall of ice with a forest in the background.,1.0,0.6752510121833208
+429,2716369043.jpg,A shirtless man with tattoos on his chest is riding on a skateboard pulled by his dog.,1.0,0.7870975678091423
+430,3217291172.jpg,Two men are standing together in front of a white brick building.,1.0,0.7434192625489608
+431,3013469764.jpg,An ATV racer blasts down the track sending dirt flying everywhere.,1.0,0.7593229856468962
+432,4295279957.jpg,"An older person wearing black shoes, brown loose-fitting pants, a green jacket, a scarf and a red hat is standing on a walkway looking off to the side.",0.9999999999999998,0.6111716850525422
+433,2806710650.jpg,A person in a red striped hooded sweatshirt and jeans shorts walking on a grassy hill.,1.0,0.6672688560103679
+434,4913618813.jpg,"A young girl appears to be jumping short, orange traffic cones on a grassy lawn while another young girl and an adult watch.",1.0,0.6656688051348456
+435,3550870909.jpg,"A woman is sitting in a yellow chair near on a city plaza near a planter of coleus and impatiens, with her purse and bags at her feet.",1.0,0.7216316265355391
+436,3782318456.jpg,Five men in asian inspired garb wrap clothes around their heads while people converse in the background.,0.9999999999999998,0.709967691684714
+437,1433259849.jpg,A man is cutting a cucumber on a wooden board.,1.0,0.7634139800918626
+438,535309053.jpg,A campsite has been established amidst the trees and bushes.,1.0,0.7650777531990361
+439,4890158457.jpg,A small group of adults and children stand on a cobblestone street outside of an Irish pub.,1.0,0.7555663716371508
+440,2147866213.jpg,A man wearing glasses and with a beer in his left hand and his dog in his right hand being seated in a love seat.,1.0,0.768283273472798
+441,3438858409.jpg,"A group of men in camouflage pants, breakdancing on a stage at a community baseball field.",1.0,0.739471534367044
+442,5645857612.jpg,A woman with a gray sweater is rolling out dough on a table.,0.9999999999999999,0.7429544853912154
+443,4611068200.jpg,A woman wearing a silly silver wig and decorative glasses holds a basket of candy and a soccer ball,1.0,0.7109276693812083
+444,6340723441.jpg,"A muscled, shirtless man sitting on a bench working out on an arm-exercising machine.",1.0,0.7445073803422881
+445,8052575239.jpg,Hundreds of people are watching a soccer game between a team wearing green jerseys and a team wearing blue jerseys.,1.0,0.7174356078359762
+446,4717481075.jpg,Two Asian women sit on a bench eating lunch while a white woman in a navy shirt walks by and checks out a promotional table.,1.0,0.6657110842314058
+447,2897990634.jpg,A man in shorts and a white garment stands at the base of stairs framed by black railing.,1.0,0.7024192753037667
+448,3327035014.jpg,A young woman is leaning over a large yellow mop bucket to wring out the mop.,1.0,0.7423852775398005
+449,55389857.jpg,Old man in a light blue shirt and jeans works on wood carving in a workshop surrounded by other projects.,1.0,0.7460554628675008
+450,2537824216.jpg,"A group of workers wearing bright orange jackets with reflective stripes, a man in the middle is holding a sign.",0.9999999999999999,0.7244473592495537
+451,156740459.jpg,There is a man with a green t-shirt cooking hamburgers and hotdogs outside on a grill.,1.0,0.7141434125887017
+452,108656820.jpg,"A group of people are either standing or sitting, some are wearing hats and scarves, while some are not.",0.9999999999999999,0.7730661026461767
+453,15875060.jpg,A young boy in swimming trunks holds a white ball in a park.,1.0,0.6999440404324591
+454,4950409945.jpg,A group of people unload their video equipment from a van located in a scenic location.,1.0,0.7971676725676666
+455,3023296051.jpg,A lively party where most people are watching others dance.,1.0,0.8393563344267225
+456,4573391235.jpg,A couples is walking outside under some trees while the flower petals are falling.,1.0,0.7414466901290928
+457,2798880731.jpg,A woman sits with two children while a picture of a man is on the computer on the table.,1.0,0.726622602428794
+458,114051287.jpg,A boy in a red soccer strip is holding his boots in his hand whilst stepping out of a car.,1.0,0.7509715360871889
+459,387974450.jpg,A dark colored dog running in a field with multilple birds in the background.,1.0,0.7598029796060176
+460,424261682.jpg,2 girls dressed in winter clothes snuggling up to a snowman with a scarf.,1.0,0.7749797884503373
+461,7725290846.jpg,A surfer just about to catch a long smooth wave on an orange surfboard.,1.0,0.8112748629424917
+462,3559693175.jpg,A group of people at a counter with a young man in a black shirt and hat helping them from the other side.,1.0,0.7141830388377282
+463,461044512.jpg,A little girl in a pink Dora shirt with a pink hat on and a pink lei around her neck is cleaning some rocks with a toothbrush in a white plastic tub.,1.0,0.7119151600295819
+464,123997871.jpg,The woman lacrosse player in blue is about to catch the ball.,1.0,0.7811902179203039
+465,4488188880.jpg,A young lady attempts to play darts in a darkened room.,1.0,0.7837660596230327
+466,4851261435.jpg,A man wearing dark-colored shorts and t-shirt kneels under a large shadow as a family walks by in the background,1.0,0.6724597315977943
+467,3050264832.jpg,A crowd stands in the background watching someone sliding down a ramp on a board.,1.0,0.8056209363225122
+468,2938599163.jpg,Asian woman walking across a crosswalk in the street.,1.0,0.7703244468604664
+469,4783219327.jpg,A boy in a blue shirt and brown shorts and two women wearing colorful outfits walk down a run-down street with livestock in the background.,1.0,0.6652850046471224
+470,5684720360.jpg,A woman with her kids standing at the cash register while a cashier bags her groceries.,0.9999999999999999,0.6978542801757222
+471,3064716525.jpg,A black and white dog jumping over a steeple vault at a competition,1.0,0.7702952134109555
+472,6576930023.jpg,There is a large crowd of people watching a soccer game with one team having a mostly black uniform and the other team a mostly white uniform.,1.0,0.7788246092274291
+473,520913429.jpg,A man dressed in green sweeps leaves from an outdoor altar.,1.0,0.7366929082043366
+474,95758790.jpg,"Young boys are hanging out on the sidewalk next to trees, while one boy is exploring the dirt around the tree.",0.9999999999999998,0.7134901661170681
+475,3442978981.jpg,Two fencers practice together; one jumps as the other crouches.,0.9999999999999999,0.7847528096713059
+476,51900752.jpg,"Two men, one in a black shirt, the other wearing a jacket, piling up wheat.",1.0,0.6828879574242518
+477,3355683198.jpg,A teenage boy in rides a hand-railing on a skateboard outside a columned brick building.,1.0,0.7227158590983465
+478,36139994.jpg,A woman with short hair is singing passionately into a microphone on stage.,1.0,0.7563338013307831
+479,3027384992.jpg,A woman and a small boy are standing below a large beam while the woman pulls on it with a rope.,0.9999999999999999,0.6883727903554923
+480,3587781729.jpg,This picture shows a blond-haired boy and brown-haired boy smiling while swinging on a tire swing.,1.0,0.7110067102341788
+481,2914737181.jpg,"A man parasails on the choppy sea, with a board on his feet to catch the waves.",1.0,0.7042156625682896
+482,1092437557.jpg,Woman is enjoying herself being outdoors biking in a forrest preserve.,1.0,0.7856423300003296
+483,3375134059.jpg,One dog on the ground and another dog standing above it.,1.0,0.8450168907692577
+484,4423275742.jpg,"A few people walk the beach, shot taken from high-altitude",1.0,0.7950431435415793
+485,11131022.jpg,"Older man in a hat, yellow shirt and dress slacks playing in the sand with a young boy.",1.0,0.7109382507498894
+486,4897473911.jpg,"Two woman in white with brown handbags, one of which is holding a big white umbrella, are standing near a booth.",1.0,0.7110954404335491
+487,3380930463.jpg,A young child wearing a black hat has an acoustic guitar on his lap.,0.9999999999999998,0.7467364643515475
+488,1785138090.jpg,A woman wearing a skimpy bathing suit is walking with a towel in a parking lot.,1.0,0.7614090258385018
+489,3241627311.jpg,A bright lamp illuminates three men wearing yellow vests and helmets and working on a machine.,1.0,0.7136539433764739
+490,7803420092.jpg,"A baseball player wearing red, white and blue gets ready to bat as his teammates stand behind him and watch.",1.0,0.7764000335255509
+491,3033686219.jpg,A black dog with a red collar sitting in the sand.,1.0,0.7535126246011143
+492,4182976314.jpg,A little boy in a blue jacket walking on a bench as his mother in a green jacket and a black bag holds his hand.,1.0,0.6900641922940807
+493,2542292902.jpg,Two men in orange vests use a meter to test equipment and record the data.,1.0,0.759735926396225
+494,6804407509.jpg,A middle-aged man using a large knife to chop up some sort of dough or pasta.,1.0,0.768752013414484
+495,2247101794.jpg,A man wearing a black shirt and white pants stretches out on a bench in the shade of trees.,1.0,0.6557772947988172
+496,137338651.jpg,"Two males running, one wearing red and white, the other navy blue and black, outside on a cloudy day.",1.0,0.719742114528575
+497,357402532.jpg,"A lady who has on a white shirt with green pants and black boots, who looks like she's enjoying the leaves.",1.0,0.7471383049371325
+498,457507422.jpg,On man holds a long piece of wood for a door frame while another man looks on.,1.0,0.8026021179268354
+499,122019659.jpg,A young boy prepares to field a baseball with people in the background.,0.9999999999999998,0.7401131478383017

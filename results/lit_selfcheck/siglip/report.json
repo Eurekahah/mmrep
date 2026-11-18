@@ -1,0 +1,45 @@
+{
+  "model": "siglip",
+  "dataset": "flickr",
+  "split": "val",
+  "cond": "clean",
+  "num_samples": 500,
+  "caption_index": 0,
+  "batch_size": 32,
+  "device": "cuda",
+  "precision": "fp32",
+  "resolved_revision": "94dffa8cb1179de3e03f091dbc3917e5d5a9ae84",
+  "checkpoint": "/root/mmrep/ckpt/siglip/lit/trainable_state.pt",
+  "training_meta": "/root/mmrep/ckpt/siglip/lit/meta.json",
+  "training": {
+    "model": "siglip",
+    "setting": "lit",
+    "meta_sha256": "56da4e43161d0d33069757aef45bf48e7c2594ec2258dd9dfe69c2abaca3e702",
+    "lr": 0.0001,
+    "epochs": 5,
+    "batch_size": 128,
+    "seed": 42,
+    "trainable_params": 282303744,
+    "wall_sec": 252.4521206826903,
+    "gpu_mem_peak_MB": 5878.646484375,
+    "expected_training_samples": 8000
+  },
+  "image_cosine": {
+    "mean": 1.0,
+    "std": 8.188600426433445e-17,
+    "min": 0.9999999999999996,
+    "max": 1.0
+  },
+  "text_cosine": {
+    "mean": 0.8722189673707226,
+    "std": 0.030141293900389343,
+    "min": 0.721800561877197,
+    "max": 0.9337654094922294
+  },
+  "image_tolerance": 1e-05,
+  "image_failed_samples": 0,
+  "image_passed": true,
+  "image_raw_max_abs": 0.0,
+  "scope": "checkpoint_reload_comparison",
+  "note": "LiT checkpoint 只保存文本参数。本报告检查重载后图像侧一致性，不单独证明训练期间图像参数从未变化；需结合冻结测试。文本余弦仅作参照，不设置通过阈值。"
+}
