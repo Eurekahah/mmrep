@@ -229,50 +229,34 @@
     }
   },
   "limitations": [
-    "Historical models entries are the 2026-11-10 CPU smoke receipts on synthetic inputs; see current_delivery for the 2026-11-11 formal GPU run.",
-    "Real P3/P4 checkpoints remain pending.",
-    "Full-stage norm statistics and LiT comparisons require the 96 future fine-tuned feature files."
+    "The historical models entries record the initial CPU tests. Current delivery is the full real-image GPU extraction.",
+    "Existing P3 CPU zero-tolerance unit-test failure remains documented in the earlier test evidence."
   ],
-  "updated_date": "2026-11-11",
+  "updated_date": "2026-11-17",
   "current_delivery": {
-    "formal_status": "pretrained_delivered_waiting_for_six_P3_P4_checkpoints",
-    "verification_date": "2026-11-11",
+    "formal_status": "all_128_features_validated_local_handoff_ready",
+    "verification_date": "2026-11-17",
     "device": "NVIDIA GeForce RTX 3080",
     "data_validation": "logs/p2_data_validation.json",
-    "stage_validation": "results/p2_stages/pretrained/norm_stats_validation.json",
+    "stage_validation": "results/norm_stats_validation.json",
     "valid_real_images": 6952,
-    "formal_feature_files": 32,
+    "formal_feature_files": 128,
     "expected_total_feature_files": 128,
-    "stage_norm_rows": 40,
+    "norm_rows": 160,
     "expected_total_norm_rows": 160,
-    "real_cpu_smoke_records_in_this_document": "models",
-    "real_gpu_smoke": {
-      "clip": "logs/p2_real_smoke/coco_val/clip/report.json",
-      "siglip": "logs/p2_real_smoke/coco_val/siglip/report.json"
-    },
-    "gpu_written_log": "logs/P2_runs.jsonl",
-    "feature_zip": "../P2_本地交接/P2_01_pretrained.zip",
-    "feature_zip_sha256": "a6fe8b98bb46fe1704a064446bbfa4aa3e5d5fe1c9a42f97688ee40215fe4225",
-    "coco_repeat_check": "logs/p2_coco_repeat.json",
-    "p2_offline_tests_passed": 66,
-    "repo_test_outcomes": {
-      "passed": 106,
-      "skipped": 2,
-      "failed_existing_p3": 1
-    },
-    "remaining_checkpoint_settings": {
-      "clip": [
-        "lit",
-        "lora_r8",
-        "lora_r16"
-      ],
-      "siglip": [
-        "lit",
-        "lora_r8",
-        "lora_r16"
-      ]
-    },
-    "formal_lit_image_pairs_checked": 0,
-    "formal_lit_image_pairs_planned": 32
+    "formal_lit_image_pairs_checked": 32,
+    "formal_lit_image_pairs_planned": 32,
+    "lit_max_abs_difference": 0.0,
+    "remaining_checkpoint_settings": {},
+    "formal_log_rows": 128,
+    "runtime_errors": 0,
+    "oom_retries": 0,
+    "received_checkpoints": "logs/p2_checkpoint_receipt.json",
+    "local_handoff": "../P2_本地交接/11月17日_后续交付",
+    "feature_archives": {
+      "P2_02_CLIP_finetuned.zip": "332e9ad140182447d02847b71137144df8bf67f45276cef6bc1a91163ca433c6",
+      "P2_03_SigLIP2_finetuned.zip": "9980ecaed1eb7438f4fb6d55538e175a391cc49fda0ab0a86f1a0ae61124920f",
+      "P2_全量交接.zip": "3aa033346831c33db4d0ef2fd8f28d78b83a7bd477c1af4bcca0945a9ed86f78"
+    }
   }
 }

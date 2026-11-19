@@ -1,5 +1,27 @@
 # P2 实验与本地交付记录
 
+## 2026 年 11 月 17 日全量交付
+
+P3 的两组 LiT 与 P4 的四组 LoRA 权重已到齐并通过本机加载检查。正式 128 份特征已完成，覆盖两个模型、四种设置、两个数据集和两个划分，包含 Flickr val 的弱强扰动。
+
+- 全量验收通过，160 行范数统计与 16 张四设置对比直方图已生成。
+- 32 对 LiT 图像冻结检查逐项相同，最大绝对差为 0。
+- 128 条正式写入日志逐项对应 128 个 NPZ，失败及 OOM 重试均为 0。
+- 本轮新增 96 份微调特征，CLIP 始终用 batch 256，SigLIP2 始终用 batch 192，保存 float32 raw embedding。
+- 六组权重的接收记录与 SHA-256 在 logs/p2_checkpoint_receipt.json。两组 SigLIP2 LoRA 的上游元数据各记载 3 次 skipped_updates，本轮使用移交的最终权重进行推理。
+
+| 设置 | 文件数 | 各文件写入耗时之和 | PyTorch 峰值显存 |
+|---|---:|---:|---:|
+| CLIP LiT | 16 | 220.82 秒 | 1294.2 MiB |
+| CLIP LoRA-r8 | 16 | 227.39 秒 | 1126.6 MiB |
+| CLIP LoRA-r16 | 16 | 228.85 秒 | 1126.6 MiB |
+| SigLIP2 LiT | 16 | 187.24 秒 | 2074.3 MiB |
+| SigLIP2 LoRA-r8 | 16 | 185.49 秒 | 1906.6 MiB |
+| SigLIP2 LoRA-r16 | 16 | 185.25 秒 | 1906.6 MiB |
+
+后续交付目录为仓库旁 P2_本地交接/11月17日_后续交付。CLIP 与 SigLIP2 两批各 48 份，全量包有 128 份。每个 ZIP 都附成员大小、SHA-256 清单，并通过逐成员读回检查。最新总表为 results/norm_stats.csv，冻结检查为 results/lit_frozen_check.csv，最终验收为 results/norm_stats_validation.json。模块使用说明已覆盖全部复现入口，可交 P1 汇总。
+
+
 ## 2026 年 11 月 11 日正式交付进度
 
 第一批 pretrained 已完成并交付至仓库旁的 `P2_本地交接/P2_01_pretrained.zip`。ZIP 内有 32 份真实数据的 NPZ、40 行范数统计、16 张直方图、正式运行日志、数据及 GPU 单批验收记录。每个成员已按包内 `MANIFEST.json` 的 SHA-256 读回核对。第一批 ZIP 的 SHA-256 为 `a6fe8b98bb46fe1704a064446bbfa4aa3e5d5fe1c9a42f97688ee40215fe4225`。
@@ -17,7 +39,7 @@
 
 **统计与测试**。结果位于 `results/p2_stages/pretrained/`，其中 `norm_stats.csv` 有 32 行图像和 8 行文本统计，标准差为总体标准差。该目录的 `norm_stats_validation.json` 包含特征与统计产物的校验值。全仓测试 106 通过、2 项显式启用的模型测试默认跳过、1 项原有 P3 零容差测试失败；P2 的 66 项离线测试全部通过，两项真实权重 GPU 单批已经单独执行。全仓记录见 `logs/p2_delivery_pytest.xml`，P3 基础提交复现记录见 `logs/p2_baseline_test.txt`。
 
-**待上游交接**。第二批 CLIP、第三批 SigLIP2 各需要 LiT、LoRA-r8、LoRA-r16 三组正式训练权重和对应的 `meta.json`。截至本次交付，本地 `ckpt/` 仅含占位文件。每种设置收到后即可先提取 16 份。两批合计还需 96 份特征、120 行范数统计和 32 对 LiT 图像冻结核验。
+**11 月 11 日时待上游交接**。第二批 CLIP、第三批 SigLIP2 各需要 LiT、LoRA-r8、LoRA-r16 三组正式训练权重和对应的 `meta.json`。截至本次交付，本地 `ckpt/` 仅含占位文件。每种设置收到后即可先提取 16 份。两批合计还需 96 份特征、120 行范数统计和 32 对 LiT 图像冻结核验。
 
 11 月 10 日完成模型加载器初版、模型说明、提取脚本和 CPU 单批检查。
 
@@ -104,4 +126,4 @@ $env:HF_HUB_OFFLINE = '1'
 
 P3 和 P4 每移交一组权重，将 `meta.json` 及 `trainable_state.pt` 或 `adapter/` 放在相应 `ckpt/{model}/{setting}/` 内。将提取命令的 model 改为 `clip` 或 `siglip`，setting 改为 `lit`、`lora_r8` 或 `lora_r16`。每组各产生 16 份特征；每模型三组齐全后用 `--stage clip-finetuned` 或 `--stage siglip-finetuned` 统计、核验并打包，全部齐全后执行 `--stage all`。
 
-全部改动保存在本地分支，尚未推送 GitHub，也未上传网盘或发送组内消息。
+11 月 11 日的代码已由用户通过 PR #1 合入 GitHub，pretrained 第一批也已由用户上传云盘。本次 11 月 17 日的后续结果、全量统计与文档更新在本地交接目录就绪，供用户提交。
