@@ -1,4 +1,4 @@
-"""遍历特征文件，计算几何指标并写出 CSV 结果。"""
+"""遍历特征文件，计算几何指标并生成CSV。"""
 from __future__ import annotations
 
 import argparse
@@ -22,7 +22,7 @@ from metrics.geometry import (
 MODELS = ("clip", "siglip")
 SETTINGS = ("pretrained", "lit", "lora_r8", "lora_r16")
 DATASETS = ("flickr", "coco")
-SPLITS = ("val", "test")
+SPLITS = ("val",)
 MAIN_CONDS = ("clean", "noise", "occl")
 STRENGTH_CONDS = ("noise_lo", "noise_hi", "occl_lo", "occl_hi")
 GEOMETRY_FIELDS = (
@@ -31,42 +31,42 @@ GEOMETRY_FIELDS = (
 )
 PROTOTYPE_FIELDS = (
     "dataset", "model", "setting", "cond", "proto_dist_mean",
-    "proto_dist_median", "proto_nn_acc",
+    "proto_dist_median", "proto_dist_weighted_mean", "proto_nn_acc",
+    "proto_nn_acc_weighted",
 )
 
 
 def _load(path: Path) -> dict:
-    """读取 NPZ 中的数组副本，关闭文件句柄后仍可使用。"""
+    """读取NPZ中的数组副本，关闭文件句柄后仍可使用。"""
     with np.load(path, allow_pickle=False) as data:
         return {key: data[key] for key in data.files}
 
 
 def _gap_bootstrap_ci(img, txt_all, n=200, seed=42, confidence=0.95):
-    """分别重采样图像和文本样本，估计两模态质心距离的百分位区间。"""
-    # 先归一化一次；bootstrap 中反复归一化完整矩阵会产生大量重复计算。
+    """按图像成组重采样，估计间隙的百分位区间。"""
+    # 特征先归一化；相同图像索引会同时选中其图像向量和五条caption 。
     img = _normalize_rows(img)
-    txt_all = _normalize_rows(txt_all)
+    txt_all = _normalize_rows(txt_all).reshape(len(img), 5, -1)
     rng = np.random.default_rng(seed)
     estimates = np.empty(n, dtype=np.float64)
     for i in range(n):
-        # 两种模态独立抽样；文本侧按 caption 观测抽样，不假设与图像逐行配对。
+        # 以图像为抽样单位，保持图像与其caption组对应。
         img_idx = rng.integers(0, len(img), size=len(img))
-        txt_idx = rng.integers(0, len(txt_all), size=len(txt_all))
         img_center = img[img_idx].mean(axis=0)
-        txt_center = txt_all[txt_idx].mean(axis=0)
+        txt_center = txt_all[img_idx].mean(axis=(0, 1))
         estimates[i] = np.linalg.norm(img_center - txt_center)
     tail = (1 - confidence) / 2
     return tuple(np.quantile(estimates, [tail, 1 - tail]))
 
 
 def _normalize_rows(x):
-    """按行 L2 归一化，供 bootstrap 预处理复用。"""
+    """按行L2归一化，供bootstrap预处理复用。"""
     x = np.asarray(x, dtype=np.float64)
     return x / np.maximum(np.linalg.norm(x, axis=1, keepdims=True), 1e-12)
 
 
 def _condition_paths(feature_root, model, setting, dataset, split):
-    """返回该组合存在的条件文件；弱、强档只对 Flickr val 扫描。"""
+    """返回该组合存在的条件文件。弱、强档只对Flickr val扫描。"""
     base = feature_root / model / setting
     conditions = list(MAIN_CONDS)
     if (dataset, split) == ("flickr", "val"):
@@ -79,7 +79,7 @@ def _condition_paths(feature_root, model, setting, dataset, split):
 
 
 def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=42):
-    """计算存在的特征组合；缺失组合跳过，最终 CSV 仍包含固定表头。"""
+    """计算存在的特征组合，缺失组合跳过，最终的CSV依然包含固定表头。"""
     feature_root, output_dir = Path(feature_root), Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     geometry_rows, prototype_rows = [], []
@@ -91,7 +91,7 @@ def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=4
                     paths = _condition_paths(feature_root, model, setting, dataset, split)
                     if not paths:
                         continue
-                    # clean 文件保存文本特征；若 clean 缺失，该组合无法计算图文联合指标。
+                    # clean文件保存文本特征，若clean缺失，该组合无法计算图文联合指标。
                     clean_path = paths.get("clean")
                     if clean_path is None:
                         print(f"skip {model}/{setting}/{dataset}_{split}: missing clean features")
@@ -113,7 +113,7 @@ def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=4
                         img = data["img_raw"]
                         if img.shape != img_clean.shape:
                             raise ValueError(f"{path}: image feature shape differs from clean")
-                        # 扰动只改变图像；对齐、文本侧均匀性和模态间隙都复用 clean 文本。
+                        # 扰动只改变图像，对齐、文本侧均匀性和模态间隙都复用clean文本。
                         lo, hi = _gap_bootstrap_ci(img, txt_all, n=ci_samples, seed=seed)
                         geometry_rows.append({
                             "dataset": dataset,
@@ -123,7 +123,7 @@ def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=4
                             "align_cos": alignment_cos(img, txt1),
                             "align_w": alignment_w(img, txt1),
                             "unif_img": uniformity(img, seed=seed),
-                            "unif_txt": uniformity(txt_all, seed=seed),
+                            "unif_txt": uniformity(txt1, seed=seed),
                             "gap": modality_gap(img, txt_all),
                             "gap_ci_low": lo,
                             "gap_ci_high": hi,
@@ -139,8 +139,8 @@ def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=4
                                 ip = {label: pair[0] for label, pair in proto.items()}
                                 tp = {label: pair[1] for label, pair in proto.items()}
                                 counts = {label: int(np.sum(labels == label)) for label in proto}
-                                dist = proto_distance(ip, tp)
-                                acc = proto_nn_acc(ip, tp)
+                                dist = proto_distance(ip, tp, sample_counts=counts)
+                                acc = proto_nn_acc(ip, tp, sample_counts=counts)
                                 prototype_rows.append({
                                     "dataset": dataset,
                                     "model": model,
@@ -148,7 +148,9 @@ def run(feature_root="features", output_dir="results", *, ci_samples=200, seed=4
                                     "cond": cond,
                                     "proto_dist_mean": dist["mean"],
                                     "proto_dist_median": dist["median"],
+                                    "proto_dist_weighted_mean": dist["weighted_mean"],
                                     "proto_nn_acc": acc["mean"],
+                                    "proto_nn_acc_weighted": acc["weighted_mean"],
                                 })
 
     _write_csv(output_dir / "geometry_metrics.csv", GEOMETRY_FIELDS, geometry_rows)
