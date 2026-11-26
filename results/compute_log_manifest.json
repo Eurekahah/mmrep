@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "logs/P2_runs.jsonl": "47f238b91108129bee62ec366bf93736862425ce180edab877f9fcc4134262cb",
+    "logs/P4_runs.jsonl": "8c554029b5c946c539380558610802df668ec3fe23b9004aa2af808157ae7dc7",
+    "ckpt/clip/lit/meta.json": "6bf0c424ac14d1f8558691cfbba49bddd5b8f05d8c695d34ea80c78adc2cda9d",
+    "ckpt/clip/lora_r16/meta.json": "eed68f58664377a1287f595bba54a9901f069776579e975db3fa3eed1c2f5cad",
+    "ckpt/clip/lora_r8/meta.json": "d610586567617a4b641355f0125ba09a7ffaa1381eca132d884744ece9dc9804",
+    "ckpt/siglip/lit/meta.json": "56da4e43161d0d33069757aef45bf48e7c2594ec2258dd9dfe69c2abaca3e702",
+    "ckpt/siglip/lora_r16/meta.json": "1311dbca08d5a1f3817142d99d78044781fbcbefe1c3dfaa670c1026d5da91b2",
+    "ckpt/siglip/lora_r8/meta.json": "8344c603df1ad6c2504261fffaf28272581b3cc56b4fd9476174a86313cb8a62"
+  },
+  "rows": 138,
+  "exact_duplicates_removed": 0,
+  "missing_log_owners": [
+    "P3",
+    "P6"
+  ],
+  "missing_checkpoint_meta": [],
+  "complete": false
+}

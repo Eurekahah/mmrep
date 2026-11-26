@@ -1,0 +1,4608 @@
+{
+  "expected_projections": 58,
+  "completed_projections": 58,
+  "figure_count": 86,
+  "missing": [],
+  "invalid": [],
+  "complete": true,
+  "completed": [
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_noise.npz",
+            "sha256": "a42a4348e4a8fce7a6d80adb62e245c04e4b58daed9eceedaef0423969229567"
+          },
+          {
+            "path": "clip/lit/coco_val_occl.npz",
+            "sha256": "872553cf0e049dc70fb32f3750f9502d691ca18cb18cc5fc3f3b9c4bf2e96fc3"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6808226704597473,
+      "wall_sec": 14.9,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lit_coco.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lit_coco.png",
+        "figures/clip_tsne_conditions_lit_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lit_coco.csv": "8248e2ba9555c3392f72051963a95896ccad24c00290c7f79a06e606c2ff53bd",
+        "figures/clip_tsne_conditions_lit_coco.png": "a1e06eb12aaba1c7c75f59476472701c66a90f89a12105866b42481bbe23776c",
+        "figures/clip_tsne_conditions_lit_coco.svg": "a4fb7b85ca83ad89a66742126f407a30b2dd4f1e0b9d1fd9254a691d6c3a0621",
+        "figures/clip_tsne_conditions_lit_coco_classes.png": "d7187327f950a8a3011180d893afd21d3dcc1d57f2358efc5a267fb9ca8b484e",
+        "figures/clip_tsne_conditions_lit_coco_classes.svg": "1426bc2a5e54662340e62fda0eba98ab7b0fd688ed220500e8c39ca1961c26f0"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_noise.npz",
+            "sha256": "a50e60b6afcbc85ad692858d88bd6ad5f5b1917814e3857792ae816d0903c9a4"
+          },
+          {
+            "path": "clip/lit/flickr_val_occl.npz",
+            "sha256": "f9f3b1f5dc816d9a0ef22294a0bfd5c463ff55f2a103b6249a9056d122edc69d"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.655705988407135,
+      "wall_sec": 20.12,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lit_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lit_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lit_flickr.csv": "d84de27cebd53584a16f0cb9c04fd25a502c1fb6de7d9891a17ea82746e2130c",
+        "figures/clip_tsne_conditions_lit_flickr.png": "2d71572e92b8bd59cc506bce512fdca0332fa3b0da2ac803da2c9a4e46567885",
+        "figures/clip_tsne_conditions_lit_flickr.svg": "5af40d0b30caa52e3860eacf8a34a35ecce8bb7f6104f8396ec9bb5318796a48"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_noise.npz",
+            "sha256": "191af90d1e71c833fa13281ddaef7cc2c9b92d117a03e1b22fb0e2551331fb0c"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_occl.npz",
+            "sha256": "c9aec9aadffeb5d09e7070918b89528b59652fb5ec23f0b3e6b1df02c3985dc2"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6899919509887695,
+      "wall_sec": 15.212,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lora_r16_coco.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lora_r16_coco.png",
+        "figures/clip_tsne_conditions_lora_r16_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lora_r16_coco.csv": "dd557403bd743229137a8ebe7dda1f5a5c146dd5166836349f4d499854953071",
+        "figures/clip_tsne_conditions_lora_r16_coco.png": "dbfdecc2a6a7c87db84efb852b335da487b0fae715a5bb297b808599f5922ef6",
+        "figures/clip_tsne_conditions_lora_r16_coco.svg": "7991f0a36d6db8051b803828ae421c7428f304ef897a0a4f5c25dddc04071e1a",
+        "figures/clip_tsne_conditions_lora_r16_coco_classes.png": "3eed2260b84050cf9def2d8c075473249522e16415d3297be5e9cdf79b8a0d74",
+        "figures/clip_tsne_conditions_lora_r16_coco_classes.svg": "8ab18615223c240a0cc7399aa62d32868628daa945fb8b7674343faef22fa91e"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_noise.npz",
+            "sha256": "183fcac4a4c1caf64a316cee3c972de1bd4d706de05c2e2bd017ceec3c0c5fcf"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_occl.npz",
+            "sha256": "5d54bef95d9a66edc8f0ff17d85b103d0e97fe66d48141f5296ced2d55d8a322"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6610301733016968,
+      "wall_sec": 19.975,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lora_r16_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lora_r16_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lora_r16_flickr.csv": "7f80611d942ea30148c5309344060c3b3ae96c005c8e4ba0bf1ab67ef468ce22",
+        "figures/clip_tsne_conditions_lora_r16_flickr.png": "33ea9c8a3175fd27dc76c8f14be469a1aed36dc66dc8736cec8fc9fa01391642",
+        "figures/clip_tsne_conditions_lora_r16_flickr.svg": "f92a3dda18f75e3a0297dc0fc20ffcbf4d433972ce8df0e2fdc05210c41efb52"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_noise.npz",
+            "sha256": "bb77c4564e298966f4223a03465172d63484977e0f71a6a12512f156e5eb78ab"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_occl.npz",
+            "sha256": "edd74149d53217c5e900c3452f2fa648ecbbbfc043bfa9aba80456321ee961cd"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6927917003631592,
+      "wall_sec": 15.312,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lora_r8_coco.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lora_r8_coco.png",
+        "figures/clip_tsne_conditions_lora_r8_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lora_r8_coco.csv": "dd80dc811f8661143eaa7ec47c687dc8fd6b3ba1f18f3a5baecde93452310ed6",
+        "figures/clip_tsne_conditions_lora_r8_coco.png": "4e2f9ed5c01286757ef7862958b1e04a1e9ab7f7f7b5ef5dc660de729afbba9d",
+        "figures/clip_tsne_conditions_lora_r8_coco.svg": "e1589d9116a33becb4c005b5e57f87131b08377c54675d3bdbb847c6bf6230c1",
+        "figures/clip_tsne_conditions_lora_r8_coco_classes.png": "46c2b44f755686224c46aa6920b89836bc486b8890938d6944620692dce4a082",
+        "figures/clip_tsne_conditions_lora_r8_coco_classes.svg": "1a24b74adeada83c0ddc432e51f2b15a98c7dbdf9fb3d7e0cce959ead936d344"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_noise.npz",
+            "sha256": "003d32cb96997ef8708e0463e913b4e886e331823854149412ab32a55fe89ffd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_occl.npz",
+            "sha256": "aa7806442c9e7eae23192e651a4ce2f5ca64ef76650615214966ab012538ca05"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6652324199676514,
+      "wall_sec": 18.504,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_lora_r8_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_lora_r8_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_lora_r8_flickr.csv": "fb75858b535d93c1e1c0f0d58f9e7c396704c3f0925926094c2d4dfd3dd3bc29",
+        "figures/clip_tsne_conditions_lora_r8_flickr.png": "9c6fa520fe93cbfd343449ac5c220e2f4ca2f6986934304b8ddcc9a3c586fd96",
+        "figures/clip_tsne_conditions_lora_r8_flickr.svg": "9e8a8c72c880d783ae24fced090fbf378214bd1fe973e14560c29cccd2eb4f6a"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_noise.npz",
+            "sha256": "a210d3dd2f45c75651e6515fd5396d522062ec788cb3c4ddcbc167bb88285866"
+          },
+          {
+            "path": "clip/pretrained/coco_val_occl.npz",
+            "sha256": "f86f83d7f3ea2104aa4f8a3d4c3ef5a82b40b5629365b2a289ba95e4d67b5a90"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6683412790298462,
+      "wall_sec": 13.752,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_pretrained_coco.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_pretrained_coco.png",
+        "figures/clip_tsne_conditions_pretrained_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_pretrained_coco.csv": "58f605a242f145d175f27ce956b4026681c111b80348d10b1e36896bc3a44037",
+        "figures/clip_tsne_conditions_pretrained_coco.png": "fddc680b894c8a8b679f9ff947cc26a7008c0fc6825e21e902cfb1980bfa349e",
+        "figures/clip_tsne_conditions_pretrained_coco.svg": "e0fd870606f05f555e2b8d211556d32a3c64716b56934681738f834f1b5a4c7b",
+        "figures/clip_tsne_conditions_pretrained_coco_classes.png": "f4e6dea5b0b0e970fcb5193be0e5fc425b3364db7b41bf3a40c96a98f7cfc44d",
+        "figures/clip_tsne_conditions_pretrained_coco_classes.svg": "012d9fef334684509fad52c92c55267bdc3d2651aa9a61635889ac6774c07d29"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6428940296173096,
+      "wall_sec": 22.697,
+      "points": 4000,
+      "coordinates": "coordinates/clip_tsne_conditions_pretrained_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_conditions_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_conditions_pretrained_flickr.csv": "21cab7685c37c3ee9fc34234afc142f3de65cb28680230bcc9239c4025fddb45",
+        "figures/clip_tsne_conditions_pretrained_flickr.png": "6d0cbb67c8bc0b0d4a3fd70c1f08a420fb429c34202f5f9056bdafa8f4d95c3f",
+        "figures/clip_tsne_conditions_pretrained_flickr.svg": "d917437e38484b9b308d7f20ff8c53a9fa21b0d7d9b5e05df12610cc61c2a2ae"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6788988709449768,
+      "wall_sec": 33.212,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_clean_coco.csv",
+      "figures": [
+        "figures/clip_tsne_settings_clean_coco.png",
+        "figures/clip_tsne_settings_clean_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_clean_coco.csv": "84a4051eb0a5b67ecfad4b262ee0cdcc851d5eab7797855e7e7be15277cff952",
+        "figures/clip_tsne_settings_clean_coco.png": "bacf354cb62967f3b03df5f1006b1a3fdcec945bb7c5e3e82ccfac10ea60ebd7",
+        "figures/clip_tsne_settings_clean_coco.svg": "b561c310991d1ffd4b0c30281a8abed7921365ce36dacdf4ac8458612990141c",
+        "figures/clip_tsne_settings_clean_coco_classes.png": "8965dd4ce1d33f33dfb65ba7a9f223820250188f6fe9c62940222e9c46e23547",
+        "figures/clip_tsne_settings_clean_coco_classes.svg": "f4102d58303818885651c8caa202b14c82d3e1d77b8a0c7c0523faac6d77e4ce"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6511049270629883,
+      "wall_sec": 36.157,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_clean_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_settings_clean_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_clean_flickr.csv": "1d4ebd27acc4a966f8c9c444508aa1f4cede8a38c0154ebc770911df0020ca1b",
+        "figures/clip_tsne_settings_clean_flickr.png": "a36d7c83bde79404c6e970d8ac1c757361ace2b0d0e07859a36ec797fc4381fc",
+        "figures/clip_tsne_settings_clean_flickr.svg": "e8a0b30026e38bb0665492d832203ee1dc90f4ee810fd316a13a4e5a5002e01b"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_noise.npz",
+            "sha256": "a42a4348e4a8fce7a6d80adb62e245c04e4b58daed9eceedaef0423969229567"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_noise.npz",
+            "sha256": "191af90d1e71c833fa13281ddaef7cc2c9b92d117a03e1b22fb0e2551331fb0c"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_noise.npz",
+            "sha256": "bb77c4564e298966f4223a03465172d63484977e0f71a6a12512f156e5eb78ab"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_noise.npz",
+            "sha256": "a210d3dd2f45c75651e6515fd5396d522062ec788cb3c4ddcbc167bb88285866"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6948992013931274,
+      "wall_sec": 30.028,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_noise_coco.csv",
+      "figures": [
+        "figures/clip_tsne_settings_noise_coco.png",
+        "figures/clip_tsne_settings_noise_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_noise_coco.csv": "3b2e5bc6573130cafde784c57e13d95654a820d5d2126836e3af7b5f7818ad85",
+        "figures/clip_tsne_settings_noise_coco.png": "b78eed271fce751f8c080994a05253a162522f405de9dd3072472126e206f048",
+        "figures/clip_tsne_settings_noise_coco.svg": "af4e6d34836572233fcfb88c7c3d0fbdeca71e79b2b786afe68f7f4a670caf4e",
+        "figures/clip_tsne_settings_noise_coco_classes.png": "baa7838d015354c6923e064ba85588ca8d268708467b8275a9eda1b2d639f6c8",
+        "figures/clip_tsne_settings_noise_coco_classes.svg": "0efc2bba8468cd871d6dc2ab9ad41278f37f320299c58c1ca711e15987dc91b0"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_noise.npz",
+            "sha256": "a50e60b6afcbc85ad692858d88bd6ad5f5b1917814e3857792ae816d0903c9a4"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_noise.npz",
+            "sha256": "183fcac4a4c1caf64a316cee3c972de1bd4d706de05c2e2bd017ceec3c0c5fcf"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_noise.npz",
+            "sha256": "003d32cb96997ef8708e0463e913b4e886e331823854149412ab32a55fe89ffd"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6627025604248047,
+      "wall_sec": 47.552,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_noise_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_settings_noise_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_noise_flickr.csv": "e693b7c26e1af477887c55346d4313136b23ae07f1edc776f0bdfc083823a718",
+        "figures/clip_tsne_settings_noise_flickr.png": "e5fad3908164a0f9aafb1e52e614ca5694adfc5c357b07b9202b777e8430fd7c",
+        "figures/clip_tsne_settings_noise_flickr.svg": "d8ee994949a48c67992bd9b82622e9640bc0a97a772b0d8a78a5f42ca695e1dc"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_occl.npz",
+            "sha256": "872553cf0e049dc70fb32f3750f9502d691ca18cb18cc5fc3f3b9c4bf2e96fc3"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_occl.npz",
+            "sha256": "c9aec9aadffeb5d09e7070918b89528b59652fb5ec23f0b3e6b1df02c3985dc2"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_occl.npz",
+            "sha256": "edd74149d53217c5e900c3452f2fa648ecbbbfc043bfa9aba80456321ee961cd"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_occl.npz",
+            "sha256": "f86f83d7f3ea2104aa4f8a3d4c3ef5a82b40b5629365b2a289ba95e4d67b5a90"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6979566216468811,
+      "wall_sec": 30.144,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_occl_coco.csv",
+      "figures": [
+        "figures/clip_tsne_settings_occl_coco.png",
+        "figures/clip_tsne_settings_occl_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_occl_coco.csv": "d8e815ce43cf18a9f85474694ace96ed6b6b5e87a397cb04a38431f011e81bed",
+        "figures/clip_tsne_settings_occl_coco.png": "2344e257172ca9799aeb6fe4340c6d398e8ff5485c4f0d149e6e2da5085f39ec",
+        "figures/clip_tsne_settings_occl_coco.svg": "96e554fd4da695a9870d5603529bd7b5733aa0ddb0aa1e52291cf062e39450d3",
+        "figures/clip_tsne_settings_occl_coco_classes.png": "187830a55d17c044f3ba3b3a6bcf7b6f8ab6daa15a82ba417aadc2f890378c40",
+        "figures/clip_tsne_settings_occl_coco_classes.svg": "37cabf787103a7f5b9c348e0b75dd4f93181d8b5e86d28ba20ad4cfdff576138"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_occl.npz",
+            "sha256": "f9f3b1f5dc816d9a0ef22294a0bfd5c463ff55f2a103b6249a9056d122edc69d"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_occl.npz",
+            "sha256": "5d54bef95d9a66edc8f0ff17d85b103d0e97fe66d48141f5296ced2d55d8a322"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_occl.npz",
+            "sha256": "aa7806442c9e7eae23192e651a4ce2f5ca64ef76650615214966ab012538ca05"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6696670055389404,
+      "wall_sec": 54.075,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_settings_occl_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_settings_occl_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_settings_occl_flickr.csv": "8ab8961ec010283115bbcbe2e373cbda07730d05d0516e4cf8e7070bbb8d287e",
+        "figures/clip_tsne_settings_occl_flickr.png": "a6ed0bd28f5b3e015a8a7c9132fad8d0bbd9cdf018eeca8ba63f5d807cac99b8",
+        "figures/clip_tsne_settings_occl_flickr.svg": "95368a97ce7fcead3e092c1877e0d9f1614edab966bd47f65419c51ef34d7589"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "strength_pretrained",
+        "kind": "strength",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise_lo"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "noise_hi"
+          ],
+          [
+            "pretrained",
+            "occl_lo"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "pretrained",
+            "occl_hi"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise_hi.npz",
+            "sha256": "be79e8d341919379f2c365006d12a4619cef57b3b635e728d6fa1383b1ab66c2"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise_lo.npz",
+            "sha256": "880431314b5cc3229da139bf2d377fd1ccc201e229f312bf03daa77c67cc9fda"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl_hi.npz",
+            "sha256": "bfe92ee2fa08eb868d9608aac5daa214e5c798a6fea736bf1e938a5af0707f01"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl_lo.npz",
+            "sha256": "9d5b60505cb7cf18bbef36377a96567008f2f2a289440f3193d88187c4ceef0f"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6393634676933289,
+      "wall_sec": 46.01,
+      "points": 8000,
+      "coordinates": "coordinates/clip_tsne_strength_pretrained_flickr.csv",
+      "figures": [
+        "figures/clip_tsne_strength_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_tsne_strength_pretrained_flickr.csv": "96b481c81ff73ce2c858308dd7ffac47c93d0eaad87b0bde73dc183b5cba6964",
+        "figures/clip_tsne_strength_pretrained_flickr.png": "c9f45c324ef094597385e68164cb13db83171b6141509818b2f1b430fc1e6189",
+        "figures/clip_tsne_strength_pretrained_flickr.svg": "72462a61f28be2f1dac4ed8092dba27f82ee8a526772a1db33c3fec3f46d8f6e"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_noise.npz",
+            "sha256": "a42a4348e4a8fce7a6d80adb62e245c04e4b58daed9eceedaef0423969229567"
+          },
+          {
+            "path": "clip/lit/coco_val_occl.npz",
+            "sha256": "872553cf0e049dc70fb32f3750f9502d691ca18cb18cc5fc3f3b9c4bf2e96fc3"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6808226704597473,
+      "wall_sec": 14.812,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lit_coco.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lit_coco.png",
+        "figures/clip_umap_conditions_lit_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lit_coco.csv": "3fbc22df2f8732ee21802eb372a46428a34500e6b61f16a5c07c5d660501190a",
+        "figures/clip_umap_conditions_lit_coco.png": "59c8278fe5c73eddd6591bb2a8c960f16c42e16faae48fd4d5c0706a3b79842a",
+        "figures/clip_umap_conditions_lit_coco.svg": "267869a0c9dff80b5aa2102ee8edfdf6a7dbf7b5e92e37dbf0fe5e5221bc7f4f",
+        "figures/clip_umap_conditions_lit_coco_classes.png": "699e6a821337d6c4f1d6b66e6229ad5d1e21040c51af9795c5d8e8f54c24a734",
+        "figures/clip_umap_conditions_lit_coco_classes.svg": "6025dba4eb9a38bc92e1bc4d672ae34907679574fa421960c2aa7716fa7913ac"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_noise.npz",
+            "sha256": "a50e60b6afcbc85ad692858d88bd6ad5f5b1917814e3857792ae816d0903c9a4"
+          },
+          {
+            "path": "clip/lit/flickr_val_occl.npz",
+            "sha256": "f9f3b1f5dc816d9a0ef22294a0bfd5c463ff55f2a103b6249a9056d122edc69d"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.655705988407135,
+      "wall_sec": 17.186,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lit_flickr.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lit_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lit_flickr.csv": "5431391e4acfff17f01767713bd91a5ce0842203fb026860fc18f05a951bdd17",
+        "figures/clip_umap_conditions_lit_flickr.png": "a050ea7b21985463f20b2e037acbefd72e207c670e2fec6b142501a67c920b2d",
+        "figures/clip_umap_conditions_lit_flickr.svg": "989f1133dc5a091d4dd45a93db0336856da4b8cf6e090e61c7be2d19482223ca"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_noise.npz",
+            "sha256": "191af90d1e71c833fa13281ddaef7cc2c9b92d117a03e1b22fb0e2551331fb0c"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_occl.npz",
+            "sha256": "c9aec9aadffeb5d09e7070918b89528b59652fb5ec23f0b3e6b1df02c3985dc2"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6899919509887695,
+      "wall_sec": 14.563,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lora_r16_coco.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lora_r16_coco.png",
+        "figures/clip_umap_conditions_lora_r16_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lora_r16_coco.csv": "f843b7e18d6406c1312bb3fbcfbb5e7ccd3bf886ea30d1d4ea9b1dba29dc9cb2",
+        "figures/clip_umap_conditions_lora_r16_coco.png": "3f25063f1c265fccb4f1cd25b3ef4d2bbed84c77a5ea40a1da5f5378814dd541",
+        "figures/clip_umap_conditions_lora_r16_coco.svg": "897caed2c5882fa9200994f998c50b3c12e196d3a61d26a095bfc15bb089c919",
+        "figures/clip_umap_conditions_lora_r16_coco_classes.png": "28c30927dd17f972a17c2db025829149025f0237172ccd438f3e482c26cf04a6",
+        "figures/clip_umap_conditions_lora_r16_coco_classes.svg": "36b4094dcf686abceda7ecb3af96be339821bb9d3e464f9b648a7a7b2c59a4ab"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_noise.npz",
+            "sha256": "183fcac4a4c1caf64a316cee3c972de1bd4d706de05c2e2bd017ceec3c0c5fcf"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_occl.npz",
+            "sha256": "5d54bef95d9a66edc8f0ff17d85b103d0e97fe66d48141f5296ced2d55d8a322"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6610301733016968,
+      "wall_sec": 19.546,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lora_r16_flickr.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lora_r16_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lora_r16_flickr.csv": "d36b237657fe62c4b9c7bb92dbe6fb98d0db42a433620412f646da6ce03c07c3",
+        "figures/clip_umap_conditions_lora_r16_flickr.png": "f05725626f99ee56065fcc7ba0aaff0fd383ac2fca2c5978bcd72f67f9f36da9",
+        "figures/clip_umap_conditions_lora_r16_flickr.svg": "f1e305ef54a58ff155709f64719a3b6d969830356956fd9c0a9d765ec2996c51"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_noise.npz",
+            "sha256": "bb77c4564e298966f4223a03465172d63484977e0f71a6a12512f156e5eb78ab"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_occl.npz",
+            "sha256": "edd74149d53217c5e900c3452f2fa648ecbbbfc043bfa9aba80456321ee961cd"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6927917003631592,
+      "wall_sec": 13.442,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lora_r8_coco.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lora_r8_coco.png",
+        "figures/clip_umap_conditions_lora_r8_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lora_r8_coco.csv": "dac59a9977752f6bf9cf19c28f9a801a43c45db8f4f50067bac6a461032a0bd3",
+        "figures/clip_umap_conditions_lora_r8_coco.png": "bf2df372254aa1623fb94616461d0ba04c0c6c97263c21834c359d6bad8314fc",
+        "figures/clip_umap_conditions_lora_r8_coco.svg": "73c7dbe2f9f09b2426fc3c7d6d43957c4dcd8fb66fbc67902df0c8f8fa1fcf4f",
+        "figures/clip_umap_conditions_lora_r8_coco_classes.png": "023f24299b50e9e47e39092003fc36bd2d2887128be7d2c49d90a9842bbee263",
+        "figures/clip_umap_conditions_lora_r8_coco_classes.svg": "6317cfae0f89d0138056b0f7b1970a6cf38a326692e63eb9259051409f794d84"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_noise.npz",
+            "sha256": "003d32cb96997ef8708e0463e913b4e886e331823854149412ab32a55fe89ffd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_occl.npz",
+            "sha256": "aa7806442c9e7eae23192e651a4ce2f5ca64ef76650615214966ab012538ca05"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6652324199676514,
+      "wall_sec": 20.593,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_lora_r8_flickr.csv",
+      "figures": [
+        "figures/clip_umap_conditions_lora_r8_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_lora_r8_flickr.csv": "db4904bfa99f0e2a49fe7c95e2e406cc5a6c3717a807dce40ee865ac491f7055",
+        "figures/clip_umap_conditions_lora_r8_flickr.png": "c0d3e56e3a1a51ac409367afe28cad923a0e4a6b2b672d712451e93330e3432c",
+        "figures/clip_umap_conditions_lora_r8_flickr.svg": "9273c0c7dad243b895704229bf79d28c0f47195a53bd90fc571b0547da132b8e"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_noise.npz",
+            "sha256": "a210d3dd2f45c75651e6515fd5396d522062ec788cb3c4ddcbc167bb88285866"
+          },
+          {
+            "path": "clip/pretrained/coco_val_occl.npz",
+            "sha256": "f86f83d7f3ea2104aa4f8a3d4c3ef5a82b40b5629365b2a289ba95e4d67b5a90"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6683412790298462,
+      "wall_sec": 18.598,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_pretrained_coco.csv",
+      "figures": [
+        "figures/clip_umap_conditions_pretrained_coco.png",
+        "figures/clip_umap_conditions_pretrained_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_pretrained_coco.csv": "1cead469162e240863ff5244d34bd7dc845951dea91a6080d69a451d2d93dbb5",
+        "figures/clip_umap_conditions_pretrained_coco.png": "a81195b309de8e1724b26f6b23629409733e98165707e9f6e93349316b7bf68f",
+        "figures/clip_umap_conditions_pretrained_coco.svg": "4c5b9b8082abcaf9834980015b1409972d8cbf19a1ff0e736f435252d6426eac",
+        "figures/clip_umap_conditions_pretrained_coco_classes.png": "54eb96e7db4142231d3b085856024bd9b4a12c5a1b0155a6f822451a0ad73c82",
+        "figures/clip_umap_conditions_pretrained_coco_classes.svg": "dc23ebe7045dc85e193d974040a3f357444503bac582ccd89733057aaa8e9535"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6428940296173096,
+      "wall_sec": 18.974,
+      "points": 4000,
+      "coordinates": "coordinates/clip_umap_conditions_pretrained_flickr.csv",
+      "figures": [
+        "figures/clip_umap_conditions_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_conditions_pretrained_flickr.csv": "b3b0542097263fc39b08e5ec433c48fac5c4f5c9d9312c3c3694312cbe33acc9",
+        "figures/clip_umap_conditions_pretrained_flickr.png": "a84ecce77a1c51fb42fee85ff8d8ce649553e23250ed63938b91ef3f6a7fb36a",
+        "figures/clip_umap_conditions_pretrained_flickr.svg": "4ee6a440bee32e3908a37fc98b0fbf5a9d80f82918fd1ee17cab5b4de2a5b87a"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6788988709449768,
+      "wall_sec": 13.138,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_clean_coco.csv",
+      "figures": [
+        "figures/clip_umap_settings_clean_coco.png",
+        "figures/clip_umap_settings_clean_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_clean_coco.csv": "b1d219f57afad6bb723d70021049641061997d87e0b77cd49c2711def6f19608",
+        "figures/clip_umap_settings_clean_coco.png": "eff14327e1501fa66d7abb6c61eb6bfdf2ab4a9d835c41265f60aebd9689a58b",
+        "figures/clip_umap_settings_clean_coco.svg": "6b78d2b4b7bbd2bff526509b24ec3b2944968c2c34e2e72c0182b13a42402600",
+        "figures/clip_umap_settings_clean_coco_classes.png": "dc616a83ae24ef64bc18c639d96c2b213a377e2e50748c2092a53ef347e9dfd9",
+        "figures/clip_umap_settings_clean_coco_classes.svg": "a0e6ed4021198afe664ce286c810c5a13561e9fb34e7012a3b367f328c195299"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6511049270629883,
+      "wall_sec": 44.478,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_clean_flickr.csv",
+      "figures": [
+        "figures/clip_umap_settings_clean_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_clean_flickr.csv": "d51dfb8e35afe048a749554c6c9aa95ed5ac6747db1d0ccf97525d41da9db75f",
+        "figures/clip_umap_settings_clean_flickr.png": "a068de37f01c5c13612e7a67357a051e2bddf69d019eda5db77cb5976366d625",
+        "figures/clip_umap_settings_clean_flickr.svg": "2e6689ea2f76628a0b600bc04de8c7f4d3441ede83f1a26f5b5d6c2f1b0c2e2a"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_noise.npz",
+            "sha256": "a42a4348e4a8fce7a6d80adb62e245c04e4b58daed9eceedaef0423969229567"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_noise.npz",
+            "sha256": "191af90d1e71c833fa13281ddaef7cc2c9b92d117a03e1b22fb0e2551331fb0c"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_noise.npz",
+            "sha256": "bb77c4564e298966f4223a03465172d63484977e0f71a6a12512f156e5eb78ab"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_noise.npz",
+            "sha256": "a210d3dd2f45c75651e6515fd5396d522062ec788cb3c4ddcbc167bb88285866"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6948992013931274,
+      "wall_sec": 12.678,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_noise_coco.csv",
+      "figures": [
+        "figures/clip_umap_settings_noise_coco.png",
+        "figures/clip_umap_settings_noise_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_noise_coco.csv": "54a62e8ffd51d95f8cfaeafc4a6572190a342be1f0299a186304401144f722a5",
+        "figures/clip_umap_settings_noise_coco.png": "9830a13d8582d68d41247a357969c00fa37bdd3bcf37ef14d16feb1bf06b7939",
+        "figures/clip_umap_settings_noise_coco.svg": "0fd0821714c48bf9fdfb5db9e5257b1d4bc794ce7cae2ba6aeba0ea7781170a7",
+        "figures/clip_umap_settings_noise_coco_classes.png": "50d2dad095c469e2b7e3467dc2ab5827c8b466365eb243ef1a9eb37b9514608c",
+        "figures/clip_umap_settings_noise_coco_classes.svg": "74ffc082b324c908de8271eed76f5eb7c03a1250c180e86f8a20f0fd829ed6b7"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_noise.npz",
+            "sha256": "a50e60b6afcbc85ad692858d88bd6ad5f5b1917814e3857792ae816d0903c9a4"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_noise.npz",
+            "sha256": "183fcac4a4c1caf64a316cee3c972de1bd4d706de05c2e2bd017ceec3c0c5fcf"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_noise.npz",
+            "sha256": "003d32cb96997ef8708e0463e913b4e886e331823854149412ab32a55fe89ffd"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6627025604248047,
+      "wall_sec": 15.638,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_noise_flickr.csv",
+      "figures": [
+        "figures/clip_umap_settings_noise_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_noise_flickr.csv": "9e9a8290e7e53a7d59626769339f7095879308b6b27023094dacce34f7f0c7d8",
+        "figures/clip_umap_settings_noise_flickr.png": "5f4cae5d76a5f49e8ff774312e74f68e0c174b30b7eb8f07029cd62985e39506",
+        "figures/clip_umap_settings_noise_flickr.svg": "f5861a48532dbca612e34ba2df8bc992bdfae4acd87d220ccbaabfd9f0e4c53c"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/coco_val_clean.npz",
+            "sha256": "7eaab227f725b0bbbf466116db8852dd5ee31399a327aabd4c4b2066deb2f420"
+          },
+          {
+            "path": "clip/lit/coco_val_occl.npz",
+            "sha256": "872553cf0e049dc70fb32f3750f9502d691ca18cb18cc5fc3f3b9c4bf2e96fc3"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_clean.npz",
+            "sha256": "9469123be7fc71a3a639a08fc3e68a5e2f82c18ed9c80acb4781446fa6cd53c4"
+          },
+          {
+            "path": "clip/lora_r16/coco_val_occl.npz",
+            "sha256": "c9aec9aadffeb5d09e7070918b89528b59652fb5ec23f0b3e6b1df02c3985dc2"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_clean.npz",
+            "sha256": "1efafeabc16858f94a420b88fb6ed7aec70880da1bef2f6a6b89dcd6832c3a56"
+          },
+          {
+            "path": "clip/lora_r8/coco_val_occl.npz",
+            "sha256": "edd74149d53217c5e900c3452f2fa648ecbbbfc043bfa9aba80456321ee961cd"
+          },
+          {
+            "path": "clip/pretrained/coco_val_clean.npz",
+            "sha256": "512892c97fb7b9c56d65d8b277d07e711325dd072673cbf6a560d799591953d8"
+          },
+          {
+            "path": "clip/pretrained/coco_val_occl.npz",
+            "sha256": "f86f83d7f3ea2104aa4f8a3d4c3ef5a82b40b5629365b2a289ba95e4d67b5a90"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6979566216468811,
+      "wall_sec": 48.843,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_occl_coco.csv",
+      "figures": [
+        "figures/clip_umap_settings_occl_coco.png",
+        "figures/clip_umap_settings_occl_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_occl_coco.csv": "6c2058a90012ad16704611ae5e96aa369159bd13d2c056eaa8180e0e0bd41d2b",
+        "figures/clip_umap_settings_occl_coco.png": "9a7f7fbac31296ef0e0c814ee217bdb0121b898d95f27a9d41814f419a0d3442",
+        "figures/clip_umap_settings_occl_coco.svg": "a5afb5a036acc49876c752e203d8aa4def2e80071460365a5f328038f4457613",
+        "figures/clip_umap_settings_occl_coco_classes.png": "b4305073ddc13a2db0f0c0994ccd57c646d50cbdaefc1b1dfb7b0d8e629f3c1f",
+        "figures/clip_umap_settings_occl_coco_classes.svg": "c733fea85aa986a20b4f4a7f42fbabcb28656b3c43e17780d834a2fe753cd3bb"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/lit/flickr_val_clean.npz",
+            "sha256": "ed84fb1877e8ce77ca4a69e6e19c2c310af894c24920eba374b09d2cc8e91a42"
+          },
+          {
+            "path": "clip/lit/flickr_val_occl.npz",
+            "sha256": "f9f3b1f5dc816d9a0ef22294a0bfd5c463ff55f2a103b6249a9056d122edc69d"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_clean.npz",
+            "sha256": "682e29b2ff3d7aaf8b5fe495b862dbce28a1b0452c253818d53e212fecbdfa02"
+          },
+          {
+            "path": "clip/lora_r16/flickr_val_occl.npz",
+            "sha256": "5d54bef95d9a66edc8f0ff17d85b103d0e97fe66d48141f5296ced2d55d8a322"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_clean.npz",
+            "sha256": "91bd81a0993b253a9fceaa73ce291d4af44e32d241fbf3e34bb4453ccd3187bd"
+          },
+          {
+            "path": "clip/lora_r8/flickr_val_occl.npz",
+            "sha256": "aa7806442c9e7eae23192e651a4ce2f5ca64ef76650615214966ab012538ca05"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6696670055389404,
+      "wall_sec": 13.009,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_settings_occl_flickr.csv",
+      "figures": [
+        "figures/clip_umap_settings_occl_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_settings_occl_flickr.csv": "203412173ad6a3a2e6cbf54a80ab4c0dcd6a953ec46fb0b6bca0a99bf7092638",
+        "figures/clip_umap_settings_occl_flickr.png": "e3c77a6d5d18e3636cbdd16b64763e6b5a2e623dfde11418e0620dd00b0a1884",
+        "figures/clip_umap_settings_occl_flickr.svg": "23411cf881b399df9bbdec00ac599761d3a772578fc9abd38cc9e15bb39fefde"
+      }
+    },
+    {
+      "config": {
+        "model": "clip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "strength_pretrained",
+        "kind": "strength",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise_lo"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "noise_hi"
+          ],
+          [
+            "pretrained",
+            "occl_lo"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "pretrained",
+            "occl_hi"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "clip/pretrained/flickr_val_clean.npz",
+            "sha256": "b9fa90026f081790bdb6b11f83ac8298163b581c242973c580434842fc0a5f85"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise.npz",
+            "sha256": "e2d67addd80abc0d92b1daed8473c9d923be36138b2f5788d40c40ba2c0f0cb3"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise_hi.npz",
+            "sha256": "be79e8d341919379f2c365006d12a4619cef57b3b635e728d6fa1383b1ab66c2"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_noise_lo.npz",
+            "sha256": "880431314b5cc3229da139bf2d377fd1ccc201e229f312bf03daa77c67cc9fda"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl.npz",
+            "sha256": "9752bd2dd03256638514395e4c65a947a5af3da84331049ec146670fa073e548"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl_hi.npz",
+            "sha256": "bfe92ee2fa08eb868d9608aac5daa214e5c798a6fea736bf1e938a5af0707f01"
+          },
+          {
+            "path": "clip/pretrained/flickr_val_occl_lo.npz",
+            "sha256": "9d5b60505cb7cf18bbef36377a96567008f2f2a289440f3193d88187c4ceef0f"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6393634676933289,
+      "wall_sec": 12.891,
+      "points": 8000,
+      "coordinates": "coordinates/clip_umap_strength_pretrained_flickr.csv",
+      "figures": [
+        "figures/clip_umap_strength_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/clip_umap_strength_pretrained_flickr.csv": "428a8de3c6b90040f8aff6102b72270c9c290bb74e3519faf363d588edaf3bc5",
+        "figures/clip_umap_strength_pretrained_flickr.png": "ce8d9dfd2f0b857c79168b5e0fef176ffd9c61dd712ba39d2867c25a1950229e",
+        "figures/clip_umap_strength_pretrained_flickr.svg": "441e6ee5b5486759264c42ee90b055a8184d0067d252f82c340918ae405a659e"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_noise.npz",
+            "sha256": "12355d75d5dfcc0889bc44b37ad788d8785db16ee7e0ae18edc79f066976a24e"
+          },
+          {
+            "path": "siglip/lit/coco_val_occl.npz",
+            "sha256": "624f8cae6433ea03385cb016138da1ffadc3d3abf1be74046e98a8cdcc95e22d"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7055190801620483,
+      "wall_sec": 17.249,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lit_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lit_coco.png",
+        "figures/siglip_tsne_conditions_lit_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lit_coco.csv": "ac3a0b3bef561f2d643d3ff40d9d1775b7f3d6220358159b4d732d7f0690d97f",
+        "figures/siglip_tsne_conditions_lit_coco.png": "ba6a4110d102225d1ff66b4a0a3d08f41fa09ddb2588478df55a49dd14261eae",
+        "figures/siglip_tsne_conditions_lit_coco.svg": "446764786a04cbf808943541039c6a01c3b3cd9b5366d712cfaec1e7e6f611d3",
+        "figures/siglip_tsne_conditions_lit_coco_classes.png": "ca1d9f4b77c36fab479d6698e6d6a1f1dd53e21a9992f0e760b49cf453f33d03",
+        "figures/siglip_tsne_conditions_lit_coco_classes.svg": "b73ce30982b40e3c66f4c35bcc376a5606cdb1b204163c0ee9b75f77cefb3396"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_noise.npz",
+            "sha256": "8f633c6c97f745a7343c87816a4b32b20d95d8f1a14140f6a7a710bce1771f1e"
+          },
+          {
+            "path": "siglip/lit/flickr_val_occl.npz",
+            "sha256": "6c9c6f46a9ccc2f7e111cbd8c37e3194c28fb255b4a351479bb538804ab96552"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6926597952842712,
+      "wall_sec": 19.879,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lit_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lit_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lit_flickr.csv": "89f67bd38a505998125ecae61b94d1311763f28dae33cde3bda2b9ea2e4ebe1d",
+        "figures/siglip_tsne_conditions_lit_flickr.png": "d3c9c6f3dcc1f1e628bf1c1527a0e4cebd48be1002f982e23675cda66fee2130",
+        "figures/siglip_tsne_conditions_lit_flickr.svg": "c36918e133d44048ffed558bd7cdf08e8bc32e07277da30dc94a445f28c8e721"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_noise.npz",
+            "sha256": "75946582b16d97a2b730c51f51c436266e910ade538784bac7f98d00363ce099"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_occl.npz",
+            "sha256": "ddcac1e77f9fd2eaf8dbccbc5a00f26ce82efbe9e130eb7c33bd674d70e883e5"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7188451886177063,
+      "wall_sec": 14.672,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lora_r16_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lora_r16_coco.png",
+        "figures/siglip_tsne_conditions_lora_r16_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lora_r16_coco.csv": "6834293423347bbe6e549b2cf675cbdb98573ab0471f0ac59970f1e788dd70a1",
+        "figures/siglip_tsne_conditions_lora_r16_coco.png": "99b15fc050452ffcfa2b97ed9ebd123fa9ce920e36ba1942eb79b8e0217a15c8",
+        "figures/siglip_tsne_conditions_lora_r16_coco.svg": "3a0d22a91ddbfbbdb857a422e9e60a97da14fd51b46fbc54031e015882616cbe",
+        "figures/siglip_tsne_conditions_lora_r16_coco_classes.png": "7ed65f5cc15807e6ac34bac94f7c522c626695b2d4100d87cd519716b931fa26",
+        "figures/siglip_tsne_conditions_lora_r16_coco_classes.svg": "52069028b09ab882dee30d69fc79d9c3a0c998795486f539c53d15d95d2ac6c8"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_noise.npz",
+            "sha256": "159d004b283792c23489e3055adc47cf8ffb050c1ac5721b6600546a8c3a4eb1"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_occl.npz",
+            "sha256": "adbefb6c84df04290f6174ab973f4fefbbe6da2cbf7a41ad60d7e99e6f5f0abb"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7064881920814514,
+      "wall_sec": 17.373,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lora_r16_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lora_r16_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lora_r16_flickr.csv": "024fec690604481919bb7156846533b3a5e5e47a30dfad86f83fc3c4b86f9886",
+        "figures/siglip_tsne_conditions_lora_r16_flickr.png": "292e376cd315172dddad68321cbe1d02990cf5ddf71efa4248f6aac3ff253da4",
+        "figures/siglip_tsne_conditions_lora_r16_flickr.svg": "80a56f3096bb4656834abf98a4688fc9b305d06aec45ad3a74f53fdf075d5d46"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_noise.npz",
+            "sha256": "9fabe95e209dfd2ead323b35864185c98de1ada1cc25e152f6d220f5ca8a67c4"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_occl.npz",
+            "sha256": "84f288bbe2d45ad42a034f7d3b3cdf259475367a4c483297adfeb6d08dc29c32"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7171306014060974,
+      "wall_sec": 15.713,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lora_r8_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lora_r8_coco.png",
+        "figures/siglip_tsne_conditions_lora_r8_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lora_r8_coco.csv": "cb3deb419066e48ebbfba5b1cb60f4b9d31ea3e46791599ad9f417579aa20685",
+        "figures/siglip_tsne_conditions_lora_r8_coco.png": "cc18ca9e49266ec9fe65e59ae0c0ebbd3a0172d3c58dd0a7efdeb8e60e1bb551",
+        "figures/siglip_tsne_conditions_lora_r8_coco.svg": "5e411928888122d4d09c72666a1c81b80f370e9c8b292cc014d717cc2ceb79cd",
+        "figures/siglip_tsne_conditions_lora_r8_coco_classes.png": "0cf9a8b1b19c5e68f4b7e4730ca9f97b538265f2ae607d889ce04606fd16bf23",
+        "figures/siglip_tsne_conditions_lora_r8_coco_classes.svg": "396a91c8984df9b8d0b982453091cf2e89789fc1d16b000c9037a57cf481af0d"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_noise.npz",
+            "sha256": "e53f2a0db5b042387e2ca5e31873b93241a75fb300fd60098e18fe4c64520e1b"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_occl.npz",
+            "sha256": "ae83626fbf1630660a26ab8fb1dc079d6526337456b73812d6f94014e0efa27f"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7028075456619263,
+      "wall_sec": 17.651,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_lora_r8_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_lora_r8_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_lora_r8_flickr.csv": "546a318a4efc0ea4c0aa104fb4f3decacf542b1dffe44bf4dcc4ed3d63b1cfd5",
+        "figures/siglip_tsne_conditions_lora_r8_flickr.png": "3c863f9897fa06d76e01e149c292bd4c48562d49b0edaafeb1436fa54d2de185",
+        "figures/siglip_tsne_conditions_lora_r8_flickr.svg": "c99d969d4e36d2e76909c5ab2a1289bdaddcc05e0a088ccb791629559598015b"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_noise.npz",
+            "sha256": "06d919b1e512bd455dbac6c9771d30f5d6f3baac9f9e983abb7dd05a224c48c1"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_occl.npz",
+            "sha256": "0365871425deb55d78e16e0c76d6dc8c0bccb3494ca98f1482537e12cb2d8a41"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7108216285705566,
+      "wall_sec": 16.025,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_pretrained_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_pretrained_coco.png",
+        "figures/siglip_tsne_conditions_pretrained_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_pretrained_coco.csv": "56e4d0679e0cc5d9578a3d9ed9643a5403b070b1fe0f80aecca3e6926aa7042c",
+        "figures/siglip_tsne_conditions_pretrained_coco.png": "9d91b2bba7c6210a663d4738721c5863359bf09d648180ede94a0e39e742b0d4",
+        "figures/siglip_tsne_conditions_pretrained_coco.svg": "f8448091bfdbcf87c10c0fbbe6f0b2d714cdb6f2157b5602c2624bfa0cfc9190",
+        "figures/siglip_tsne_conditions_pretrained_coco_classes.png": "ad58a1953d050ac4770b8425fcbbac035e157fc9cc8637697ce71b12e326e3af",
+        "figures/siglip_tsne_conditions_pretrained_coco_classes.svg": "4d649465d86a746c3219d3630a5c6d7b94e5dad345a5c14fe20023f219fca48d"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_noise.npz",
+            "sha256": "1b4368f05ab081995ba5f5a193d4b90ab8eb6598034f90f02d0bc2cf061348ec"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_occl.npz",
+            "sha256": "9323c4c4fcf4d773caf8b26483ba18b716850bd0aaf0fb7b956bf11d1c8c0734"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6919074654579163,
+      "wall_sec": 17.356,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_tsne_conditions_pretrained_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_conditions_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_conditions_pretrained_flickr.csv": "0f2ac78c0c5a7afd44fa7784597f5c9f86d3fa14df203aca6bc769e59462ea21",
+        "figures/siglip_tsne_conditions_pretrained_flickr.png": "d557359282c452fdd039235c8e9908a98969756979e4f8cc0518983a847416cf",
+        "figures/siglip_tsne_conditions_pretrained_flickr.svg": "e2f518737e71af2480301b798938bb6bbd81188645f9639d8ebd1ae654964363"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7154242992401123,
+      "wall_sec": 32.659,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_clean_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_clean_coco.png",
+        "figures/siglip_tsne_settings_clean_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_clean_coco.csv": "89e28631b37f74325c5599da89c37cf376d87b121537d4998d45831e8b58ae40",
+        "figures/siglip_tsne_settings_clean_coco.png": "b5685db4228f3cb9058b207e1525f43136d710ff4a86b0957db55aede1a66504",
+        "figures/siglip_tsne_settings_clean_coco.svg": "f1aec4ae2c55a3670808ed68bcf7b60471b13ad72b9c260361a4ef60dec4657a",
+        "figures/siglip_tsne_settings_clean_coco_classes.png": "db45513fa8277b3deb6022ac1f657956a52437746fd25cf34d9ecedde5287317",
+        "figures/siglip_tsne_settings_clean_coco_classes.svg": "3cd0bb4c1f3b7a61d27b7c76ff85e931f3339d1f950474019a4b0abea1e44517"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6962428092956543,
+      "wall_sec": 36.876,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_clean_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_clean_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_clean_flickr.csv": "d612363bdde093be4e1a2b32798ea87a4f8ba4b74f91d8bb9f734ed09b1ca508",
+        "figures/siglip_tsne_settings_clean_flickr.png": "4c20c2512f01f595c3824271420fc82461ba6aceaa170fd66bb98b907e5199c8",
+        "figures/siglip_tsne_settings_clean_flickr.svg": "8079f8f774559f3c698ee541f210515a92385993ec592da5ebdec97d5d4c19b8"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_noise.npz",
+            "sha256": "12355d75d5dfcc0889bc44b37ad788d8785db16ee7e0ae18edc79f066976a24e"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_noise.npz",
+            "sha256": "75946582b16d97a2b730c51f51c436266e910ade538784bac7f98d00363ce099"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_noise.npz",
+            "sha256": "9fabe95e209dfd2ead323b35864185c98de1ada1cc25e152f6d220f5ca8a67c4"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_noise.npz",
+            "sha256": "06d919b1e512bd455dbac6c9771d30f5d6f3baac9f9e983abb7dd05a224c48c1"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7357110381126404,
+      "wall_sec": 31.963,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_noise_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_noise_coco.png",
+        "figures/siglip_tsne_settings_noise_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_noise_coco.csv": "71fe423b60da8f2cee6e6765e19a93b10755b2b19c757436a35c57cec13c20b7",
+        "figures/siglip_tsne_settings_noise_coco.png": "f07e3f9e753aefdda1c51e7f63a7a352333d927726a7212969e479c9a1ee734f",
+        "figures/siglip_tsne_settings_noise_coco.svg": "14b117f5e3e12bdbe4c9f249d7946f5e63a179d1134e943009cfe58ee77eb88d",
+        "figures/siglip_tsne_settings_noise_coco_classes.png": "cdb179568ece3b1825a8d74b16a005fbf9540df14b366e388dc9eacc79be53f8",
+        "figures/siglip_tsne_settings_noise_coco_classes.svg": "116ded4316f29305ba0f64f097983826c0ef8bc1201ffaaf3de5294cb3089050"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_noise.npz",
+            "sha256": "8f633c6c97f745a7343c87816a4b32b20d95d8f1a14140f6a7a710bce1771f1e"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_noise.npz",
+            "sha256": "159d004b283792c23489e3055adc47cf8ffb050c1ac5721b6600546a8c3a4eb1"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_noise.npz",
+            "sha256": "e53f2a0db5b042387e2ca5e31873b93241a75fb300fd60098e18fe4c64520e1b"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_noise.npz",
+            "sha256": "1b4368f05ab081995ba5f5a193d4b90ab8eb6598034f90f02d0bc2cf061348ec"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7122690081596375,
+      "wall_sec": 33.981,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_noise_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_noise_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_noise_flickr.csv": "b41ca4b0482f28dab3ab367372921b0385a39c244079175ef6e1997c029b35bd",
+        "figures/siglip_tsne_settings_noise_flickr.png": "8a7b64e670aac75720b43e39d8307cbf3aefe12e1c3aa156adac370e8a098d8c",
+        "figures/siglip_tsne_settings_noise_flickr.svg": "7b525517310123dc6fd0362ed33490a229c922867b6640b9fb2b245fa666c594"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_occl.npz",
+            "sha256": "624f8cae6433ea03385cb016138da1ffadc3d3abf1be74046e98a8cdcc95e22d"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_occl.npz",
+            "sha256": "ddcac1e77f9fd2eaf8dbccbc5a00f26ce82efbe9e130eb7c33bd674d70e883e5"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_occl.npz",
+            "sha256": "84f288bbe2d45ad42a034f7d3b3cdf259475367a4c483297adfeb6d08dc29c32"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_occl.npz",
+            "sha256": "0365871425deb55d78e16e0c76d6dc8c0bccb3494ca98f1482537e12cb2d8a41"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.729853630065918,
+      "wall_sec": 33.384,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_occl_coco.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_occl_coco.png",
+        "figures/siglip_tsne_settings_occl_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_occl_coco.csv": "68000b288a9cfb25db481f06d9f0d698d64bdf1f9d4e786f0c3550c6c6f0c526",
+        "figures/siglip_tsne_settings_occl_coco.png": "026121b1649f023abda10f91b131ae0e4563bab5effd46e4a0a69d4d3d762995",
+        "figures/siglip_tsne_settings_occl_coco.svg": "251146e2bd94f3579796929c3d7e00361f19ee350d0afafb6d74c47c08b7d5ab",
+        "figures/siglip_tsne_settings_occl_coco_classes.png": "da63556e0c7c9032acaa3c35d221636eb67b90bfa25cf22fe0cca3e3f5eaafbe",
+        "figures/siglip_tsne_settings_occl_coco_classes.svg": "ce84ad9db99c98186b54b7143ed050a6cc5a3011f0e7cb0817717edf1bf9920d"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "tsne",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_occl.npz",
+            "sha256": "6c9c6f46a9ccc2f7e111cbd8c37e3194c28fb255b4a351479bb538804ab96552"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_occl.npz",
+            "sha256": "adbefb6c84df04290f6174ab973f4fefbbe6da2cbf7a41ad60d7e99e6f5f0abb"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_occl.npz",
+            "sha256": "ae83626fbf1630660a26ab8fb1dc079d6526337456b73812d6f94014e0efa27f"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_occl.npz",
+            "sha256": "9323c4c4fcf4d773caf8b26483ba18b716850bd0aaf0fb7b956bf11d1c8c0734"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7068856358528137,
+      "wall_sec": 37.468,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_tsne_settings_occl_flickr.csv",
+      "figures": [
+        "figures/siglip_tsne_settings_occl_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_tsne_settings_occl_flickr.csv": "8180913c63d7a5ccb7c7f0bceb3f5bf60ea70a52e357c205d549568913727386",
+        "figures/siglip_tsne_settings_occl_flickr.png": "ece96e07e49dbeda4225cb6208ab08a2b03ce67c5adebb71f3a60cd3b200d7d4",
+        "figures/siglip_tsne_settings_occl_flickr.svg": "2edccb1b953ea3d845f56ef2d72395e40e47bd193564192a8f0e3bb039014162"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_noise.npz",
+            "sha256": "12355d75d5dfcc0889bc44b37ad788d8785db16ee7e0ae18edc79f066976a24e"
+          },
+          {
+            "path": "siglip/lit/coco_val_occl.npz",
+            "sha256": "624f8cae6433ea03385cb016138da1ffadc3d3abf1be74046e98a8cdcc95e22d"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7055190801620483,
+      "wall_sec": 14.006,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lit_coco.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lit_coco.png",
+        "figures/siglip_umap_conditions_lit_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lit_coco.csv": "08495bfeab5b3615907e86dd12d74e042c3ee77aa0b7f8ea4afa508722529e55",
+        "figures/siglip_umap_conditions_lit_coco.png": "a5a42ddd4204210272db732edd44ae603f07416cf09cda2f96ee18852a604c65",
+        "figures/siglip_umap_conditions_lit_coco.svg": "a760a543fcd7d82cc52f737f0bb7689979de48a07583b67e03ad22bf428a40db",
+        "figures/siglip_umap_conditions_lit_coco_classes.png": "547b40c79274db373d0a0bb171d00aa6e3399cf6ec25e867f2f4cff2127b2329",
+        "figures/siglip_umap_conditions_lit_coco_classes.svg": "877df7f7ea862067fcac7f7b0428dfdf0500befd554cc4646d0c098ad2592a9d"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lit",
+        "kind": "conditions",
+        "members": [
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lit",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_noise.npz",
+            "sha256": "8f633c6c97f745a7343c87816a4b32b20d95d8f1a14140f6a7a710bce1771f1e"
+          },
+          {
+            "path": "siglip/lit/flickr_val_occl.npz",
+            "sha256": "6c9c6f46a9ccc2f7e111cbd8c37e3194c28fb255b4a351479bb538804ab96552"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6926597952842712,
+      "wall_sec": 12.978,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lit_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lit_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lit_flickr.csv": "b3204c1d094795fb15a107e51840de59f7ac6b4c5a981274fcc41e40cadb2265",
+        "figures/siglip_umap_conditions_lit_flickr.png": "5d4133602168cc53d3f2c9ed48229cecbcbcb57f2854b378339d64fc418b8c59",
+        "figures/siglip_umap_conditions_lit_flickr.svg": "6df658e5f43a78a6596162e469ff459662d945026a9dd42660e43529c6e0d4d2"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_noise.npz",
+            "sha256": "75946582b16d97a2b730c51f51c436266e910ade538784bac7f98d00363ce099"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_occl.npz",
+            "sha256": "ddcac1e77f9fd2eaf8dbccbc5a00f26ce82efbe9e130eb7c33bd674d70e883e5"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7188451886177063,
+      "wall_sec": 13.212,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lora_r16_coco.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lora_r16_coco.png",
+        "figures/siglip_umap_conditions_lora_r16_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lora_r16_coco.csv": "6870cde75c3ef99368ae4040933213997f488a6b46ea02257f41f2dbb0947085",
+        "figures/siglip_umap_conditions_lora_r16_coco.png": "4b1f20d4e03ae8b45b95cf6de7cc5eb8f93fccb98ca51831f7c441356f129670",
+        "figures/siglip_umap_conditions_lora_r16_coco.svg": "b3600b8c3d1fd08df38caefcb97c424d78535207bf263ab10e91f642fb7396f5",
+        "figures/siglip_umap_conditions_lora_r16_coco_classes.png": "06fe16e67c7401c2bf2c405fbc67b9f17782f488266be14ac2f22aa8fbec13e3",
+        "figures/siglip_umap_conditions_lora_r16_coco_classes.svg": "b128a3c2beb4415a483acdf1b1ead498de0fd8ab708bc11d3f191273b215e6c1"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r16",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r16",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_noise.npz",
+            "sha256": "159d004b283792c23489e3055adc47cf8ffb050c1ac5721b6600546a8c3a4eb1"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_occl.npz",
+            "sha256": "adbefb6c84df04290f6174ab973f4fefbbe6da2cbf7a41ad60d7e99e6f5f0abb"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7064881920814514,
+      "wall_sec": 12.521,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lora_r16_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lora_r16_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lora_r16_flickr.csv": "a5885b49f9f3907a4f99c0a2ff211b101cfe80694032c331960dc3d6e08a5e84",
+        "figures/siglip_umap_conditions_lora_r16_flickr.png": "488848a46c7e6f5cc55016725e5978e5f4a3531feb328a15333b7a418b2555ce",
+        "figures/siglip_umap_conditions_lora_r16_flickr.svg": "ea0b858a8c919843711d391237ddb61f2f580f916889d1e53885e7cb281fcd20"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_noise.npz",
+            "sha256": "9fabe95e209dfd2ead323b35864185c98de1ada1cc25e152f6d220f5ca8a67c4"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_occl.npz",
+            "sha256": "84f288bbe2d45ad42a034f7d3b3cdf259475367a4c483297adfeb6d08dc29c32"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7171306014060974,
+      "wall_sec": 13.848,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lora_r8_coco.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lora_r8_coco.png",
+        "figures/siglip_umap_conditions_lora_r8_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lora_r8_coco.csv": "4ef75e885d08852971c1fd1ada2a4beec7856118fb91a6bf35898d594bf31a3c",
+        "figures/siglip_umap_conditions_lora_r8_coco.png": "950da3471b9ff94e20fc44f95bc5d0e271beb1305ec428c691d7b70c8642abc6",
+        "figures/siglip_umap_conditions_lora_r8_coco.svg": "cde73d6248f2796fb69f8c4a1117e94512b1401959cb65fcc208b9ccbdbd2f1a",
+        "figures/siglip_umap_conditions_lora_r8_coco_classes.png": "82122dccb4bb22e2d19afee3463836c5b00ec26fe476a917f110cecfea591706",
+        "figures/siglip_umap_conditions_lora_r8_coco_classes.svg": "1e33d2de03e1c4da435ea06cdfc53b89c0d1e86df9589b26409a7c3887551dfc"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_lora_r8",
+        "kind": "conditions",
+        "members": [
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_noise.npz",
+            "sha256": "e53f2a0db5b042387e2ca5e31873b93241a75fb300fd60098e18fe4c64520e1b"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_occl.npz",
+            "sha256": "ae83626fbf1630660a26ab8fb1dc079d6526337456b73812d6f94014e0efa27f"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7028075456619263,
+      "wall_sec": 12.874,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_lora_r8_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_lora_r8_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_lora_r8_flickr.csv": "8167f0ac913ee1ef826aa28b8ad04b8d610519d15141c62f455f6b61b6ea0add",
+        "figures/siglip_umap_conditions_lora_r8_flickr.png": "d5f8f664c7c1da7246e2bc005537f6c88416d641c4c353cedce8542fab6eae5b",
+        "figures/siglip_umap_conditions_lora_r8_flickr.svg": "728f6272a9edbb94592e7ecb2094e48c022b0611810a190ee7afa5dd92426992"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_noise.npz",
+            "sha256": "06d919b1e512bd455dbac6c9771d30f5d6f3baac9f9e983abb7dd05a224c48c1"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_occl.npz",
+            "sha256": "0365871425deb55d78e16e0c76d6dc8c0bccb3494ca98f1482537e12cb2d8a41"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7108216285705566,
+      "wall_sec": 13.273,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_pretrained_coco.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_pretrained_coco.png",
+        "figures/siglip_umap_conditions_pretrained_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_pretrained_coco.csv": "d92496dc613c7d620e46580b1605e673b03ad3227c9e15a90377a8f7ba94bc49",
+        "figures/siglip_umap_conditions_pretrained_coco.png": "15c0d85e24606e3ff8e7121ee404f131c8d15dbe8ed11ac823089cf60227886c",
+        "figures/siglip_umap_conditions_pretrained_coco.svg": "6973a126115dff206cfca890e547d2c337c6da23360770e2f07b2d49fb0fe478",
+        "figures/siglip_umap_conditions_pretrained_coco_classes.png": "daaa0c6b34dc0eb55cc5287f0ad6ce44db8d5965e9e36d4fcd5e81259f15eb58",
+        "figures/siglip_umap_conditions_pretrained_coco_classes.svg": "bb15ba5bb5d6bf3e8d6fae4ed71e99911347dd6bf936b602649aa08bb44e6bae"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "conditions_pretrained",
+        "kind": "conditions",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "pretrained",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_noise.npz",
+            "sha256": "1b4368f05ab081995ba5f5a193d4b90ab8eb6598034f90f02d0bc2cf061348ec"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_occl.npz",
+            "sha256": "9323c4c4fcf4d773caf8b26483ba18b716850bd0aaf0fb7b956bf11d1c8c0734"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6919074654579163,
+      "wall_sec": 17.366,
+      "points": 4000,
+      "coordinates": "coordinates/siglip_umap_conditions_pretrained_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_conditions_pretrained_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_conditions_pretrained_flickr.csv": "a9f58988ee6ca06c6286a9ffd5086f1d465e4bebe298274d052955d8202e838e",
+        "figures/siglip_umap_conditions_pretrained_flickr.png": "c313baef982a364e0254ef14831926c36028f14f88251bc17c3c1da7c6ac1cae",
+        "figures/siglip_umap_conditions_pretrained_flickr.svg": "03498974db895219f2dfbbfce2b2f40be8b5da44578b2732638a715a5c74bd5d"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7154242992401123,
+      "wall_sec": 11.483,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_clean_coco.csv",
+      "figures": [
+        "figures/siglip_umap_settings_clean_coco.png",
+        "figures/siglip_umap_settings_clean_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_clean_coco.csv": "2ad7e24a7f1bc22c06402fe0a9cef7b45ef0cd30efd20cd9930707a543db6185",
+        "figures/siglip_umap_settings_clean_coco.png": "afcdf491cac5d6fb67fe0a48fb82abed33e38e0e135925a64c7b7bbb6e056618",
+        "figures/siglip_umap_settings_clean_coco.svg": "a0c38a2ad1c28d084c26dce2cff09ddeae7eeb781912e4ddb3e2a8a5cdcfa7b0",
+        "figures/siglip_umap_settings_clean_coco_classes.png": "0e9b95180732b8263fdff75bab09dc757f11b2285f9dd25efb52d0367a37f021",
+        "figures/siglip_umap_settings_clean_coco_classes.svg": "54becc313570f57a66998a8b0718d6a35f1938121e70aa9882bb871f07dbb877"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_clean",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "clean"
+          ],
+          [
+            "lit",
+            "clean"
+          ],
+          [
+            "lora_r8",
+            "clean"
+          ],
+          [
+            "lora_r16",
+            "clean"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.6962428092956543,
+      "wall_sec": 41.139,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_clean_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_settings_clean_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_clean_flickr.csv": "7590c283e895a72d2d119811522d99390940370ec2d64fcd455df00cdb3ab0c3",
+        "figures/siglip_umap_settings_clean_flickr.png": "38f3da3c8181f28d31bd5f1e7b394df2d86d1cce162fd9d35a949153b12f9879",
+        "figures/siglip_umap_settings_clean_flickr.svg": "36ea879bc18c9d9398a55ad5b23b0d95ab51cdaaa47eb8aee6006b1e9cb9d7f3"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_noise.npz",
+            "sha256": "12355d75d5dfcc0889bc44b37ad788d8785db16ee7e0ae18edc79f066976a24e"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_noise.npz",
+            "sha256": "75946582b16d97a2b730c51f51c436266e910ade538784bac7f98d00363ce099"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_noise.npz",
+            "sha256": "9fabe95e209dfd2ead323b35864185c98de1ada1cc25e152f6d220f5ca8a67c4"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_noise.npz",
+            "sha256": "06d919b1e512bd455dbac6c9771d30f5d6f3baac9f9e983abb7dd05a224c48c1"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7357110381126404,
+      "wall_sec": 12.359,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_noise_coco.csv",
+      "figures": [
+        "figures/siglip_umap_settings_noise_coco.png",
+        "figures/siglip_umap_settings_noise_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_noise_coco.csv": "bc4b0977449f834be9a1a31e1e1be3d2f33b4419d3536534d6784686945bf211",
+        "figures/siglip_umap_settings_noise_coco.png": "0412cd5d48b5bdf0a299dd679d9b08f6e17747249da25417a8a7245dc9ca89a3",
+        "figures/siglip_umap_settings_noise_coco.svg": "0e7c2c47a6055850e4b5a18ceb004d4dd39078fe43292a81bde899e5e56df44e",
+        "figures/siglip_umap_settings_noise_coco_classes.png": "2eceff53f714abb3636263eff52f4092ae3b18daff70341df48a1bde4825f5e6",
+        "figures/siglip_umap_settings_noise_coco_classes.svg": "0e6bd7c5edc9d71c86a7435876fccf9133572354fbf53e7baad9e499a7e33cc3"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_noise",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "noise"
+          ],
+          [
+            "lit",
+            "noise"
+          ],
+          [
+            "lora_r8",
+            "noise"
+          ],
+          [
+            "lora_r16",
+            "noise"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_noise.npz",
+            "sha256": "8f633c6c97f745a7343c87816a4b32b20d95d8f1a14140f6a7a710bce1771f1e"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_noise.npz",
+            "sha256": "159d004b283792c23489e3055adc47cf8ffb050c1ac5721b6600546a8c3a4eb1"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_noise.npz",
+            "sha256": "e53f2a0db5b042387e2ca5e31873b93241a75fb300fd60098e18fe4c64520e1b"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_noise.npz",
+            "sha256": "1b4368f05ab081995ba5f5a193d4b90ab8eb6598034f90f02d0bc2cf061348ec"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7122690081596375,
+      "wall_sec": 10.041,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_noise_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_settings_noise_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_noise_flickr.csv": "a1feca31875139d7f7dbfff29ee02207f9630d4f17553bce45310f2e2928a7e6",
+        "figures/siglip_umap_settings_noise_flickr.png": "e4bbbd3106e1a9cd381674c64b44596ffddd01b56324350a761e0017ce6e7109",
+        "figures/siglip_umap_settings_noise_flickr.svg": "fede5b86c29611398313ec4921e1ab231e8fd3eab44c66d77c1025416575cf34"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "coco",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/coco_val_clean.npz",
+            "sha256": "1f946fcf898aea5d1986b21ff056d5cd5b97cb5c6728c42d539b2c6967f5c836"
+          },
+          {
+            "path": "siglip/lit/coco_val_occl.npz",
+            "sha256": "624f8cae6433ea03385cb016138da1ffadc3d3abf1be74046e98a8cdcc95e22d"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_clean.npz",
+            "sha256": "641e14f5dc59d6b7f13014039c32c33a7f4bdf2e299c93559ae7950009eb6da5"
+          },
+          {
+            "path": "siglip/lora_r16/coco_val_occl.npz",
+            "sha256": "ddcac1e77f9fd2eaf8dbccbc5a00f26ce82efbe9e130eb7c33bd674d70e883e5"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_clean.npz",
+            "sha256": "0afe831ac45c31ea5115d8639b159e92eb5c54bd55654fb0e8605fb3e913b524"
+          },
+          {
+            "path": "siglip/lora_r8/coco_val_occl.npz",
+            "sha256": "84f288bbe2d45ad42a034f7d3b3cdf259475367a4c483297adfeb6d08dc29c32"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_clean.npz",
+            "sha256": "3c9b66f9263e3adb8ca2bf556102b0b9e94bad2bd7f1f6b00a0397def454d67e"
+          },
+          {
+            "path": "siglip/pretrained/coco_val_occl.npz",
+            "sha256": "0365871425deb55d78e16e0c76d6dc8c0bccb3494ca98f1482537e12cb2d8a41"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.729853630065918,
+      "wall_sec": 11.431,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_occl_coco.csv",
+      "figures": [
+        "figures/siglip_umap_settings_occl_coco.png",
+        "figures/siglip_umap_settings_occl_coco_classes.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_occl_coco.csv": "3bc8d90c78fb29d4b1cee147a9003f463ac399dfde40252baf600b4f30bf929b",
+        "figures/siglip_umap_settings_occl_coco.png": "5c210192c39a906bd6bc429965a671acc47d4fc645d89653ca7c2e9d010c8685",
+        "figures/siglip_umap_settings_occl_coco.svg": "032bd48a8070cadb89595484eaa94e57126714538ba7346b6d4b3526cb188c05",
+        "figures/siglip_umap_settings_occl_coco_classes.png": "c2c5ae8ae46d2eca3a79bff32a3ecf0a65d81b7ef8f18129beaedb66f964439c",
+        "figures/siglip_umap_settings_occl_coco_classes.svg": "482e69636c27b6a23794ac6dff5a2ea37ec1ccc96ea6287e04ee6ab320e4bf37"
+      }
+    },
+    {
+      "config": {
+        "model": "siglip",
+        "dataset": "flickr",
+        "split": "val",
+        "group": "settings_occl",
+        "kind": "settings",
+        "members": [
+          [
+            "pretrained",
+            "occl"
+          ],
+          [
+            "lit",
+            "occl"
+          ],
+          [
+            "lora_r8",
+            "occl"
+          ],
+          [
+            "lora_r16",
+            "occl"
+          ]
+        ],
+        "method": "umap",
+        "n_images": 1000,
+        "seed": 42,
+        "demo": false,
+        "pca_components": 50,
+        "perplexity": 30,
+        "init": "pca",
+        "max_iter": 1000,
+        "n_neighbors": 15,
+        "min_dist": 0.1,
+        "text_fit": "once_per_setting",
+        "sources": [
+          {
+            "path": "siglip/lit/flickr_val_clean.npz",
+            "sha256": "cf8838528900ffbf3b7a62de9e5015262a2a21b7892afff1bfef8e10a119d085"
+          },
+          {
+            "path": "siglip/lit/flickr_val_occl.npz",
+            "sha256": "6c9c6f46a9ccc2f7e111cbd8c37e3194c28fb255b4a351479bb538804ab96552"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_clean.npz",
+            "sha256": "9e62ea49f9d6840374dfabc54b9d072de4de8aaa0503f3f760796733065162eb"
+          },
+          {
+            "path": "siglip/lora_r16/flickr_val_occl.npz",
+            "sha256": "adbefb6c84df04290f6174ab973f4fefbbe6da2cbf7a41ad60d7e99e6f5f0abb"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_clean.npz",
+            "sha256": "ed2549ebec06c0877291ed72ff64ac97ac2e29baa5930b0a8a463e84a171bb37"
+          },
+          {
+            "path": "siglip/lora_r8/flickr_val_occl.npz",
+            "sha256": "ae83626fbf1630660a26ab8fb1dc079d6526337456b73812d6f94014e0efa27f"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_clean.npz",
+            "sha256": "9364236862ce0d941f966f241f9e757f85ae0681381f19db48657e22a2bca753"
+          },
+          {
+            "path": "siglip/pretrained/flickr_val_occl.npz",
+            "sha256": "9323c4c4fcf4d773caf8b26483ba18b716850bd0aaf0fb7b956bf11d1c8c0734"
+          }
+        ],
+        "script_sha256": "1aef926ed801a3b4a593966d79fbfed9ffacacc4a856b6f4c73bfe6653bd9988",
+        "style_sha256": "0e7d7fa5d6c28830f01d4de35c7c63e69fc5797ec13fa858fcd9c7e6a72df8f3",
+        "versions": {
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "umap-learn": "0.5.7",
+          "matplotlib": "3.9.2",
+          "pandas": "2.2.3"
+        }
+      },
+      "pca_explained_variance_ratio": 0.7068856358528137,
+      "wall_sec": 9.831,
+      "points": 8000,
+      "coordinates": "coordinates/siglip_umap_settings_occl_flickr.csv",
+      "figures": [
+        "figures/siglip_umap_settings_occl_flickr.png"
+      ],
+      "artifacts": {
+        "coordinates/siglip_umap_settings_occl_flickr.csv": "adc0b5fda4bbecbc3cde02868a7acbe91891aec09688160d21bb1b402157e7fa",
+        "figures/siglip_umap_settings_occl_flickr.png": "044bbe4710626441d3df7ca5a2e0d6ac78a0d8ca8283ae7f9e1e36e9aab760f2",
+        "figures/siglip_umap_settings_occl_flickr.svg": "ece9ff2db24f23ada34aeb63e52635eaa875cd6ac462f08fb50aa9bf3b7eea46"
+      }
+    }
+  ]
+}

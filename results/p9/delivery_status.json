@@ -1,0 +1,17 @@
+{
+  "projections_complete": true,
+  "figures": 86,
+  "indexed_figures": 161,
+  "table_count": 7,
+  "tables_missing": [
+    "svd",
+    "strength"
+  ],
+  "summary_workbook_available": false,
+  "missing_logs": [
+    "P3",
+    "P6"
+  ],
+  "consistency_passed": true,
+  "complete": false
+}

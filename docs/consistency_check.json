@@ -1,0 +1,162 @@
+{
+  "seed": 42,
+  "checks": [
+    {
+      "kind": "number",
+      "item": "retrieval_retrieval_val row 13 t2i_R5",
+      "source": "results/retrieval_val.csv data row 51",
+      "raw": 79.45880452,
+      "display": "79.5%",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 287 n",
+      "source": "results/drift_cosine.csv data row 192",
+      "raw": 5000.0,
+      "display": "5000",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "retrieval_retrieval_val row 16 i2t_R1",
+      "source": "results/retrieval_val.csv data row 71",
+      "raw": 75.40387722,
+      "display": "75.4%",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 203 p95",
+      "source": "results/drift_cosine.csv data row 160",
+      "raw": 0.9707940881,
+      "display": "0.9708",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 51 std",
+      "source": "results/drift_cosine.csv data row 278",
+      "raw": 0.05000206338,
+      "display": "0.0500",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 47 std",
+      "source": "results/drift_cosine.csv data row 274",
+      "raw": 0.03992778366,
+      "display": "0.0399",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 234 p50",
+      "source": "results/drift_cosine.csv data row 447",
+      "raw": 0.9607393495,
+      "display": "0.9607",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "retrieval_retrieval_val row 19 t2i_R5",
+      "source": "results/retrieval_val.csv data row 61",
+      "raw": 82.76252019,
+      "display": "82.8%",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "alignment_uniformity row 14 unif_txt",
+      "source": "results/geometry_metrics.csv data row 59",
+      "raw": -1.794644041524538,
+      "display": "-1.7946",
+      "pass": true
+    },
+    {
+      "kind": "number",
+      "item": "drift row 348 std",
+      "source": "results/drift_cosine.csv data row 26",
+      "raw": 0.07238005185,
+      "display": "0.0724",
+      "pass": true
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/siglip_tsne_settings_occl_flickr.png",
+      "source": "results/p9/coordinates/siglip_tsne_settings_occl_flickr.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/clip_umap_conditions_pretrained_flickr.png",
+      "source": "results/p9/coordinates/clip_umap_conditions_pretrained_flickr.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/clip_umap_conditions_lora_r8_coco_classes.png",
+      "source": "results/p9/coordinates/clip_umap_conditions_lora_r8_coco.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/siglip_tsne_conditions_pretrained_coco.png",
+      "source": "results/p9/coordinates/siglip_tsne_conditions_pretrained_coco.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/siglip_umap_conditions_lora_r16_coco_classes.png",
+      "source": "results/p9/coordinates/siglip_umap_conditions_lora_r16_coco.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/clip_tsne_settings_clean_flickr.png",
+      "source": "results/p9/coordinates/clip_tsne_settings_clean_flickr.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/clip_umap_settings_clean_coco.png",
+      "source": "results/p9/coordinates/clip_umap_settings_clean_coco.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/clip_umap_settings_noise_flickr.png",
+      "source": "results/p9/coordinates/clip_umap_settings_noise_flickr.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/siglip_tsne_conditions_lit_flickr.png",
+      "source": "results/p9/coordinates/siglip_tsne_conditions_lit_flickr.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    },
+    {
+      "kind": "figure",
+      "item": "results/p9/figures/siglip_umap_conditions_pretrained_coco_classes.png",
+      "source": "results/p9/coordinates/siglip_umap_conditions_pretrained_coco.csv",
+      "pass": true,
+      "checks": "input/output SHA256, coordinate rows, finite values, first caption, 300 dpi, PNG/SVG"
+    }
+  ],
+  "numbers_checked": 10,
+  "figures_checked": 10,
+  "passed": true,
+  "missing_tables": [
+    "svd",
+    "strength"
+  ]
+}
