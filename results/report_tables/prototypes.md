@@ -1,0 +1,28 @@
+<!-- Source: results/prototype_metrics.csv; ratios are formatted as percentages only for recall/accuracy. -->
+
+| dataset | split | model | setting | cond | proto_dist_mean | proto_dist_median | proto_dist_weighted_mean | proto_nn_acc | proto_nn_acc_weighted |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| coco | val | clip | lit | clean | 0.6882 | 0.6837 | 0.7275 | 100.0% | 100.0% |
+| coco | val | clip | lit | noise | 0.6972 | 0.6964 | 0.7315 | 100.0% | 100.0% |
+| coco | val | clip | lit | occl | 0.7033 | 0.7027 | 0.7331 | 100.0% | 100.0% |
+| coco | val | clip | lora_r16 | clean | 0.6559 | 0.6532 | 0.6874 | 100.0% | 100.0% |
+| coco | val | clip | lora_r16 | noise | 0.6614 | 0.6602 | 0.6889 | 100.0% | 100.0% |
+| coco | val | clip | lora_r16 | occl | 0.6626 | 0.6601 | 0.6884 | 100.0% | 100.0% |
+| coco | val | clip | lora_r8 | clean | 0.6605 | 0.6558 | 0.6913 | 100.0% | 100.0% |
+| coco | val | clip | lora_r8 | noise | 0.6663 | 0.6634 | 0.6934 | 100.0% | 100.0% |
+| coco | val | clip | lora_r8 | occl | 0.6696 | 0.6662 | 0.6955 | 100.0% | 100.0% |
+| coco | val | clip | pretrained | clean | 0.6422 | 0.6428 | 0.6536 | 100.0% | 100.0% |
+| coco | val | clip | pretrained | noise | 0.6451 | 0.6459 | 0.6548 | 100.0% | 100.0% |
+| coco | val | clip | pretrained | occl | 0.6611 | 0.6602 | 0.6716 | 100.0% | 100.0% |
+| coco | val | siglip | lit | clean | 0.8685 | 0.8633 | 0.9096 | 94.6% | 92.3% |
+| coco | val | siglip | lit | noise | 0.8737 | 0.8694 | 0.9097 | 94.6% | 92.3% |
+| coco | val | siglip | lit | occl | 0.8698 | 0.8629 | 0.9023 | 100.0% | 100.0% |
+| coco | val | siglip | lora_r16 | clean | 0.8850 | 0.8795 | 0.9279 | 100.0% | 100.0% |
+| coco | val | siglip | lora_r16 | noise | 0.8840 | 0.8764 | 0.9221 | 100.0% | 100.0% |
+| coco | val | siglip | lora_r16 | occl | 0.8879 | 0.8796 | 0.9223 | 94.6% | 97.0% |
+| coco | val | siglip | lora_r8 | clean | 0.8823 | 0.8751 | 0.9239 | 97.3% | 94.1% |
+| coco | val | siglip | lora_r8 | noise | 0.8844 | 0.8779 | 0.9214 | 94.6% | 92.3% |
+| coco | val | siglip | lora_r8 | occl | 0.8830 | 0.8746 | 0.9171 | 97.3% | 98.8% |
+| coco | val | siglip | pretrained | clean | 0.9140 | 0.9091 | 0.9489 | 91.9% | 90.1% |
+| coco | val | siglip | pretrained | noise | 0.9133 | 0.9081 | 0.9444 | 91.9% | 90.1% |
+| coco | val | siglip | pretrained | occl | 0.9059 | 0.8983 | 0.9337 | 94.6% | 96.5% |

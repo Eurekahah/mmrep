@@ -1,0 +1,162 @@
+﻿图号,文件路径,生成脚本,数据来源 csv,对应报告章节,一句话说明,核验状态
+F001,docs/gantt.png,,docs/分工方案.md,附录：实验组织,gantt：组内上游已交付的图。,待上游补生成脚本/数据来源
+F002,docs/perturb_examples_clip.png,tools/make_perturb_examples.py,configs/perturb.yaml;configs/models.yaml,数据与扰动设置,perturb_examples_clip：组内上游已交付的图。,已登记上游来源，未重跑
+F003,docs/perturb_examples_siglip.png,tools/make_perturb_examples.py,configs/perturb.yaml;configs/models.yaml,数据与扰动设置,perturb_examples_siglip：组内上游已交付的图。,已登记上游来源，未重跑
+F004,results/figs/alignment_uniformity_scatter.png,metrics/plot_geometry.py,results/geometry_metrics.csv,表征空间几何,alignment_uniformity_scatter：组内上游已交付的图。,已登记上游来源，未重跑
+F005,results/figs/modality_gap_bars.png,metrics/plot_geometry.py,results/geometry_metrics.csv,表征空间几何,modality_gap_bars：组内上游已交付的图。,已登记上游来源，未重跑
+F006,results/figs/norm_clip_coco_test_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F007,results/figs/norm_clip_coco_test_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F008,results/figs/norm_clip_coco_val_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F009,results/figs/norm_clip_coco_val_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F010,results/figs/norm_clip_flickr_test_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F011,results/figs/norm_clip_flickr_test_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F012,results/figs/norm_clip_flickr_val_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F013,results/figs/norm_clip_flickr_val_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_clip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F014,results/figs/norm_siglip_coco_test_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F015,results/figs/norm_siglip_coco_test_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F016,results/figs/norm_siglip_coco_val_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F017,results/figs/norm_siglip_coco_val_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F018,results/figs/norm_siglip_flickr_test_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F019,results/figs/norm_siglip_flickr_test_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F020,results/figs/norm_siglip_flickr_val_image.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F021,results/figs/norm_siglip_flickr_val_text.png,extract/norm_stats.py,results/norm_stats.csv,特征范数,norm_siglip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F022,results/figs/p5_drift_image_coco_test.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_image_coco_test：组内上游已交付的图。,已登记上游来源，未重跑
+F023,results/figs/p5_drift_image_coco_val.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_image_coco_val：组内上游已交付的图。,已登记上游来源，未重跑
+F024,results/figs/p5_drift_image_flickr_test.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_image_flickr_test：组内上游已交付的图。,已登记上游来源，未重跑
+F025,results/figs/p5_drift_image_flickr_val.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_image_flickr_val：组内上游已交付的图。,已登记上游来源，未重跑
+F026,results/figs/p5_drift_text_coco_test.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_text_coco_test：组内上游已交付的图。,已登记上游来源，未重跑
+F027,results/figs/p5_drift_text_coco_val.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_text_coco_val：组内上游已交付的图。,已登记上游来源，未重跑
+F028,results/figs/p5_drift_text_flickr_test.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_text_flickr_test：组内上游已交付的图。,已登记上游来源，未重跑
+F029,results/figs/p5_drift_text_flickr_val.png,eval/plot_p5.py,results/drift_cosine.csv,下游任务与嵌入漂移,p5_drift_text_flickr_val：组内上游已交付的图。,已登记上游来源，未重跑
+F030,results/figs/p5_drop_coco_test.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_drop_coco_test：组内上游已交付的图。,已登记上游来源，未重跑
+F031,results/figs/p5_drop_coco_val.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_drop_coco_val：组内上游已交付的图。,已登记上游来源，未重跑
+F032,results/figs/p5_drop_flickr_test.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_drop_flickr_test：组内上游已交付的图。,已登记上游来源，未重跑
+F033,results/figs/p5_drop_flickr_val.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_drop_flickr_val：组内上游已交付的图。,已登记上游来源，未重跑
+F034,results/figs/p5_recall_coco_test.png,eval/plot_p5.py,results/retrieval_test.csv,下游任务与嵌入漂移,p5_recall_coco_test：组内上游已交付的图。,已登记上游来源，未重跑
+F035,results/figs/p5_recall_coco_val.png,eval/plot_p5.py,results/retrieval_val.csv,下游任务与嵌入漂移,p5_recall_coco_val：组内上游已交付的图。,已登记上游来源，未重跑
+F036,results/figs/p5_recall_flickr_test.png,eval/plot_p5.py,results/retrieval_test.csv,下游任务与嵌入漂移,p5_recall_flickr_test：组内上游已交付的图。,已登记上游来源，未重跑
+F037,results/figs/p5_recall_flickr_val.png,eval/plot_p5.py,results/retrieval_val.csv,下游任务与嵌入漂移,p5_recall_flickr_val：组内上游已交付的图。,已登记上游来源，未重跑
+F038,results/figs/p5_strength_noise.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_strength_noise：组内上游已交付的图。,已登记上游来源，未重跑
+F039,results/figs/p5_strength_occl.png,eval/plot_p5.py,results/retrieval_drop.csv,下游任务与嵌入漂移,p5_strength_occl：组内上游已交付的图。,已登记上游来源，未重跑
+F040,results/figs/strength_alignment.png,metrics/plot_geometry.py,results/geometry_metrics.csv,表征空间几何,strength_alignment：组内上游已交付的图。,已登记上游来源，未重跑
+F041,results/figs/strength_modality_gap.png,metrics/plot_geometry.py,results/geometry_metrics.csv,表征空间几何,strength_modality_gap：组内上游已交付的图。,已登记上游来源，未重跑
+F042,results/lit_selfcheck/clip/loss.png,train/selfcheck_lit.py,results/lit_selfcheck/clip/epochs.csv,训练设置与收敛,loss：组内上游已交付的图。,已登记上游来源，未重跑
+F043,results/lit_selfcheck/siglip/loss.png,train/selfcheck_lit.py,results/lit_selfcheck/siglip/epochs.csv,训练设置与收敛,loss：组内上游已交付的图。,已登记上游来源，未重跑
+F044,results/p2_stages/clip-finetuned/figs/norm_clip_coco_test_image.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F045,results/p2_stages/clip-finetuned/figs/norm_clip_coco_test_text.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F046,results/p2_stages/clip-finetuned/figs/norm_clip_coco_val_image.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F047,results/p2_stages/clip-finetuned/figs/norm_clip_coco_val_text.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F048,results/p2_stages/clip-finetuned/figs/norm_clip_flickr_test_image.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F049,results/p2_stages/clip-finetuned/figs/norm_clip_flickr_test_text.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F050,results/p2_stages/clip-finetuned/figs/norm_clip_flickr_val_image.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F051,results/p2_stages/clip-finetuned/figs/norm_clip_flickr_val_text.png,extract/norm_stats.py,results/p2_stages/clip-finetuned/norm_stats.csv,特征范数,norm_clip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F052,results/p2_stages/pretrained/figs/norm_clip_coco_test_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F053,results/p2_stages/pretrained/figs/norm_clip_coco_test_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F054,results/p2_stages/pretrained/figs/norm_clip_coco_val_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F055,results/p2_stages/pretrained/figs/norm_clip_coco_val_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F056,results/p2_stages/pretrained/figs/norm_clip_flickr_test_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F057,results/p2_stages/pretrained/figs/norm_clip_flickr_test_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F058,results/p2_stages/pretrained/figs/norm_clip_flickr_val_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F059,results/p2_stages/pretrained/figs/norm_clip_flickr_val_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_clip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F060,results/p2_stages/pretrained/figs/norm_siglip_coco_test_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F061,results/p2_stages/pretrained/figs/norm_siglip_coco_test_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F062,results/p2_stages/pretrained/figs/norm_siglip_coco_val_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F063,results/p2_stages/pretrained/figs/norm_siglip_coco_val_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F064,results/p2_stages/pretrained/figs/norm_siglip_flickr_test_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F065,results/p2_stages/pretrained/figs/norm_siglip_flickr_test_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F066,results/p2_stages/pretrained/figs/norm_siglip_flickr_val_image.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F067,results/p2_stages/pretrained/figs/norm_siglip_flickr_val_text.png,extract/norm_stats.py,results/p2_stages/pretrained/norm_stats.csv,特征范数,norm_siglip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F068,results/p2_stages/siglip-finetuned/figs/norm_siglip_coco_test_image.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_coco_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F069,results/p2_stages/siglip-finetuned/figs/norm_siglip_coco_test_text.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_coco_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F070,results/p2_stages/siglip-finetuned/figs/norm_siglip_coco_val_image.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_coco_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F071,results/p2_stages/siglip-finetuned/figs/norm_siglip_coco_val_text.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_coco_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F072,results/p2_stages/siglip-finetuned/figs/norm_siglip_flickr_test_image.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_flickr_test_image：组内上游已交付的图。,已登记上游来源，未重跑
+F073,results/p2_stages/siglip-finetuned/figs/norm_siglip_flickr_test_text.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_flickr_test_text：组内上游已交付的图。,已登记上游来源，未重跑
+F074,results/p2_stages/siglip-finetuned/figs/norm_siglip_flickr_val_image.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_flickr_val_image：组内上游已交付的图。,已登记上游来源，未重跑
+F075,results/p2_stages/siglip-finetuned/figs/norm_siglip_flickr_val_text.png,extract/norm_stats.py,results/p2_stages/siglip-finetuned/norm_stats.csv,特征范数,norm_siglip_flickr_val_text：组内上游已交付的图。,已登记上游来源，未重跑
+F076,results/p9/figures/clip_tsne_conditions_lit_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lit_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F077,results/p9/figures/clip_tsne_conditions_lit_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lit_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F078,results/p9/figures/clip_tsne_conditions_lit_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lit_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F079,results/p9/figures/clip_tsne_conditions_lora_r16_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r16_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F080,results/p9/figures/clip_tsne_conditions_lora_r16_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r16_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F081,results/p9/figures/clip_tsne_conditions_lora_r16_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r16_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F082,results/p9/figures/clip_tsne_conditions_lora_r8_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r8_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F083,results/p9/figures/clip_tsne_conditions_lora_r8_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r8_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F084,results/p9/figures/clip_tsne_conditions_lora_r8_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_lora_r8_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F085,results/p9/figures/clip_tsne_conditions_pretrained_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_pretrained_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F086,results/p9/figures/clip_tsne_conditions_pretrained_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_pretrained_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F087,results/p9/figures/clip_tsne_conditions_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_conditions_pretrained_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F088,results/p9/figures/clip_tsne_settings_clean_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_clean_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F089,results/p9/figures/clip_tsne_settings_clean_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_clean_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F090,results/p9/figures/clip_tsne_settings_clean_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_clean_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F091,results/p9/figures/clip_tsne_settings_noise_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_noise_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F092,results/p9/figures/clip_tsne_settings_noise_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_noise_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F093,results/p9/figures/clip_tsne_settings_noise_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_noise_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F094,results/p9/figures/clip_tsne_settings_occl_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_occl_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F095,results/p9/figures/clip_tsne_settings_occl_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_occl_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F096,results/p9/figures/clip_tsne_settings_occl_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_settings_occl_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F097,results/p9/figures/clip_tsne_strength_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_tsne_strength_pretrained_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 strength_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F098,results/p9/figures/clip_umap_conditions_lit_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lit_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F099,results/p9/figures/clip_umap_conditions_lit_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lit_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F100,results/p9/figures/clip_umap_conditions_lit_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lit_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F101,results/p9/figures/clip_umap_conditions_lora_r16_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r16_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F102,results/p9/figures/clip_umap_conditions_lora_r16_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r16_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F103,results/p9/figures/clip_umap_conditions_lora_r16_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r16_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F104,results/p9/figures/clip_umap_conditions_lora_r8_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r8_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F105,results/p9/figures/clip_umap_conditions_lora_r8_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r8_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F106,results/p9/figures/clip_umap_conditions_lora_r8_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_lora_r8_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F107,results/p9/figures/clip_umap_conditions_pretrained_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_pretrained_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F108,results/p9/figures/clip_umap_conditions_pretrained_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_pretrained_coco.csv,表征空间可视化,CLIP 在 coco val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F109,results/p9/figures/clip_umap_conditions_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_conditions_pretrained_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F110,results/p9/figures/clip_umap_settings_clean_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_clean_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F111,results/p9/figures/clip_umap_settings_clean_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_clean_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F112,results/p9/figures/clip_umap_settings_clean_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_clean_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F113,results/p9/figures/clip_umap_settings_noise_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_noise_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F114,results/p9/figures/clip_umap_settings_noise_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_noise_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F115,results/p9/figures/clip_umap_settings_noise_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_noise_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F116,results/p9/figures/clip_umap_settings_occl_coco.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_occl_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F117,results/p9/figures/clip_umap_settings_occl_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_occl_coco.csv,表征空间可视化,CLIP 在 coco val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F118,results/p9/figures/clip_umap_settings_occl_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_settings_occl_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F119,results/p9/figures/clip_umap_strength_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/clip_umap_strength_pretrained_flickr.csv,表征空间可视化,CLIP 在 flickr val 的 strength_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F120,results/p9/figures/siglip_tsne_conditions_lit_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lit_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F121,results/p9/figures/siglip_tsne_conditions_lit_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lit_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F122,results/p9/figures/siglip_tsne_conditions_lit_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lit_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lit 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F123,results/p9/figures/siglip_tsne_conditions_lora_r16_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r16_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F124,results/p9/figures/siglip_tsne_conditions_lora_r16_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r16_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F125,results/p9/figures/siglip_tsne_conditions_lora_r16_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r16_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lora_r16 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F126,results/p9/figures/siglip_tsne_conditions_lora_r8_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r8_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F127,results/p9/figures/siglip_tsne_conditions_lora_r8_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r8_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F128,results/p9/figures/siglip_tsne_conditions_lora_r8_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_lora_r8_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lora_r8 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F129,results/p9/figures/siglip_tsne_conditions_pretrained_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_pretrained_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F130,results/p9/figures/siglip_tsne_conditions_pretrained_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_pretrained_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F131,results/p9/figures/siglip_tsne_conditions_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_conditions_pretrained_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_pretrained 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F132,results/p9/figures/siglip_tsne_settings_clean_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_clean_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F133,results/p9/figures/siglip_tsne_settings_clean_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_clean_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F134,results/p9/figures/siglip_tsne_settings_clean_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_clean_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_clean 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F135,results/p9/figures/siglip_tsne_settings_noise_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_noise_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F136,results/p9/figures/siglip_tsne_settings_noise_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_noise_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F137,results/p9/figures/siglip_tsne_settings_noise_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_noise_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_noise 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F138,results/p9/figures/siglip_tsne_settings_occl_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_occl_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F139,results/p9/figures/siglip_tsne_settings_occl_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_occl_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F140,results/p9/figures/siglip_tsne_settings_occl_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_tsne_settings_occl_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_occl 联合 TSNE 投影。,已登记：含参数、来源哈希与坐标
+F141,results/p9/figures/siglip_umap_conditions_lit_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lit_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F142,results/p9/figures/siglip_umap_conditions_lit_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lit_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F143,results/p9/figures/siglip_umap_conditions_lit_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lit_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lit 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F144,results/p9/figures/siglip_umap_conditions_lora_r16_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r16_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F145,results/p9/figures/siglip_umap_conditions_lora_r16_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r16_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F146,results/p9/figures/siglip_umap_conditions_lora_r16_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r16_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lora_r16 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F147,results/p9/figures/siglip_umap_conditions_lora_r8_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r8_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F148,results/p9/figures/siglip_umap_conditions_lora_r8_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r8_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F149,results/p9/figures/siglip_umap_conditions_lora_r8_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_lora_r8_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_lora_r8 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F150,results/p9/figures/siglip_umap_conditions_pretrained_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_pretrained_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F151,results/p9/figures/siglip_umap_conditions_pretrained_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_pretrained_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F152,results/p9/figures/siglip_umap_conditions_pretrained_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_conditions_pretrained_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 conditions_pretrained 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F153,results/p9/figures/siglip_umap_settings_clean_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_clean_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F154,results/p9/figures/siglip_umap_settings_clean_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_clean_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F155,results/p9/figures/siglip_umap_settings_clean_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_clean_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_clean 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F156,results/p9/figures/siglip_umap_settings_noise_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_noise_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F157,results/p9/figures/siglip_umap_settings_noise_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_noise_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F158,results/p9/figures/siglip_umap_settings_noise_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_noise_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_noise 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F159,results/p9/figures/siglip_umap_settings_occl_coco.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_occl_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F160,results/p9/figures/siglip_umap_settings_occl_coco_classes.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_occl_coco.csv,表征空间可视化,SIGLIP 在 coco val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
+F161,results/p9/figures/siglip_umap_settings_occl_flickr.png,viz/tsne_umap.py,results/p9/coordinates/siglip_umap_settings_occl_flickr.csv,表征空间可视化,SIGLIP 在 flickr val 的 settings_occl 联合 UMAP 投影。,已登记：含参数、来源哈希与坐标
