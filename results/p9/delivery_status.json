@@ -8,10 +8,7 @@
     "strength"
   ],
   "summary_workbook_available": false,
-  "missing_logs": [
-    "P3",
-    "P6"
-  ],
+  "missing_logs": [],
   "consistency_passed": true,
   "complete": false
 }

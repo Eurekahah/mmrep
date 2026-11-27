@@ -2,6 +2,8 @@
 
 按《分工方案_无PPT版》实施。P9 不训练模型、不重提取特征、不制作 PPT。当前上游交付与缺项见 [p9_handoff.md](../docs/p9_handoff.md)，机器可读状态见 `results/p9/delivery_status.json`。
 
+实际上交范围见 [p9_submission_checklist.md](../docs/p9_submission_checklist.md)。代码与 README 放 GitHub；云盘精简包只放正式图表与交付文档。下面提到的坐标、哈希、输入验收和逐单元格 manifest 是脚本运行时生成的本地材料，可按需复现，不要求重复上传。PNG 和 SVG 两种正式图格式都保留。
+
 ## 环境和输入
 
 Python 3.10；仅 CPU 即可。可以沿用组内环境，或在独立环境安装：
@@ -23,6 +25,8 @@ python -m viz.run_p9
 ```bash
 python -m viz.run_p9 --skip-projections
 ```
+
+`--skip-projections` 需要已有的 `results/p9/coordinates/` 缓存。精简包不包含缓存；新环境要准备输入后运行完整命令，或从已有本地/历史备份恢复缓存。查看已有图表无需运行脚本。
 
 ## 降维和绘图
 
